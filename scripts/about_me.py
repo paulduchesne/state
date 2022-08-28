@@ -7,7 +7,19 @@ import uuid
 
 # check authored data can be retrieved.
 
-def author_triple(s, p, o, n):
+def write_statement(path, graph):
+
+    ''' Create or append new triple. '''
+
+    if path.exists():
+        extant_graph = rdflib.Graph()
+        extant_graph.parse(path)
+        extant_graph += graph
+        extant_graph.serialize(destination=path, format='nt', encoding='utf-8')
+    else:
+        graph.serialize(destination=path, format='nt', encoding='utf-8')
+
+def format_statement(s, p, o, n):
 
     ''' Author triple as encrypted statement. '''
 
@@ -24,15 +36,12 @@ def author_triple(s, p, o, n):
     data_graph.add((res[statement_ident], rdflib.RDF.type, ont['statement']))
     data_graph.add((res[statement_ident], ont.hasPayload, rdflib.Literal(enc_statement)))
     data_path = pathlib.Path.cwd().parents[0] / 'data' / f'{n}.nt'
-    data_graph.serialize(destination=data_path, format='nt', encoding='utf-8')
+    write_statement(data_path, data_graph)
 
     key_graph = rdflib.Graph()
     key_graph.add((res[statement_ident], ont.hasKey, rdflib.Literal(statement_key)))
     key_path = pathlib.Path.cwd().parents[0] / 'keys.nt'
-    key_graph.serialize(destination=key_path, format='nt', encoding='utf-8')
-
-    # you need a function here, if path does not exist, create.
-    # otherwise append.
+    write_statement(key_path, key_graph)
 
 json_path = pathlib.Path.cwd().parents[0] / "person.json"
 
@@ -51,5 +60,5 @@ if json_path.exists():
     ont = rdflib.Namespace(f'https://{ident}.org/ontology/')
     res = rdflib.Namespace(f'https://{ident}.org/resource/')
 
-    author_triple(res[ident], rdflib.RDFS.label, rdflib.Literal(name), ident)
-    author_triple(res[ident], ont.hasBirthDate, rdflib.Literal(dob), ident)
+    format_statement(res[ident], rdflib.RDFS.label, rdflib.Literal(name), ident)
+    format_statement(res[ident], ont.hasBirthDate, rdflib.Literal(dob), ident)
