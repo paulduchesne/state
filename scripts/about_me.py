@@ -36,6 +36,7 @@ def format_statement(s, p, o, n):
     data_graph.add((res[statement_ident], rdflib.RDF.type, ont['statement']))
     data_graph.add((res[statement_ident], ont.hasPayload, rdflib.Literal(enc_statement)))
     data_path = pathlib.Path.cwd().parents[0] / 'data' / f'{n}.nt'
+    data_path.parents[0].mkdir(exist_ok=True)
     write_statement(data_path, data_graph)
 
     key_graph = rdflib.Graph()
@@ -45,8 +46,7 @@ def format_statement(s, p, o, n):
 
 json_path = pathlib.Path.cwd().parents[0] / "person.json"
 
-# if not json_path.exists():
-if json_path.exists():
+if not json_path.exists():
 
     print("\n// Define subject entity.")
 
