@@ -2,6 +2,7 @@
 import ansible_vault
 import json
 import pathlib
+import pydash
 import rdflib
 import uuid
 
@@ -20,6 +21,18 @@ def write_statement(path, graph):
 def format_statement(s, p, o, n):
 
     ''' Author triple as encrypted statement. '''
+
+    ident_file = pathlib.Path.cwd().parents[0] / 'person.json'
+
+    if not ident_file.exists():
+        raise Exception('Ident file not found.')
+    else:
+        with open(ident_file) as ident_uuid:
+            ident_uuid = json.load(ident_uuid)
+            ident = pydash.get(ident_uuid, 'identifier')
+
+    ont = rdflib.Namespace(f'https://{ident}.org/ontology/')
+    res = rdflib.Namespace(f'https://{ident}.org/resource/')
 
     statement_key = str(uuid.uuid4())
     statement_ident = str(uuid.uuid4())
@@ -41,22 +54,3 @@ def format_statement(s, p, o, n):
     key_graph.add((res[statement_ident], ont.hasKey, rdflib.Literal(statement_key)))
     key_path = pathlib.Path.cwd().parents[0] / 'keys.nt'
     write_statement(key_path, key_graph)
-
-json_path = pathlib.Path.cwd().parents[0] / "person.json"
-
-if not json_path.exists():
-
-    print("\n// Define subject entity.")
-
-    name = input("\nProvide name: ")
-    dob = input("\nProvide date of birth: ")
-    ident = str(uuid.uuid4())
-
-    with open(json_path, "w") as json_data:
-        json.dump({"identifier": ident}, json_data)
-
-    ont = rdflib.Namespace(f'https://{ident}.org/ontology/')
-    res = rdflib.Namespace(f'https://{ident}.org/resource/')
-
-    format_statement(res[ident], rdflib.RDFS.label, rdflib.Literal(name), ident)
-    format_statement(res[ident], ont.hasBirthDate, rdflib.Literal(dob), ident)
