@@ -1,6 +1,8 @@
 from cryptography.fernet import Fernet
 import base64
+import hashlib
 import json
+import os
 import pathlib
 import pydash
 import rdflib
@@ -25,6 +27,17 @@ def encryption_pair():
         json.dump(config, config_out)
 
     return {'statement':statement_uuid, 'key':key_uuid}
+
+def checksummer(file_path):
+
+    ''' Default MD5 checksumming function. '''
+
+    with open(file_path, 'rb') as item:
+        hash = hashlib.md5()
+        for buff in iter(lambda: item.read(65536), b''):
+            hash.update(buff)
+        checksum = hash.hexdigest().lower()
+        return(checksum)
 
 def me(name, birth):
 
@@ -86,6 +99,25 @@ def person(name, birth):
     statement((res[person_uuid], rdflib.RDF.type, ont['person']), home_uuid)
     statement((res[person_uuid], ont['has_name'], rdflib.Literal(name)), home_uuid)
     statement((res[person_uuid], ont['has_birth_date'], rdflib.Literal(birth)), home_uuid)
+
+def file(path):
+
+    ''' Load file into graph. '''
+
+    home_uuid = individual()
+    ont = rdflib.Namespace(f'https://{home_uuid}.org/ontology/') 
+    res = rdflib.Namespace(f'https://{home_uuid}.org/resource/')
+
+    file_uuid = str(uuid.uuid4())
+
+    with open(str(path), 'rb') as file_data:
+        file_data = file_data.read()
+
+    statement((res[file_uuid], rdflib.RDF.type, ont['file']), home_uuid)
+    statement((res[file_uuid], ont['has_original_filename'], rdflib.Literal(str(path))), home_uuid)
+    statement((res[file_uuid], ont['has_md5_hash'], rdflib.Literal(checksummer(path))), home_uuid)
+    statement((res[file_uuid], ont['has_file_size'], rdflib.Literal(os.path.getsize(path))), home_uuid)
+    statement((res[file_uuid], ont['has_payload'], rdflib.Literal(base64.b64encode(file_data))), home_uuid)
 
 def decrypt_all():
 
