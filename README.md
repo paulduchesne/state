@@ -4,10 +4,20 @@
 
 The name is derived from "state" as a verb, synonymous with "assert" or "declare", but also has other linguistic implications.
 
-This repository currently comprises a collection of Python scripts, with the intention to eventually migrate to a dedicated node.js web app.
+This repository currently comprises a dedicated Python module for programmatic use, with the intention to eventually graduated to a web application.
 
-#### about_me.py
+`state.me('paul duchesne', '1986-04-14')`
 
-The first step of the process is to declare yourself as an entity, who will be responsible for the authorship of all future claims.
+An important initial step is to define the individual who will be making all resulting claims. Required fields are a name and a date of birth. Date of birth is mandatory for all individuals as an excellent (although not collision infallible) method of disambiguation.
 
-Two datapoints are expected, a name and a date of birth. The script automatically generates a UUID which will represent the first-person subject, and provide a URI namespace.
+`state.person('philip kindred dick', '1928-12-16')`
+
+Other individuals can be defined, although their initial URI will be contained under the author's namespace. A useful function would be to identify where individuals have defined themselves using this protocol elsewhere, and "adopt" their own expressed identity.
+
+`state.file(pathlib.Path.home() / '02.flac')`
+
+One of the more interesting aspects of this prototype is that files can also be stored in the resulting graph, both metadata around the file and the file payload stored as an encrypted base64 string. Given the comparatively large size of these specific statements, there is currently a shallow/deep flag to indicated where the encrypted triple contains file contents.
+
+`state.decrypt_all()`
+
+The entire local graph (minus file data) can also be decrypted with a single function call.
