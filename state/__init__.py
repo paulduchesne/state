@@ -84,6 +84,10 @@ def statement(triple, home):
 
     meta_graph.add((res[enc['statement']], rdflib.RDF.type, ont['statement'] ))
     meta_graph.add((res[enc['statement']], ont['has_payload'], rdflib.Literal(fernet.encrypt(source.encode()).decode())))
+    if triple[1] != ont['has_payload']:
+        meta_graph.add((res[enc['statement']], ont['layer'], ont['shallow']))
+    else:
+        meta_graph.add((res[enc['statement']], ont['layer'], ont['deep']))
     meta_graph.serialize(destination=str(ttl_file), format="turtle")
 
 def person(name, birth):
@@ -131,9 +135,14 @@ def decrypt_all():
     meta_graph.parse(pathlib.Path.cwd() / 'graph.ttl')
 
     statements = [s for s,p,o in meta_graph.triples((None, None, ont.statement))]
+    
+    shallow_statements = list()
+    for x in statements:
+        for s,p,o in meta_graph.triples((x, ont['layer'], ont['shallow'])):
+            shallow_statements.append(s)
 
     payloads = list()
-    for x in statements:
+    for x in shallow_statements:
         statement_id = pathlib.Path(str(x)).stem
         for s,p,o in meta_graph.triples((x, ont['has_payload'], None)):
             payloads.append({statement_id:str(o)})
