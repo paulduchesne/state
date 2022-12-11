@@ -77,7 +77,8 @@ def statement(triple, home):
     enc = encryption_pair()
     fernet = Fernet(base64.urlsafe_b64encode(enc['key'].encode()))
 
-    ttl_file = pathlib.Path.cwd() / 'graph.ttl'
+    ttl_file = pathlib.Path.cwd() / 'data' / f'{str(uuid.uuid4())[:2]}.ttl'
+    ttl_file.parents[0].mkdir(exist_ok=True)
     meta_graph = rdflib.Graph()
     if ttl_file.exists():
         meta_graph.parse(ttl_file)
@@ -132,7 +133,8 @@ def decrypt_all():
     res = rdflib.Namespace(f'https://{home_uuid}.org/resource/')
 
     meta_graph = rdflib.Graph()
-    meta_graph.parse(pathlib.Path.cwd() / 'graph.ttl')
+    for x in [x for x in (pathlib.Path.cwd() / 'data').iterdir() if x.suffix == '.ttl']:
+        meta_graph.parse(x)
 
     statements = [s for s,p,o in meta_graph.triples((None, None, ont.statement))]
     
