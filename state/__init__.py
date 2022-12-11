@@ -121,7 +121,7 @@ def file(path):
     statement((res[file_uuid], ont['has_original_filename'], rdflib.Literal(str(path))), home_uuid)
     statement((res[file_uuid], ont['has_md5_hash'], rdflib.Literal(checksummer(path))), home_uuid)
     statement((res[file_uuid], ont['has_file_size'], rdflib.Literal(os.path.getsize(path))), home_uuid)
-    statement((res[file_uuid], ont['has_payload'], rdflib.Literal(base64.b64encode(file_data))), home_uuid)
+    statement((res[file_uuid], ont['has_payload'], rdflib.Literal(base64.b64encode(file_data).decode('utf-8'))), home_uuid)
 
 def decrypt_all():
 
