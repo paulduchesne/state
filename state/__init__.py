@@ -91,19 +91,40 @@ def statement(triple, home):
         meta_graph.add((res[enc['statement']], ont['layer'], ont['deep']))
     meta_graph.serialize(destination=str(ttl_file), format="turtle")
 
-def person(name, birth):
+def person_extant(name, birth):
 
-    ''' Add an external individual to the graph. '''
+    ''' Does person likely already exist in graph? '''
+
+    # note that for now this will just be a straight dob match,
+    # in the future it would be nice to see fuzzy matching on name as factor.
 
     home_uuid = individual()
     ont = rdflib.Namespace(f'https://{home_uuid}.org/ontology/') 
     res = rdflib.Namespace(f'https://{home_uuid}.org/resource/')
 
-    person_uuid = str(uuid.uuid4())
+    extant_graph = decrypt_all()
+    person_match = [s for s,p,o in extant_graph.triples((None, ont['has_birth_date'], rdflib.Literal(birth)))]
 
-    statement((res[person_uuid], rdflib.RDF.type, ont['person']), home_uuid)
-    statement((res[person_uuid], ont['has_name'], rdflib.Literal(name)), home_uuid)
-    statement((res[person_uuid], ont['has_birth_date'], rdflib.Literal(birth)), home_uuid)
+    return len(person_match)
+
+def person(name, birth):
+
+    ''' Add an external individual to the graph. '''
+
+    # for now silently pass on matching individual.
+
+    if person_extant(name, birth):
+        print(f'{name} already exists.')
+    else:
+        home_uuid = individual()
+        ont = rdflib.Namespace(f'https://{home_uuid}.org/ontology/') 
+        res = rdflib.Namespace(f'https://{home_uuid}.org/resource/')
+
+        person_uuid = str(uuid.uuid4())
+
+        statement((res[person_uuid], rdflib.RDF.type, ont['person']), home_uuid)
+        statement((res[person_uuid], ont['has_name'], rdflib.Literal(name)), home_uuid)
+        statement((res[person_uuid], ont['has_birth_date'], rdflib.Literal(birth)), home_uuid)
 
 def file(path):
 
@@ -162,4 +183,6 @@ def decrypt_all():
             decode_graph.parse(data=decMessage)
             lower_graph += decode_graph
 
-    print(lower_graph.serialize(format='turtle'))
+    # print(lower_graph.serialize(format='turtle'))
+
+    return lower_graph
