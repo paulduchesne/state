@@ -126,6 +126,19 @@ def person(name, birth):
         statement((res[person_uuid], ont['has_name'], rdflib.Literal(name)), home_uuid)
         statement((res[person_uuid], ont['has_birth_date'], rdflib.Literal(birth)), home_uuid)
 
+def file_extant(md5_hash):
+
+    ''' Check if file already exists in the graph. '''
+
+    home_uuid = individual()
+    ont = rdflib.Namespace(f'https://{home_uuid}.org/ontology/') 
+    res = rdflib.Namespace(f'https://{home_uuid}.org/resource/')
+
+    extant_graph = decrypt_all()
+    file_match = [s for s,p,o in extant_graph.triples((None, ont['has_md5_hash'], rdflib.Literal(md5_hash)))]
+
+    return len(file_match)
+
 def file(path):
 
     ''' Load file into graph. '''
@@ -134,16 +147,20 @@ def file(path):
     ont = rdflib.Namespace(f'https://{home_uuid}.org/ontology/') 
     res = rdflib.Namespace(f'https://{home_uuid}.org/resource/')
 
-    file_uuid = str(uuid.uuid4())
+    checksum = checksummer(path)
 
-    with open(str(path), 'rb') as file_data:
-        file_data = file_data.read()
+    if file_extant(checksum):
+        print(f'{path.name} already exists.')
+    else:
+        file_uuid = str(uuid.uuid4())
+        with open(str(path), 'rb') as file_data:
+            file_data = file_data.read()
 
-    statement((res[file_uuid], rdflib.RDF.type, ont['file']), home_uuid)
-    statement((res[file_uuid], ont['has_original_filename'], rdflib.Literal(str(path))), home_uuid)
-    statement((res[file_uuid], ont['has_md5_hash'], rdflib.Literal(checksummer(path))), home_uuid)
-    statement((res[file_uuid], ont['has_file_size'], rdflib.Literal(os.path.getsize(path))), home_uuid)
-    statement((res[file_uuid], ont['has_payload'], rdflib.Literal(base64.b64encode(file_data).decode('utf-8'))), home_uuid)
+        statement((res[file_uuid], rdflib.RDF.type, ont['file']), home_uuid)
+        statement((res[file_uuid], ont['has_original_filename'], rdflib.Literal(str(path))), home_uuid)
+        statement((res[file_uuid], ont['has_md5_hash'], rdflib.Literal(checksum)), home_uuid)
+        statement((res[file_uuid], ont['has_file_size'], rdflib.Literal(os.path.getsize(path))), home_uuid)
+        statement((res[file_uuid], ont['has_payload'], rdflib.Literal(base64.b64encode(file_data).decode('utf-8'))), home_uuid)
 
 def decrypt_all():
 
