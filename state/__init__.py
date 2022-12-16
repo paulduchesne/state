@@ -91,6 +91,13 @@ def statement(triple, home):
         meta_graph.add((res[enc['statement']], ont['layer'], ont['deep']))
     meta_graph.serialize(destination=str(ttl_file), format="turtle")
 
+def people(list_of_people):
+
+    ''' Add multiple people. '''
+
+    for p in list_of_people:
+        person(p['name'], p['birth'])
+
 def person_extant(name, birth):
 
     ''' Does person likely already exist in graph? '''
