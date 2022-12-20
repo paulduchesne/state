@@ -210,3 +210,49 @@ def decrypt_all():
     # print(lower_graph.serialize(format='turtle'))
 
     return lower_graph
+
+def decrypt_files():
+
+    ''' Decrypt files stored in the graph. '''
+
+    home_uuid = individual()
+    ont = rdflib.Namespace(f'https://{home_uuid}.org/ontology/') 
+    res = rdflib.Namespace(f'https://{home_uuid}.org/resource/')
+
+    meta_graph = rdflib.Graph()
+    for x in [x for x in (pathlib.Path.cwd() / 'data').iterdir() if x.suffix == '.ttl']:
+        meta_graph.parse(x)
+
+    statements = [s for s,p,o in meta_graph.triples((None, None, ont.statement))]
+    
+    payloads = list()
+    for x in statements:
+        statement_id = pathlib.Path(str(x)).stem
+        for s,p,o in meta_graph.triples((x, ont['has_payload'], None)):
+            payloads.append({statement_id:str(o)})
+
+    config_location = pathlib.Path.cwd() / 'individual.json'
+    with open(config_location) as config:
+        keys = json.load(config)['keys']
+
+    lower_graph = rdflib.Graph()
+    for p in payloads:
+        for k,v in p.items():
+            fernet = Fernet(base64.urlsafe_b64encode(keys[k].encode()))
+            decMessage = fernet.decrypt(v.encode()).decode()
+            decode_graph = rdflib.Graph()
+            decode_graph.parse(data=decMessage)
+            lower_graph += decode_graph
+
+    files = [s for s,p,o in lower_graph.triples((None, rdflib.RDF.type, ont.file))]
+    for f in files:
+
+        file_hash = [o for s,p,o in lower_graph.triples((f, ont.has_md5_hash, None))]
+        file_name = [o for s,p,o in lower_graph.triples((f, ont.has_original_filename, None))]
+        file_content = [o for s,p,o in lower_graph.triples((f, ont.has_payload, None))]
+ 
+        output_file = f'{file_hash[0]}{pathlib.Path(file_name[0]).suffix}'
+        output_file = pathlib.Path.cwd() / 'files' / output_file
+
+        with open(output_file, 'wb') as output:
+            output.write(base64.decodebytes(file_content[0].encode('utf-8')))

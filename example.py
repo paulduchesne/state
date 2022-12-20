@@ -17,3 +17,6 @@ state.file(pathlib.Path.home() / '02.flac')
 
 # decrypt all statements in personal graph.
 state.decrypt_all()
+
+# decrypt files.
+state.decrypt_files()
