@@ -1,3 +1,3 @@
 # State
 
-Personal linked data system.
+Declare personal linked data.
