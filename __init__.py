@@ -2,6 +2,7 @@
 from cryptography.fernet import Fernet
 import base64
 import json
+import pandas
 import pathlib
 import rdflib
 import uuid
@@ -14,8 +15,8 @@ def write_statements(graph):
 
     for s,p,o in graph.triples((None, None, None)):
 
-        statement_uuid = str(uuid.uuid4())
-        statement_uri = rdflib.URIRef('web://'+statement_uuid)
+        statement_id = str(uuid.uuid4())
+        statement_uri = rdflib.URIRef('web://'+statement_id)
         statement = rdflib.Graph().add((s, p, o)).serialize(format='nt')
 
         key = str(uuid.uuid4()).replace('-', '')
@@ -27,11 +28,11 @@ def write_statements(graph):
         state_literal = rdflib.Literal(fernet.encrypt(statement.encode()).decode())
         public_graph.add((statement_uri, rdflib.URIRef('state://ontology/content'), state_literal))
 
-        graph_path = pathlib.Path.home() / 'state' / 'turtle' / statement_uuid[:2] / f'{statement_uuid}.ttl'
+        graph_path = pathlib.Path.home() / 'state' / 'turtle' / statement_id[:2] / f'{statement_id}.ttl'
         graph_path.parents[0].mkdir(exist_ok=True, parents=True)
         public_graph.serialize(destination=str(graph_path), format='turtle')
 
-        private_keys[statement_uuid] = key
+        private_keys[statement_id] = key
 
     keys_path = pathlib.Path.home() / 'state' / 'private.json'
     if not keys_path.exists():
@@ -43,3 +44,51 @@ def write_statements(graph):
         
         with open(keys_path, 'w') as keys_out:
             json.dump(keys_in | private_keys, keys_out, indent=4)
+
+def read_statement(statement_id):
+
+    ''' Retrieve triple against provided state id. '''
+
+    key_path = pathlib.Path.home() / 'state' / 'private.json'
+    if not key_path.exists():
+        raise Exception('Keys could not be found.')
+    else:
+        with open(key_path) as private_keys:
+            private_keys = json.load(private_keys)
+
+    statement_path = pathlib.Path.home() / 'state' / 'turtle' / statement_id[:2] / f'{statement_id}.ttl'
+    public_statememt = rdflib.Graph().parse(statement_path)
+    for s,p,o in public_statememt:
+        if p == rdflib.URIRef('state://ontology/content'):
+            if pathlib.Path(s).name in private_keys:
+                key = private_keys[pathlib.Path(s).name]
+                fernet = Fernet(base64.urlsafe_b64encode(key.encode()))
+                private_statement = fernet.decrypt(o.encode()).decode()
+                private_graph = rdflib.Graph().parse(data=private_statement)
+
+                return private_graph
+
+def map_statements():
+
+    ''' Regenerate files from existing graph. '''
+
+    # build a map of the private graph. this is currently being performed on-the-fly, 
+    # but an alternate model would be that a local copy exists to be consulted.
+
+    map_df = pandas.DataFrame(columns=['source', 'subject', 'predicate', 'object'])
+    public_statements = [x.stem for x in (pathlib.Path.home() / 'state' / 'turtle' ).rglob('*') if x.suffix == '.ttl']
+    for x in public_statements:
+
+        res_triple = read_statement(x)
+
+        if res_triple:
+
+            for a,b,c in res_triple.triples((None, None, None)):
+                if type(c) == type(rdflib.URIRef('')):
+                    map_df.loc[len(map_df)] = [(x),(a), (b), (c)]
+                elif type(c) == type(rdflib.Literal('')):
+                    map_df.loc[len(map_df)] = [(x),(a), (b), (rdflib.Literal('LITERAL'))]
+                else:
+                    raise Exception('Unknown object type.')
+
+    return map_df
