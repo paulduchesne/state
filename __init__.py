@@ -92,3 +92,32 @@ def map_statements():
                     raise Exception('Unknown object type.')
 
     return map_df
+
+def map_update():
+
+    ''' Unlike map statemenst, map update works off a disk resource. '''
+
+    map_path = pathlib.Path.home() / 'state' / 'map.parquet'
+    if not map_path.exists():
+        map_df = pandas.DataFrame(columns=['source', 'subject', 'predicate', 'object'])
+        map_df.to_parquet(map_path)
+    else:
+        map_df = pandas.read_parquet(map_path)
+
+    public_statements = [x.stem for x in (pathlib.Path.home() / 'state' / 'turtle' ).rglob('*') if x.suffix == '.ttl']
+    for x in public_statements:
+        if x not in map_df.source.unique():
+            res_triple = read_statement(x)
+            if res_triple:
+                for a,b,c in res_triple.triples((None, None, None)):
+                    if type(c) == type(rdflib.URIRef('')):
+                        map_df.loc[len(map_df)] = [(x),(a), (b), (c)]
+                    elif type(c) == type(rdflib.Literal('')):
+                        map_df.loc[len(map_df)] = [(x),(a), (b), (rdflib.Literal('LITERAL'))]
+                    else:
+                        raise Exception('Unknown object type.')
+
+    map_df.to_parquet(map_path)
+
+    return map_df
+
