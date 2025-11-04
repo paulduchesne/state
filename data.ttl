@@ -1,0 +1,6 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+<https://paulduchesne.github.io/0ef53722-52ca-49c8-873d-3549a74914e8>
+    a <http://www.loc.gov/premis/rdf/v3/Person> ;
+    rdfs:label "Paul Duchesne" ;
+.
