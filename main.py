@@ -36,7 +36,7 @@ def build():
             comment = o
         string += comment
 
-        markdown_path = pathlib.Path.cwd() / '/'.join(pathlib.Path(e).parts[2:])
+        markdown_path = pathlib.Path.cwd() / f'{'/'.join(pathlib.Path(e).parts[2:])}.md'
         with open(markdown_path, 'w') as markdown:
             markdown.write(string)
 
