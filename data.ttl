@@ -6,12 +6,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:comment "A young man from Canberra." ;
 .
 
+<https://paulduchesne.github.io/resource/d2d8ae17-8d48-4256-931e-4f24ecf61f60>
+    a <http://www.loc.gov/premis/rdf/v3/Person> ;
+    rdfs:label "Jaye Weatherburn" ;
+    rdfs:comment "Jaye is Head of Digital Preservation at the NFSA." ;
+.
+
 <https://paulduchesne.github.io/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a>
     a <http://www.loc.gov/premis/rdf/v3/Event> ;
     rdfs:label "iPRES 2025" ;
     rdfs:comment "The 2025 iteration of the iPRES conference, held in Wellington." ;
 .
-
-
-
 
