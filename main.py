@@ -19,6 +19,7 @@ def build():
     for e in [
         "http://www.loc.gov/premis/rdf/v3/Event",
         "http://www.loc.gov/premis/rdf/v3/Person",
+        "http://www.loc.gov/premis/rdf/v3/Organization",
     ]:
         entities += [s for s,p,o in g.triples((None, rdflib.RDF.type, rdflib.URIRef(e)))]
 
