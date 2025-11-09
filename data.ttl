@@ -3,7 +3,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/resource/0ef53722-52ca-49c8-873d-3549a74914e8>
     a <http://www.loc.gov/premis/rdf/v3/Person> ;
     rdfs:label "Paul Duchesne" ;
-    rdfs:comment "Paul Duchesne is a film archivist and software developer, based in Canberra. He has worked for the [NFSA](https://paulduchesne.github.io/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c) and [TIB](), and is a member of the [FIAF]() [Cataloguing and Documentation Commission]()." ;
+    rdfs:comment "Paul Duchesne is a film archivist and software developer, based in Canberra. \n\nHe has worked for the [NFSA](https://paulduchesne.github.io/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c) and [TIB](), and is a member of the [FIAF]() [Cataloguing and Documentation Commission]()." ;
 .
 
 <https://paulduchesne.github.io/resource/d2d8ae17-8d48-4256-931e-4f24ecf61f60>
@@ -23,4 +23,3 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "National Film and Sound Archive" ;
     rdfs:comment "The National Film and Sound Archive of Australia, based in Canberra." ;
 .
-
