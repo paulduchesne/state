@@ -3,25 +3,25 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX premis: <http://www.loc.gov/premis/rdf/v3/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-<https://paulduchesne.github.io/resource/0ef53722-52ca-49c8-873d-3549a74914e8>
+<https://paulduchesne.github.io/personal-premis/resource/0ef53722-52ca-49c8-873d-3549a74914e8>
     a <http://www.loc.gov/premis/rdf/v3/Person> ;
     rdfs:label "Paul Duchesne" ;
-    rdfs:comment "Paul Duchesne is a film archivist and software developer, based in Canberra. He has worked for the [NFSA](https://paulduchesne.github.io/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c) and [TIB](), and is a member of the [FIAF]() [Cataloguing and Documentation Commission]()." ;
+    rdfs:comment "Paul Duchesne is a film archivist and software developer, based in Canberra. He has worked for the [NFSA](https://paulduchesne.github.io/personal-premis/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c) and [TIB](), and is a member of the [FIAF]() [Cataloguing and Documentation Commission]()." ;
 .
 
-<https://paulduchesne.github.io/resource/d2d8ae17-8d48-4256-931e-4f24ecf61f60>
+<https://paulduchesne.github.io/personal-premis/resource/d2d8ae17-8d48-4256-931e-4f24ecf61f60>
     a <http://www.loc.gov/premis/rdf/v3/Person> ;
     rdfs:label "Jaye Weatherburn" ;
     rdfs:comment "" ;
 .
 
-<https://paulduchesne.github.io/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a>
+<https://paulduchesne.github.io/personal-premis/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a>
     a <http://www.loc.gov/premis/rdf/v3/Event> ;
     rdfs:label "iPRES 2025" ;
     rdfs:comment "The 2025 iteration of the [iPRES]() conference, held in [Wellington]()." ;
 .
 
-<https://paulduchesne.github.io/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c>
+<https://paulduchesne.github.io/personal-premis/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c>
     a <http://www.loc.gov/premis/rdf/v3/Organization> ;
     rdfs:label "National Film and Sound Archive" ;
     rdfs:comment "The National Film and Sound Archive of Australia, based in Canberra." ;
@@ -51,7 +51,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <https://paulduchesne.github.io/personal-premis/resource/ec0545af-f371-4df8-a0ef-5196c8a27859>
     a ont:Book ;
+    rdfs:label "I Remain in Darkness" ;
+    rdfs:comment "1997 book by Annie Ernaux." ;
+    ont:hasAuthor <https://paulduchesne.github.io/personal-premis/resource/585e1cc0-3883-40f9-a036-7e9bae25077e> ;    
     premis:identifier "9781910695975" ;
-    ont:hasAuthor <https://paulduchesne.github.io/personal-premis/resource/585e1cc0-3883-40f9-a036-7e9bae25077e> ;
-    ont:hasTitle "I Remain in Darkness" ;
 .
