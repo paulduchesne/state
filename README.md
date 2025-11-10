@@ -6,7 +6,7 @@ I have long been interested in the concept of publishing personal data as an ope
 
 [PREMIS](https://www.loc.gov/standards/premis/) is explicitly intended as a framework for activity and characteristics related to digital preservation, but appears flexible enough to document such personal information.
 
-[Test Entity](https://paulduchesne.github.io/resource/0ef53722-52ca-49c8-873d-3549a74914e8)
+[Test Entity](https://paulduchesne.github.io/personal-premis/resource/0ef53722-52ca-49c8-873d-3549a74914e8)
 
 **License**
 
