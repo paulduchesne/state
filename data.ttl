@@ -1,9 +1,12 @@
+PREFIX ont: <https://paulduchesne.github.io/personal-premis/ontology/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX premis: <http://www.loc.gov/premis/rdf/v3/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <https://paulduchesne.github.io/resource/0ef53722-52ca-49c8-873d-3549a74914e8>
     a <http://www.loc.gov/premis/rdf/v3/Person> ;
     rdfs:label "Paul Duchesne" ;
-    rdfs:comment "Paul Duchesne is a film archivist and software developer, based in Canberra. \n\nHe has worked for the [NFSA](https://paulduchesne.github.io/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c) and [TIB](), and is a member of the [FIAF]() [Cataloguing and Documentation Commission]()." ;
+    rdfs:comment "Paul Duchesne is a film archivist and software developer, based in Canberra. He has worked for the [NFSA](https://paulduchesne.github.io/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c) and [TIB](), and is a member of the [FIAF]() [Cataloguing and Documentation Commission]()." ;
 .
 
 <https://paulduchesne.github.io/resource/d2d8ae17-8d48-4256-931e-4f24ecf61f60>
@@ -22,4 +25,33 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a <http://www.loc.gov/premis/rdf/v3/Organization> ;
     rdfs:label "National Film and Sound Archive" ;
     rdfs:comment "The National Film and Sound Archive of Australia, based in Canberra." ;
+.
+
+<https://paulduchesne.github.io/personal-premis/resource/86477d45-4c1a-4f95-841d-a3fc2d8ffa25>
+    a ont:ReadingEvent ;
+    ont:endDate "" ;
+    ont:hasParticipant
+        <https://paulduchesne.github.io/personal-premis/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
+        <https://paulduchesne.github.io/personal-premis/resource/ec0545af-f371-4df8-a0ef-5196c8a27859> ;
+    ont:startDate "2025-11-09" ;
+.
+
+<https://paulduchesne.github.io/personal-premis/ontology/ReadingEvent>
+    a owl:Class ;
+    rdfs:label "Reading Event" ;
+    rdfs:comment "Event type concerning the act of reading." ;
+    rdfs:subClassOf premis:Event ;
+.
+
+<https://paulduchesne.github.io/personal-premis/resource/585e1cc0-3883-40f9-a036-7e9bae25077e>
+    a premis:Person ;
+    rdfs:label "Annie Ernaux" ;
+    rdfs:comment "French Nobel-prize winning author." ;
+.
+
+<https://paulduchesne.github.io/personal-premis/resource/ec0545af-f371-4df8-a0ef-5196c8a27859>
+    a ont:Book ;
+    premis:identifier "9781910695975" ;
+    ont:hasAuthor <https://paulduchesne.github.io/personal-premis/resource/585e1cc0-3883-40f9-a036-7e9bae25077e> ;
+    ont:hasTitle "I Remain in Darkness" ;
 .
