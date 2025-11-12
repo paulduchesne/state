@@ -64,6 +64,7 @@ def build():
                 df.loc[len(df)] = [p, o]
 
 
+
         # print(len(df))
         # print(df.head())
 
@@ -74,13 +75,16 @@ def build():
 
             return label
 
-        if len(df):
-            string += '\n\n'
-            string += '| Property      | Object |\n'
-            string += '| ----------- | ----------- |\n'
+        # if len(df):
+        #     string += '\n\n'
+        #     string += '| Property      | Object |\n'
+        #     string += '| ----------- | ----------- |\n'
 
         # TODO, make sure "type" is top.
 
+        string += '\n\n'
+        string += '### Statements\n\n'
+        subj = f'[{get_label(g, e)}]({e})'
         for x in df.to_dict('records'):
             prop = f'[{get_label(g, x['property'])}]({x['property']})'
             if type(x['object']) == rdflib.term.Literal:
@@ -90,7 +94,7 @@ def build():
             else:
                 raise Exception('Object type unknown.')
             
-            string += f'| {prop} | {obj} |\n'
+            string += f'{subj} → {prop} → {obj}    \n'
          
 
         markdown_path = pathlib.Path.cwd() / f'{'/'.join(pathlib.Path(e).parts[3:])}.md'
