@@ -7,12 +7,16 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a <http://www.loc.gov/premis/rdf/v3/Person> ;
     rdfs:label "Paul Duchesne" ;
     rdfs:comment "Paul Duchesne is a film archivist and software developer, based in Canberra. He has worked for the [NFSA](https://paulduchesne.github.io/personal-premis/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c) and [TIB](), and is a member of the [FIAF]() [Cataloguing and Documentation Commission]()." ;
+    ont:worksAt <https://paulduchesne.github.io/personal-premis/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c> ;
+    ont:attended <https://paulduchesne.github.io/personal-premis/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ;
 .
 
 <https://paulduchesne.github.io/personal-premis/resource/d2d8ae17-8d48-4256-931e-4f24ecf61f60>
     a <http://www.loc.gov/premis/rdf/v3/Person> ;
     rdfs:label "Jaye Weatherburn" ;
     rdfs:comment "Jaye Weatherburn, working where stories, systems, and stewardship meet." ;
+    ont:worksAt <https://paulduchesne.github.io/personal-premis/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c> ;
+    ont:attended <https://paulduchesne.github.io/personal-premis/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ;
 .
 
 <https://paulduchesne.github.io/personal-premis/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a>
@@ -23,6 +27,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <https://paulduchesne.github.io/personal-premis/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c>
     a <http://www.loc.gov/premis/rdf/v3/Organization> ;
+    a premis:Organization ;
     rdfs:label "National Film and Sound Archive" ;
     rdfs:comment "The National Film and Sound Archive of Australia, based in Canberra." ;
 .
@@ -78,4 +83,28 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:comment "2024 book by Slavoj Zizek." ;
     ont:hasAuthor <https://paulduchesne.github.io/personal-premis/resource/b7315610-4737-4c68-934a-0a1fbe09d281> ;
     premis:identifier "9781350515857" ;
+.
+
+<https://paulduchesne.github.io/personal-premis/ontology/hasAuthor>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Author"@en ; 
+    rdfs:domain ont:Book ;   
+    rdfs:range premis:Person ;   
+.
+
+<https://paulduchesne.github.io/personal-premis/ontology/hasParticipant>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Participant"@en ;  
+.
+
+<https://paulduchesne.github.io/personal-premis/ontology/worksAt>
+    a owl:ObjectProperty ;
+    rdfs:label "Works At"@en ; 
+    rdfs:domain premis:Person ;   
+    rdfs:range premis:Organization ;   
+.
+
+<https://paulduchesne.github.io/personal-premis/ontology/attended>
+    a owl:ObjectProperty ;
+    rdfs:label "Attended"@en ;  
 .

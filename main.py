@@ -1,5 +1,6 @@
 # build script to generate resource markdown pages from turtle data.
 
+import pandas
 import pathlib
 import rdflib
 
@@ -13,6 +14,14 @@ def build():
         raise Exception("Path does not exist.")
     g = rdflib.Graph().parse(path)
 
+    # merge premis ontology.
+
+    g += rdflib.Graph().parse('https://raw.githubusercontent.com/lcnetdev/PREMIS/refs/heads/master/premis3.owl')
+
+    # load rdf ontology.
+
+    g += rdflib.Graph().parse('https://www.w3.org/1999/02/22-rdf-syntax-ns')
+
     # collect primary entities.
 
     entities = list()
@@ -24,12 +33,15 @@ def build():
     ]:
         entities += [s for s,p,o in g.triples((None, rdflib.RDF.type, rdflib.URIRef(e)))]
 
-    for e in entities:
-        print(e)
+    # for e in entities:
+    #     print(e)
 
     # build markdown.
 
     for e in entities:
+
+
+        # print('\n')
 
         # TODO introduce expectation of minimum data here.
 
@@ -42,6 +54,44 @@ def build():
         for s,p,o in g.triples((e, rdflib.RDFS.comment, None)):
             comment = o
         string += comment
+
+        df = pandas.DataFrame(columns=['property', 'object'])
+        for s,p,o in g.triples((e, None, None)):
+            if p not in [rdflib.RDFS.label, rdflib.RDFS.comment]:
+                # print(s,p,o)
+                # link to property, and label, link to object, label
+
+                df.loc[len(df)] = [p, o]
+
+
+        # print(len(df))
+        # print(df.head())
+
+        def get_label(graph, uri):
+            label = ''
+            for s,p,o in graph.triples((uri, rdflib.RDFS.label, None)):
+                label = o
+
+            return label
+
+        if len(df):
+            string += '\n\n'
+            string += '| Property      | Object |\n'
+            string += '| ----------- | ----------- |\n'
+
+        # TODO, make sure "type" is top.
+
+        for x in df.to_dict('records'):
+            prop = f'[{get_label(g, x['property'])}]({x['property']})'
+            if type(x['object']) == rdflib.term.Literal:
+                obj = x['object']
+            elif type(x['object']) == rdflib.term.URIRef:
+                obj = f'[{get_label(g, x['object'])}]({x['object']})'
+            else:
+                raise Exception('Object type unknown.')
+            
+            string += f'| {prop} | {obj} |\n'
+         
 
         markdown_path = pathlib.Path.cwd() / f'{'/'.join(pathlib.Path(e).parts[3:])}.md'
         markdown_path.parent.mkdir(exist_ok=True)
