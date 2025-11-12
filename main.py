@@ -40,6 +40,12 @@ def build():
 
     for e in entities:
 
+        def get_label(graph, uri):
+            label = ''
+            for s,p,o in graph.triples((uri, rdflib.RDFS.label, None)):
+                label = o
+
+            return label
 
         # print('\n')
 
@@ -58,27 +64,7 @@ def build():
         df = pandas.DataFrame(columns=['property', 'object'])
         for s,p,o in g.triples((e, None, None)):
             if p not in [rdflib.RDFS.label, rdflib.RDFS.comment]:
-                # print(s,p,o)
-                # link to property, and label, link to object, label
-
                 df.loc[len(df)] = [p, o]
-
-
-
-        # print(len(df))
-        # print(df.head())
-
-        def get_label(graph, uri):
-            label = ''
-            for s,p,o in graph.triples((uri, rdflib.RDFS.label, None)):
-                label = o
-
-            return label
-
-        # if len(df):
-        #     string += '\n\n'
-        #     string += '| Property      | Object |\n'
-        #     string += '| ----------- | ----------- |\n'
 
         # TODO, make sure "type" is top.
 
@@ -95,6 +81,35 @@ def build():
                 raise Exception('Object type unknown.')
             
             string += f'{subj} → {prop} → {obj}    \n'
+         
+
+
+
+        df = pandas.DataFrame(columns=['subject', 'property'])
+        for s,p,o in g.triples((None, None, e)):
+            if p not in [rdflib.RDFS.label, rdflib.RDFS.comment]:
+                df.loc[len(df)] = [s, p]
+
+        # TODO, make sure "type" is top.
+
+        string += '\n\n'
+        string += '### Inverse Statements\n\n'
+        obj = f'[{get_label(g, e)}]({e})'
+        for x in df.to_dict('records'):
+            prop = f'[{get_label(g, x['property'])}]({x['property']})'
+            subj = f'[{get_label(g, x['subject'])}]({x['subject']})'
+            # if type(x['object']) == rdflib.term.Literal:
+            #     obj = x['object']
+            # elif type(x['object']) == rdflib.term.URIRef:
+            #     obj = f'[{get_label(g, x['object'])}]({x['object']})'
+            # else:
+            #     raise Exception('Object type unknown.')
+            
+            string += f'{subj} → {prop} → {obj}    \n'
+         
+
+
+
          
 
         markdown_path = pathlib.Path.cwd() / f'{'/'.join(pathlib.Path(e).parts[3:])}.md'

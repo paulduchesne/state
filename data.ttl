@@ -41,6 +41,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <https://paulduchesne.github.io/personal-premis/resource/86477d45-4c1a-4f95-841d-a3fc2d8ffa25>
     a ont:ReadingEvent ;
+    rdfs:label "Reading Event" ;
     ont:endDate "2025-11-10" ;
     ont:hasParticipant
         <https://paulduchesne.github.io/personal-premis/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
@@ -64,6 +65,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <https://paulduchesne.github.io/personal-premis/resource/fe923883-a71b-460f-99a0-d8abf05a2281>
     a ont:ReadingEvent ;
+    rdfs:label "Reading Event" ;
     ont:endDate "" ;
     ont:hasParticipant
         <https://paulduchesne.github.io/personal-premis/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
