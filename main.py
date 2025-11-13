@@ -1,4 +1,4 @@
-# build script to generate resource markdown pages from turtle data.
+# build script to generate markdown resources from rdf.
 
 import pandas
 import pathlib
@@ -7,19 +7,16 @@ import rdflib
 
 def build():
 
-    # load graph.
+    # load local graph.
 
     path = pathlib.Path.cwd() / "data.ttl"
     if not path.exists():
         raise Exception("Path does not exist.")
     g = rdflib.Graph().parse(path)
 
-    # merge premis ontology.
+    # merge external ontologies.
 
     g += rdflib.Graph().parse('https://raw.githubusercontent.com/lcnetdev/PREMIS/refs/heads/master/premis3.owl')
-
-    # load rdf ontology.
-
     g += rdflib.Graph().parse('https://www.w3.org/1999/02/22-rdf-syntax-ns')
 
     # collect primary entities.
@@ -27,14 +24,15 @@ def build():
     entities = list()
     for e in [
         "http://www.loc.gov/premis/rdf/v3/Event", # this needs to be generalised to include all subclasses.
+        "https://paulduchesne.github.io/personal-premis/ontology/ReadingEvent", # ...but, for now.
         "http://www.loc.gov/premis/rdf/v3/Person",
         "http://www.loc.gov/premis/rdf/v3/Organization",
         "https://paulduchesne.github.io/personal-premis/ontology/Book",
     ]:
         entities += [s for s,p,o in g.triples((None, rdflib.RDF.type, rdflib.URIRef(e)))]
 
-    # for e in entities:
-    #     print(e)
+    for e in entities:
+        print(e)
 
     # build markdown.
 
