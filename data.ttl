@@ -76,7 +76,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a ont:ReadingEvent ;
     rdfs:label "Reading 'Against Progress'" ;
     rdfs:comment "Reading event." ;
-    ont:endDate "" ;
+    ont:endDate "2025-11-15" ;
     ont:hasParticipant
         <https://paulduchesne.github.io/personal-premis/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
         <https://paulduchesne.github.io/personal-premis/resource/ba8048d3-a13c-4964-9d80-a04e0c50c0ba> ;
@@ -109,6 +109,12 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "Has Participant"@en ;  
 .
 
+<https://paulduchesne.github.io/personal-premis/ontology/Book>
+    a owl:Class ;
+    rdfs:label "Book"@en ; 
+    rdfs:comment "" ;  
+.
+
 <https://paulduchesne.github.io/personal-premis/ontology/worksAt>
     a owl:ObjectProperty ;
     rdfs:label "Works At"@en ; 
@@ -122,6 +128,16 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 .
 
 <https://paulduchesne.github.io/personal-premis/ontology/wikidataId>
-    a owl:ObjectProperty ;
+    a owl:DatatypeProperty ;
     rdfs:label "Wikidata ID"@en ;  
+.
+
+<https://paulduchesne.github.io/personal-premis/ontology/startDate>
+    a owl:DatatypeProperty ;
+    rdfs:label "Start Date"@en ;  
+.
+
+<https://paulduchesne.github.io/personal-premis/ontology/EndDate>
+    a owl:DatatypeProperty ;
+    rdfs:label "End Date"@en ;  
 .
