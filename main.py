@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
     return "Hello"
 
-@app.route('/resource/test')
+@app.route('/resource/test.html')
 def resource():
     return "test"
 
