@@ -18,6 +18,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:comment "Jaye Weatherburn, working where stories, systems, and stewardship meet." ;
     ont:worksAt <https://paulduchesne.github.io/personal-premis/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c> ;
     ont:attended <https://paulduchesne.github.io/personal-premis/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ;
+    ont:wikidataId "Q57970405" ;
+.
+
+<https://paulduchesne.github.io/personal-premis/resource/2b9cb0d4-cf35-4426-b448-114e7cdacccb>
+    a <http://www.loc.gov/premis/rdf/v3/Person> ;
+    rdfs:label "Adelheid Heftberger" ;
+    rdfs:comment "" ;
+    ont:worksAt <https://paulduchesne.github.io/personal-premis/resource/10f8d9fa-2da2-449b-9946-3126c9584052> ;
+    ont:wikidataId "Q42369365" ;
 .
 
 <https://paulduchesne.github.io/personal-premis/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a>
@@ -31,6 +40,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a premis:Organization ;
     rdfs:label "National Film and Sound Archive" ;
     rdfs:comment "The National Film and Sound Archive of Australia, based in Canberra." ;
+    ont:wikidataId "Q2565882" ;    
 .
 
 <https://paulduchesne.github.io/personal-premis/resource/b8744ea7-c182-47c2-bf31-37e6ed6df396>
@@ -38,6 +48,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a premis:Organization ;
     rdfs:label "Technische Informationsbibliothek" ;
     rdfs:comment "German National Library of Science and Technology, based in Hanover." ;
+    ont:wikidataId "Q2399120" ;    
+.
+
+<https://paulduchesne.github.io/personal-premis/resource/10f8d9fa-2da2-449b-9946-3126c9584052>
+    a <http://www.loc.gov/premis/rdf/v3/Organization> ;
+    a premis:Organization ;
+    rdfs:label "Bundesarchiv" ;
+    rdfs:comment "The German National Archives." ;
+    ont:wikidataId "Q685753" ;    
 .
 
 <https://paulduchesne.github.io/personal-premis/ontology/ReadingEvent>
@@ -137,7 +156,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "Start Date"@en ;  
 .
 
-<https://paulduchesne.github.io/personal-premis/ontology/EndDate>
+<https://paulduchesne.github.io/personal-premis/ontology/endDate>
     a owl:DatatypeProperty ;
     rdfs:label "End Date"@en ;  
 .
