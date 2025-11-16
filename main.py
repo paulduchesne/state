@@ -7,6 +7,10 @@ app = Flask(__name__)
 def index():
     return "Hello"
 
+@app.route('/resource/test')
+def resource():
+    return "test"
+
 freezer = Freezer(app)
 
 if __name__ == '__main__':
