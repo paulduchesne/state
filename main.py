@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from flask_frozen import Freezer
+import json
 import pathlib
 import rdflib
 
@@ -29,7 +30,7 @@ def resource(resource):
 
     entity_graph = entity_graph.serialize(format='json-ld')
 
-    return render_template('resource.html', data=entity_graph)
+    return render_template('resource.html', data=json.loads(entity_graph))
 
 # flask freezer.
 
