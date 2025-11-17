@@ -29,8 +29,7 @@ def resource(resource):
         entity_graph.add((s,p,o))
 
     entity_graph = entity_graph.serialize(format='json-ld')
-
-    return render_template('resource.html', data=json.loads(entity_graph))
+    return render_template('resource.html', data=json.loads(entity_graph), blab=entity_graph)
 
 # flask freezer.
 
@@ -43,6 +42,11 @@ freezer = Freezer(app)
 def resource_generator():  
     people = [s for s,p,o in graph.triples((None, rdflib.RDF.type, rdflib.URIRef('http://www.loc.gov/premis/rdf/v3/Person')))]
     for p in people:
+        p = pathlib.Path(p).name
+        yield ('resource', {'resource': p})
+
+    org = [s for s,p,o in graph.triples((None, rdflib.RDF.type, rdflib.URIRef('http://www.loc.gov/premis/rdf/v3/Organization')))]
+    for p in org:
         p = pathlib.Path(p).name
         yield ('resource', {'resource': p})
 

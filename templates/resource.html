@@ -4,19 +4,44 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
     <style>
         body {
-            background-color: aquamarine;
-        }
-        h3 {
-            color: pink; 
+            background-color: #EB5E55;
+            color: #F6BAB6;
             font-family: Nunito;
         }
+        .label {
+            font-weight: 100;
+            font-size: 48px;
+        }
+        a {
+            color: #F6BAB6;
+            font-family: Nunito;
+        }
+ 
     </style>
 </head>
 
 <body>
-    <div style="width: 800px; background-color: orange; display: flex; justify-content: center;">
-        <h3>{{ data[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] | safe}}</h3>
+
+
+    <div style="width: 100%; display: flex; justify-content: center;">
+        <div style="width: 800px; padding-top: 200px;  ">
+
+
+            <tspan class='label'>{{data[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] | safe}}</tspan>
+            <br><br>
+
+            {{data[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] | safe}} → <b>type</b> → {{data[0]['@type'][0] | safe}}</br>
+            {{data[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] | safe}} → <b>description</b> → {{data[0]['http://www.w3.org/2000/01/rdf-schema#comment'][0]['@value'] | safe}}</br>
+
+
+
+
+            {% if data[0]['https://paulduchesne.github.io/personal-premis/ontology/wikidataId'] is defined %}
+            {{data[0]['http://www.w3.org/2000/01/rdf-schema#label'][0]['@value'] | safe}} → <b>wikidata</b> → <a
+                href="https://www.wikidata.org/wiki/{{data[0]['https://paulduchesne.github.io/personal-premis/ontology/wikidataId'][0]['@value'] | safe}}">{{data[0]['https://paulduchesne.github.io/personal-premis/ontology/wikidataId'][0]['@value']
+                | safe}}</a>
+            {% endif %}
+
+        </div>
     </div>
 </body>
-
-
