@@ -116,6 +116,28 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     premis:identifier "9781350515857" ;
 .
 
+<https://paulduchesne.github.io/personal-premis/resource/df0b77c1-6b2c-4bd4-904e-9921848978d0>
+    a ont:ReadingEvent ;
+    ont:endDate "2025-11-23" ;
+    ont:hasParticipant
+        <https://paulduchesne.github.io/personal-premis/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
+        <https://paulduchesne.github.io/personal-premis/resource/727f0b29-fd9c-429d-a264-5af913651d73> ;
+    ont:startDate "2025-11-15" ;
+.
+
+<https://paulduchesne.github.io/personal-premis/resource/3b811069-fff1-4393-b16b-ef02de3b5ff9>
+    a premis:Person ;
+    rdfs:label "Anna Kavan" ;
+    rdfs:comment "British writer." ;
+.
+
+<https://paulduchesne.github.io/personal-premis/resource/727f0b29-fd9c-429d-a264-5af913651d73>
+    a ont:Book ;
+    rdfs:label "Machines in the Head" ;
+    premis:identifier "9781681374147" ;
+    ont:hasAuthor <https://paulduchesne.github.io/personal-premis/resource/3b811069-fff1-4393-b16b-ef02de3b5ff9> ;
+.
+
 <https://paulduchesne.github.io/personal-premis/ontology/hasAuthor>
     a owl:ObjectProperty ;
     rdfs:label "Has Author"@en ; 
