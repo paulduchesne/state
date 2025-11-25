@@ -59,13 +59,6 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataId "Q685753" ;    
 .
 
-<https://paulduchesne.github.io/personal-premis/ontology/ReadingEvent>
-    a owl:Class ;
-    rdfs:label "Reading Event" ;
-    rdfs:comment "Event type concerning the act of reading." ;
-    rdfs:subClassOf premis:Event ;
-.
-
 <https://paulduchesne.github.io/personal-premis/resource/86477d45-4c1a-4f95-841d-a3fc2d8ffa25>
     a ont:ReadingEvent ;
     rdfs:label "Reading 'I Remain in Darkness'" ;
@@ -118,6 +111,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <https://paulduchesne.github.io/personal-premis/resource/df0b77c1-6b2c-4bd4-904e-9921848978d0>
     a ont:ReadingEvent ;
+    rdfs:label "Reading 'Machines in the Head'"@en ;
+    rdfs:comment "Reading event." ;
     ont:endDate "2025-11-23" ;
     ont:hasParticipant
         <https://paulduchesne.github.io/personal-premis/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
@@ -134,51 +129,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/personal-premis/resource/727f0b29-fd9c-429d-a264-5af913651d73>
     a ont:Book ;
     rdfs:label "Machines in the Head" ;
+    rdfs:comment "Book by Anna Kavan." ;
     premis:identifier "9781681374147" ;
     ont:hasAuthor <https://paulduchesne.github.io/personal-premis/resource/3b811069-fff1-4393-b16b-ef02de3b5ff9> ;
-.
-
-<https://paulduchesne.github.io/personal-premis/ontology/hasAuthor>
-    a owl:ObjectProperty ;
-    rdfs:label "Has Author"@en ; 
-    rdfs:domain ont:Book ;   
-    rdfs:range premis:Person ;   
-.
-
-<https://paulduchesne.github.io/personal-premis/ontology/hasParticipant>
-    a owl:ObjectProperty ;
-    rdfs:label "Has Participant"@en ;  
-.
-
-<https://paulduchesne.github.io/personal-premis/ontology/Book>
-    a owl:Class ;
-    rdfs:label "Book"@en ; 
-    rdfs:comment "" ;  
-.
-
-<https://paulduchesne.github.io/personal-premis/ontology/worksAt>
-    a owl:ObjectProperty ;
-    rdfs:label "Works At"@en ; 
-    rdfs:domain premis:Person ;   
-    rdfs:range premis:Organization ;   
-.
-
-<https://paulduchesne.github.io/personal-premis/ontology/attended>
-    a owl:ObjectProperty ;
-    rdfs:label "Attended"@en ;  
-.
-
-<https://paulduchesne.github.io/personal-premis/ontology/wikidataId>
-    a owl:DatatypeProperty ;
-    rdfs:label "Wikidata ID"@en ;  
-.
-
-<https://paulduchesne.github.io/personal-premis/ontology/startDate>
-    a owl:DatatypeProperty ;
-    rdfs:label "Start Date"@en ;  
-.
-
-<https://paulduchesne.github.io/personal-premis/ontology/endDate>
-    a owl:DatatypeProperty ;
-    rdfs:label "End Date"@en ;  
 .

@@ -7,5 +7,6 @@ requires-python = ">=3.13"
 dependencies = [
     "flask>=3.1.2",
     "frozen-flask>=1.0.2",
+    "pydash>=8.0.5",
     "rdflib>=7.4.0",
 ]
