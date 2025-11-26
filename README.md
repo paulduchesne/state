@@ -1,12 +1,12 @@
-# Personal data as PREMIS. 
+# STATE
 
 **Introduction**
 
-I have long been interested in the concept of publishing personal data as an open knowledge graph, and as counterpoint to the accumulation of such data by others. 
+Inspired as much by Annie Ernaux and Karl Ove Knausgaard as by Jer Thorp or Tim Berners-Lee, State is the latest iteration of a longstanding interest in modeling data into a personal knowledge graph. This is intended as a technical exercise, potentially personally useful, and as a counterpoint to the clandestine accumulation of such data by others.
 
-[PREMIS](https://www.loc.gov/standards/premis/) is explicitly intended as a framework for activity and characteristics related to digital preservation, but appears flexible enough to document such personal information.
+The term "state" refers both to the represenattion of "states" of myself, as well as a platform where I can "state" information.
 
-[Test Entity](https://paulduchesne.github.io/personal-premis/resource/0ef53722-52ca-49c8-873d-3549a74914e8)
+→ [Paul Duchesne](https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8)
 
 **License**
 
