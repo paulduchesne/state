@@ -13,7 +13,7 @@ def extract_entity(uriref, prop):
     entity = entity[0]    
     entity_label = extract_text(entity, rdflib.RDFS.label)
 
-    return {'entity_link':entity, 'entity_label': entity_label}
+    return {'entity_link': entity, 'entity_label': entity_label}
 
 def extract_text(uriref, prop):
     text = [o for s,p,o in graph.triples((uriref, prop, None))]
@@ -29,6 +29,7 @@ graph += rdflib.Graph().parse(pathlib.Path.cwd() / 'ontology.ttl')
 
 # external ontologies.
 
+graph += rdflib.Graph().parse('http://www.w3.org/2000/01/rdf-schema')
 graph += rdflib.Graph().parse('http://www.w3.org/2002/07/owl')
 
 # nodes.
@@ -52,6 +53,40 @@ for x in node_array.keys():
 
 for x in node_array.keys():
     node_array[x]['comment'] = extract_text(x, rdflib.RDFS.comment)
+
+# node statements.
+
+extant_props = [rdflib.RDFS.label, rdflib.RDF.type, rdflib.RDFS.comment]
+for x in node_array.keys():
+
+    props = [p for s,p,o in graph.triples((x, None, None))]
+    props = [p for p in props if p not in extant_props]
+
+    statements = list()
+    for p in sorted(props):
+        for a,b,c in graph.triples((x, p, None)):
+
+            # TODO, wikidata link should be treated like an entity.
+
+            if type(c) is rdflib.term.URIRef:
+                statements.append({
+                    'type': 'entity', 
+                    'property_link': p, 
+                    'property_label': extract_text(p, rdflib.RDFS.label), 
+                    'entity_link': c, 
+                    'entity_label': extract_text(c, rdflib.RDFS.label)
+                    })
+            elif type(c) is rdflib.term.Literal:
+                statements.append({
+                    'type': 'literal', 
+                    'property_link': p, 
+                    'property_label': extract_text(p, rdflib.RDFS.label), 
+                    'literal': c
+                    })
+            else:
+                raise Exception('Type unknown.')
+
+    node_array[x]['statements'] = pydash.uniq(statements)
 
 # define app.
 
