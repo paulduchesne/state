@@ -4,4 +4,4 @@
 
 <h3>{{ data.label }}</h3>
 [<a href="{{ data.type.entity_link }}">{{ data.type.entity_label }}</a>]<br><br>
-{{ data.comment }}<br>
+{{ data.comment | safe }}<br>
