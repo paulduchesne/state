@@ -1,48 +1,66 @@
-PREFIX ont: <https://paulduchesne.github.io/personal-premis/ontology/>
+PREFIX ont: <https://paulduchesne.github.io/state/ontology/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX premis: <http://www.loc.gov/premis/rdf/v3/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 # owl:Class
 
-<https://paulduchesne.github.io/personal-premis/ontology/ReadingEvent>
+<https://paulduchesne.github.io/state/ontology/ReadingEvent>
     a owl:Class ;
     rdfs:label "Reading Event"@en ;
     rdfs:comment "Event type concerning the act of reading."@en ;
-    rdfs:subClassOf premis:Event ;
+    rdfs:subClassOf ont:Event ;
 .
 
-<https://paulduchesne.github.io/personal-premis/ontology/Book>
+<https://paulduchesne.github.io/state/ontology/Book>
     a owl:Class ;
     rdfs:label "Book"@en ; 
     rdfs:comment "Printed material."@en ;  
 .
 
+<https://paulduchesne.github.io/state/ontology/Event>
+    a owl:Class ;
+    rdfs:label "Event"@en ; 
+    rdfs:comment ""@en ;  
+.
+
+<https://paulduchesne.github.io/state/ontology/Person>
+    a owl:Class ;
+    rdfs:label "Person"@en ; 
+    rdfs:comment ""@en ;  
+.
+
+<https://paulduchesne.github.io/state/ontology/Organisation>
+    a owl:Class ;
+    rdfs:label "Organisation"@en ; 
+    rdfs:comment ""@en ;  
+.
+
+
 # owl:ObjectProperty
 
-<https://paulduchesne.github.io/personal-premis/ontology/hasAuthor>
+<https://paulduchesne.github.io/state/ontology/hasAuthor>
     a owl:ObjectProperty ;
     rdfs:label "Has Author"@en ; 
     rdfs:comment "Person responsible for the text of a book."@en ;
     rdfs:domain ont:Book ;   
-    rdfs:range premis:Person ;   
+    rdfs:range ont:Person ;   
 .
 
-<https://paulduchesne.github.io/personal-premis/ontology/hasParticipant>
+<https://paulduchesne.github.io/state/ontology/hasParticipant>
     a owl:ObjectProperty ;
     rdfs:label "Has Participant"@en ;  
     rdfs:comment "Indicate entities who participate, most often in an event."@en ;
 .
 
-<https://paulduchesne.github.io/personal-premis/ontology/worksAt>
+<https://paulduchesne.github.io/state/ontology/worksAt>
     a owl:ObjectProperty ;
     rdfs:label "Works At"@en ; 
     rdfs:comment "Indicate the organisation where someone works."@en ;
-    rdfs:domain premis:Person ;   
-    rdfs:range premis:Organization ;   
+    rdfs:domain ont:Person ;   
+    rdfs:range ont:Organisation ;   
 .
 
-<https://paulduchesne.github.io/personal-premis/ontology/attended>
+<https://paulduchesne.github.io/state/ontology/attended>
     a owl:ObjectProperty ;
     rdfs:label "Attended"@en ; 
     rdfs:comment "To attend an event."@en ; 
@@ -50,21 +68,28 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 # owl:DatatypeProperty
 
-<https://paulduchesne.github.io/personal-premis/ontology/startDate>
+<https://paulduchesne.github.io/state/ontology/startDate>
     a owl:DatatypeProperty ;
     rdfs:label "Start Date"@en ;  
     rdfs:comment "Start of a period of time."@en ;
 .
 
-<https://paulduchesne.github.io/personal-premis/ontology/endDate>
+<https://paulduchesne.github.io/state/ontology/endDate>
     a owl:DatatypeProperty ;
     rdfs:label "End Date"@en ;  
     rdfs:comment "End of a period of time."@en ;
 .
 
-<https://paulduchesne.github.io/personal-premis/ontology/wikidataId>
+<https://paulduchesne.github.io/state/ontology/wikidataId>
     a owl:DatatypeProperty ;
     rdfs:label "Wikidata ID"@en ;  
-    rdfs:comment "Identifier use by Wikidata."@en ;
+    rdfs:comment "Identifier used by Wikidata."@en ;
 .
+
+<https://paulduchesne.github.io/state/ontology/identifier>
+    a owl:DatatypeProperty ;
+    rdfs:label "identifier"@en ;  
+    rdfs:comment ""@en ;
+.
+
 

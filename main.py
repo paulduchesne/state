@@ -30,7 +30,6 @@ graph += rdflib.Graph().parse(pathlib.Path.cwd() / 'ontology.ttl')
 # external ontologies.
 
 graph += rdflib.Graph().parse('http://www.w3.org/2002/07/owl')
-graph += rdflib.Graph().parse('https://raw.githubusercontent.com/lcnetdev/PREMIS/refs/heads/master/premis3.owl')
 
 # nodes.
 
@@ -69,7 +68,7 @@ def index():
 @app.route('/resource/<resource>.html')
 def resource(resource):
 
-    node = f'https://paulduchesne.github.io/personal-premis/resource/{resource}'
+    node = f'https://paulduchesne.github.io/state/resource/{resource}'
 
     return render_template('resource.html', data=node_array[rdflib.URIRef(node)])
 
@@ -78,7 +77,7 @@ def resource(resource):
 @app.route('/ontology/<ontology>.html')
 def ontology(ontology):
 
-    node = f'https://paulduchesne.github.io/personal-premis/ontology/{ontology}'
+    node = f'https://paulduchesne.github.io/state/ontology/{ontology}'
 
     return render_template('ontology.html', data=node_array[rdflib.URIRef(node)])
 

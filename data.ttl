@@ -1,135 +1,131 @@
-PREFIX ont: <https://paulduchesne.github.io/personal-premis/ontology/>
+PREFIX ont: <https://paulduchesne.github.io/state/ontology/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX premis: <http://www.loc.gov/premis/rdf/v3/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-<https://paulduchesne.github.io/personal-premis/resource/0ef53722-52ca-49c8-873d-3549a74914e8>
-    a <http://www.loc.gov/premis/rdf/v3/Person> ;
+<https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8>
+    a ont:Person ;
     rdfs:label "Paul Duchesne" ;
-    rdfs:comment "Paul Duchesne is a film archivist and software developer, based in Canberra. He has worked for the <a href='https://paulduchesne.github.io/personal-premis/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c'>NFSA</a> and <a href='https://paulduchesne.github.io/personal-premis/resource/b8744ea7-c182-47c2-bf31-37e6ed6df396'>TIB</a>, and is a member of the <a href=''>FIAF</a> <a href=''>Cataloguing and Documentation Commission</a>." ;
-    ont:worksAt <https://paulduchesne.github.io/personal-premis/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c> ;
-    ont:attended <https://paulduchesne.github.io/personal-premis/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ;
+    rdfs:comment "Paul Duchesne is a film archivist and software developer, based in Canberra. He has worked for the <a href='https://paulduchesne.github.io/state/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c'>NFSA</a> and <a href='https://paulduchesne.github.io/state/resource/b8744ea7-c182-47c2-bf31-37e6ed6df396'>TIB</a>, and is a member of the <a href=''>FIAF</a> <a href=''>Cataloguing and Documentation Commission</a>." ;
+    ont:worksAt <https://paulduchesne.github.io/state/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c> ;
+    ont:attended <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ;
     ont:wikidataId "Q115057988" ;
 .
 
-<https://paulduchesne.github.io/personal-premis/resource/d2d8ae17-8d48-4256-931e-4f24ecf61f60>
-    a <http://www.loc.gov/premis/rdf/v3/Person> ;
+<https://paulduchesne.github.io/state/resource/d2d8ae17-8d48-4256-931e-4f24ecf61f60>
+    a ont:Person ;
     rdfs:label "Jaye Weatherburn" ;
     rdfs:comment "Jaye Weatherburn, working where stories, systems, and stewardship meet." ;
-    ont:worksAt <https://paulduchesne.github.io/personal-premis/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c> ;
-    ont:attended <https://paulduchesne.github.io/personal-premis/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ;
+    ont:worksAt <https://paulduchesne.github.io/state/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c> ;
+    ont:attended <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ;
     ont:wikidataId "Q57970405" ;
 .
 
-<https://paulduchesne.github.io/personal-premis/resource/2b9cb0d4-cf35-4426-b448-114e7cdacccb>
-    a <http://www.loc.gov/premis/rdf/v3/Person> ;
+<https://paulduchesne.github.io/state/resource/2b9cb0d4-cf35-4426-b448-114e7cdacccb>
+    a ont:Person ;
     rdfs:label "Adelheid Heftberger" ;
     rdfs:comment "" ;
-    ont:worksAt <https://paulduchesne.github.io/personal-premis/resource/10f8d9fa-2da2-449b-9946-3126c9584052> ;
+    ont:worksAt <https://paulduchesne.github.io/state/resource/10f8d9fa-2da2-449b-9946-3126c9584052> ;
     ont:wikidataId "Q42369365" ;
 .
 
-<https://paulduchesne.github.io/personal-premis/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a>
-    a <http://www.loc.gov/premis/rdf/v3/Event> ;
+<https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a>
+    a ont:Event ;
     rdfs:label "iPRES 2025" ;
     rdfs:comment "The 2025 iteration of the [iPRES]() conference, held in [Wellington]()." ;
 .
 
-<https://paulduchesne.github.io/personal-premis/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c>
-    a <http://www.loc.gov/premis/rdf/v3/Organization> ;
-    a premis:Organization ;
+<https://paulduchesne.github.io/state/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c>
+    a ont:Organisation ;
     rdfs:label "National Film and Sound Archive" ;
     rdfs:comment "The National Film and Sound Archive of Australia, based in Canberra." ;
     ont:wikidataId "Q2565882" ;    
 .
 
-<https://paulduchesne.github.io/personal-premis/resource/b8744ea7-c182-47c2-bf31-37e6ed6df396>
-    a <http://www.loc.gov/premis/rdf/v3/Organization> ;
-    a premis:Organization ;
+<https://paulduchesne.github.io/state/resource/b8744ea7-c182-47c2-bf31-37e6ed6df396>
+    a ont:Organisation ;
     rdfs:label "Technische Informationsbibliothek" ;
     rdfs:comment "German National Library of Science and Technology, based in Hanover." ;
     ont:wikidataId "Q2399120" ;    
 .
 
-<https://paulduchesne.github.io/personal-premis/resource/10f8d9fa-2da2-449b-9946-3126c9584052>
-    a <http://www.loc.gov/premis/rdf/v3/Organization> ;
-    a premis:Organization ;
+<https://paulduchesne.github.io/state/resource/10f8d9fa-2da2-449b-9946-3126c9584052>
+    a ont:Organisation ;
     rdfs:label "Bundesarchiv" ;
     rdfs:comment "The German National Archives." ;
     ont:wikidataId "Q685753" ;    
 .
 
-<https://paulduchesne.github.io/personal-premis/resource/86477d45-4c1a-4f95-841d-a3fc2d8ffa25>
+<https://paulduchesne.github.io/state/resource/86477d45-4c1a-4f95-841d-a3fc2d8ffa25>
     a ont:ReadingEvent ;
     rdfs:label "Reading 'I Remain in Darkness'" ;
     rdfs:comment "Reading event." ;
     ont:endDate "2025-11-10" ;
     ont:hasParticipant
-        <https://paulduchesne.github.io/personal-premis/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
-        <https://paulduchesne.github.io/personal-premis/resource/ec0545af-f371-4df8-a0ef-5196c8a27859> ;
+        <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
+        <https://paulduchesne.github.io/state/resource/ec0545af-f371-4df8-a0ef-5196c8a27859> ;
     ont:startDate "2025-11-09" ;
 .
 
-<https://paulduchesne.github.io/personal-premis/resource/585e1cc0-3883-40f9-a036-7e9bae25077e>
-    a premis:Person ;
+<https://paulduchesne.github.io/state/resource/585e1cc0-3883-40f9-a036-7e9bae25077e>
+    a ont:Person ;
     rdfs:label "Annie Ernaux" ;
     rdfs:comment "French Nobel-prize winning author." ;
 .
 
-<https://paulduchesne.github.io/personal-premis/resource/ec0545af-f371-4df8-a0ef-5196c8a27859>
+<https://paulduchesne.github.io/state/resource/ec0545af-f371-4df8-a0ef-5196c8a27859>
     a ont:Book ;
     rdfs:label "I Remain in Darkness" ;
     rdfs:comment "1997 book by Annie Ernaux." ;
-    ont:hasAuthor <https://paulduchesne.github.io/personal-premis/resource/585e1cc0-3883-40f9-a036-7e9bae25077e> ;    
-    premis:identifier "9781910695975" ;
+    ont:hasAuthor <https://paulduchesne.github.io/state/resource/585e1cc0-3883-40f9-a036-7e9bae25077e> ;    
+    ont:identifier "9781910695975" ;
 .
 
-<https://paulduchesne.github.io/personal-premis/resource/fe923883-a71b-460f-99a0-d8abf05a2281>
+<https://paulduchesne.github.io/state/resource/fe923883-a71b-460f-99a0-d8abf05a2281>
     a ont:ReadingEvent ;
     rdfs:label "Reading 'Against Progress'" ;
     rdfs:comment "Reading event." ;
     ont:endDate "2025-11-15" ;
     ont:hasParticipant
-        <https://paulduchesne.github.io/personal-premis/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
-        <https://paulduchesne.github.io/personal-premis/resource/ba8048d3-a13c-4964-9d80-a04e0c50c0ba> ;
+        <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
+        <https://paulduchesne.github.io/state/resource/ba8048d3-a13c-4964-9d80-a04e0c50c0ba> ;
     ont:startDate "2025-11-11" ;
 .
 
-<https://paulduchesne.github.io/personal-premis/resource/b7315610-4737-4c68-934a-0a1fbe09d281>
-    a premis:Person ;
+<https://paulduchesne.github.io/state/resource/b7315610-4737-4c68-934a-0a1fbe09d281>
+    a ont:Person ;
     rdfs:label "Slavoj Zizek" ;
     rdfs:comment "Slovenian neo-Marxist philosopher." ;
 .
 
-<https://paulduchesne.github.io/personal-premis/resource/ba8048d3-a13c-4964-9d80-a04e0c50c0ba>
+<https://paulduchesne.github.io/state/resource/ba8048d3-a13c-4964-9d80-a04e0c50c0ba>
     a ont:Book ;
     rdfs:label "Against Progress" ;
     rdfs:comment "2024 book by Slavoj Zizek." ;
-    ont:hasAuthor <https://paulduchesne.github.io/personal-premis/resource/b7315610-4737-4c68-934a-0a1fbe09d281> ;
-    premis:identifier "9781350515857" ;
+    ont:hasAuthor <https://paulduchesne.github.io/state/resource/b7315610-4737-4c68-934a-0a1fbe09d281> ;
+    ont:identifier "9781350515857" ;
 .
 
-<https://paulduchesne.github.io/personal-premis/resource/df0b77c1-6b2c-4bd4-904e-9921848978d0>
+<https://paulduchesne.github.io/state/resource/df0b77c1-6b2c-4bd4-904e-9921848978d0>
     a ont:ReadingEvent ;
     rdfs:label "Reading 'Machines in the Head'"@en ;
     rdfs:comment "Reading event." ;
     ont:endDate "2025-11-23" ;
     ont:hasParticipant
-        <https://paulduchesne.github.io/personal-premis/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
-        <https://paulduchesne.github.io/personal-premis/resource/727f0b29-fd9c-429d-a264-5af913651d73> ;
+        <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
+        <https://paulduchesne.github.io/state/resource/727f0b29-fd9c-429d-a264-5af913651d73> ;
     ont:startDate "2025-11-15" ;
 .
 
-<https://paulduchesne.github.io/personal-premis/resource/3b811069-fff1-4393-b16b-ef02de3b5ff9>
-    a premis:Person ;
+<https://paulduchesne.github.io/state/resource/3b811069-fff1-4393-b16b-ef02de3b5ff9>
+    a ont:Person ;
     rdfs:label "Anna Kavan" ;
     rdfs:comment "British writer." ;
 .
 
-<https://paulduchesne.github.io/personal-premis/resource/727f0b29-fd9c-429d-a264-5af913651d73>
+<https://paulduchesne.github.io/state/resource/727f0b29-fd9c-429d-a264-5af913651d73>
     a ont:Book ;
     rdfs:label "Machines in the Head" ;
     rdfs:comment "Book by Anna Kavan." ;
-    premis:identifier "9781681374147" ;
-    ont:hasAuthor <https://paulduchesne.github.io/personal-premis/resource/3b811069-fff1-4393-b16b-ef02de3b5ff9> ;
+    ont:identifier "9781681374147" ;
+    ont:hasAuthor <https://paulduchesne.github.io/state/resource/3b811069-fff1-4393-b16b-ef02de3b5ff9> ;
 .
