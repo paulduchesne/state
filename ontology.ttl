@@ -52,12 +52,22 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:comment "Indicate entities who participate, most often in an event."@en ;
 .
 
-<https://paulduchesne.github.io/state/ontology/worksAt>
+<https://paulduchesne.github.io/state/ontology/employeeOf>
     a owl:ObjectProperty ;
-    rdfs:label "Works At"@en ; 
-    rdfs:comment "Indicate the organisation where someone works."@en ;
+    rdfs:label "Employee Of"@en ; 
+    rdfs:comment "Indicate the organisation which employs a person."@en ;
     rdfs:domain ont:Person ;   
     rdfs:range ont:Organisation ;   
+    owl:inverseOf ont:hasEmployee ;   
+.
+
+<https://paulduchesne.github.io/state/ontology/hasEmployee>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Employee"@en ; 
+    rdfs:comment "Indicate the person employed by an organisation."@en ;
+    rdfs:domain ont:Organisation ;   
+    rdfs:range ont:Person ;  
+    owl:inverseOf ont:employeeOf ;
 .
 
 <https://paulduchesne.github.io/state/ontology/attended>

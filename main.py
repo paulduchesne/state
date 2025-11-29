@@ -1,6 +1,5 @@
 from flask import Flask, render_template
 from flask_frozen import Freezer
-import json
 import pathlib
 import pydash
 import rdflib

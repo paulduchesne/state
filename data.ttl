@@ -6,7 +6,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a ont:Person ;
     rdfs:label "Paul Duchesne" ;
     rdfs:comment "Paul Duchesne is a film archivist and software developer, based in Canberra. He has worked for the <a href='https://paulduchesne.github.io/state/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c'>NFSA</a> and <a href='https://paulduchesne.github.io/state/resource/b8744ea7-c182-47c2-bf31-37e6ed6df396'>TIB</a>, and is a member of the <a href=''>FIAF</a> <a href=''>Cataloguing and Documentation Commission</a>." ;
-    ont:worksAt <https://paulduchesne.github.io/state/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c> ;
+    ont:employeeOf <https://paulduchesne.github.io/state/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c> ;
     ont:attended <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ;
     ont:wikidataId "Q115057988" ;
 .
@@ -15,7 +15,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a ont:Person ;
     rdfs:label "Jaye Weatherburn" ;
     rdfs:comment "Jaye Weatherburn, working where stories, systems, and stewardship meet." ;
-    ont:worksAt <https://paulduchesne.github.io/state/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c> ;
+    ont:employeeOf <https://paulduchesne.github.io/state/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c> ;
     ont:attended <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ;
     ont:wikidataId "Q57970405" ;
 .
@@ -24,7 +24,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a ont:Person ;
     rdfs:label "Adelheid Heftberger" ;
     rdfs:comment "" ;
-    ont:worksAt <https://paulduchesne.github.io/state/resource/10f8d9fa-2da2-449b-9946-3126c9584052> ;
+    ont:employeeOf <https://paulduchesne.github.io/state/resource/10f8d9fa-2da2-449b-9946-3126c9584052> ;
     ont:wikidataId "Q42369365" ;
 .
 
