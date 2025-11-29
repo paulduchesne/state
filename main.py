@@ -64,10 +64,15 @@ for x in node_array.keys():
     statements = list()
     for p in sorted(props):
         for a,b,c in graph.triples((x, p, None)):
-
-            # TODO, wikidata link should be treated like an entity.
-
-            if type(c) is rdflib.term.URIRef:
+            if pathlib.Path(p).name == 'wikidataIdentifier':
+                statements.append({
+                    'type': 'entity', 
+                    'property_link': p, 
+                    'property_label': extract_text(p, rdflib.RDFS.label), 
+                    'entity_link': f'https://www.wikidata.org/wiki/{c}', 
+                    'entity_label': c
+                    })
+            elif type(c) is rdflib.term.URIRef:
                 statements.append({
                     'type': 'entity', 
                     'property_link': p, 
