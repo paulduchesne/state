@@ -35,7 +35,6 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:comment ""@en ;  
 .
 
-
 # owl:ObjectProperty
 
 <https://paulduchesne.github.io/state/ontology/hasAuthor>
@@ -90,9 +89,9 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:comment "End of a period of time."@en ;
 .
 
-<https://paulduchesne.github.io/state/ontology/wikidataId>
+<https://paulduchesne.github.io/state/ontology/wikidataIdentifier>
     a owl:DatatypeProperty ;
-    rdfs:label "Wikidata ID"@en ;  
+    rdfs:label "Wikidata Identifier"@en ;  
     rdfs:comment "Identifier used by Wikidata."@en ;
 .
 
