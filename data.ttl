@@ -7,7 +7,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "Paul Duchesne" ;
     rdfs:comment "Paul Duchesne is a film archivist and software developer, based in Canberra. He has worked for the <a href='https://paulduchesne.github.io/state/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c'>NFSA</a> and <a href='https://paulduchesne.github.io/state/resource/b8744ea7-c182-47c2-bf31-37e6ed6df396'>TIB</a>, and is a member of the <a href=''>FIAF</a> <a href=''>Cataloguing and Documentation Commission</a>." ;
     ont:employeeOf <https://paulduchesne.github.io/state/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c> ;
-    ont:attended <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ;
     ont:wikidataIdentifier "Q115057988" ;
 .
 
@@ -16,14 +16,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "Jaye Weatherburn" ;
     rdfs:comment "Jaye Weatherburn, working where stories, systems, and stewardship meet." ;
     ont:employeeOf <https://paulduchesne.github.io/state/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c> ;
-    ont:attended <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ;
     ont:wikidataIdentifier "Q57970405" ;
 .
 
 <https://paulduchesne.github.io/state/resource/2b9cb0d4-cf35-4426-b448-114e7cdacccb>
     a ont:Person ;
     rdfs:label "Adelheid Heftberger" ;
-    rdfs:comment "" ;
+    rdfs:comment "Austrian researcher." ;
     ont:employeeOf <https://paulduchesne.github.io/state/resource/10f8d9fa-2da2-449b-9946-3126c9584052> ;
     ont:wikidataIdentifier "Q42369365" ;
 .
@@ -38,6 +38,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a ont:Organisation ;
     rdfs:label "National Film and Sound Archive" ;
     rdfs:comment "The National Film and Sound Archive of Australia, based in Canberra." ;
+    ont:hasEmployee <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ;
+    ont:hasEmployee <https://paulduchesne.github.io/state/resource/d2d8ae17-8d48-4256-931e-4f24ecf61f60> ;
     ont:wikidataIdentifier "Q2565882" ;    
 .
 
@@ -45,6 +47,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a ont:Organisation ;
     rdfs:label "Technische Informationsbibliothek" ;
     rdfs:comment "German National Library of Science and Technology, based in Hanover." ;
+    ont:hasEmployee <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ;
     ont:wikidataIdentifier "Q2399120" ;    
 .
 
@@ -52,6 +55,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a ont:Organisation ;
     rdfs:label "Bundesarchiv" ;
     rdfs:comment "The German National Archives." ;
+    ont:hasEmployee <https://paulduchesne.github.io/state/resource/2b9cb0d4-cf35-4426-b448-114e7cdacccb> ;
     ont:wikidataIdentifier "Q685753" ;    
 .
 

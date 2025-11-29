@@ -48,7 +48,19 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/state/ontology/hasParticipant>
     a owl:ObjectProperty ;
     rdfs:label "Has Participant"@en ;  
-    rdfs:comment "Indicate entities who participate, most often in an event."@en ;
+    rdfs:comment "Indicate the entities who participated in an event."@en ;
+    rdfs:domain ont:Event ;   
+    rdfs:range ont:Person ;
+    owl:inverseOf ont:participatedIn ; 
+.
+
+<https://paulduchesne.github.io/state/ontology/participatedIn>
+    a owl:ObjectProperty ;
+    rdfs:label "Participated In"@en ;  
+    rdfs:comment "Indicate the event participated in by an entity."@en ;
+    rdfs:domain ont:Person ;   
+    rdfs:range ont:Event ;
+    owl:inverseOf ont:hasParticipant ; 
 .
 
 <https://paulduchesne.github.io/state/ontology/employeeOf>
@@ -67,12 +79,6 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:domain ont:Organisation ;   
     rdfs:range ont:Person ;  
     owl:inverseOf ont:employeeOf ;
-.
-
-<https://paulduchesne.github.io/state/ontology/attended>
-    a owl:ObjectProperty ;
-    rdfs:label "Attended"@en ; 
-    rdfs:comment "To attend an event."@en ; 
 .
 
 # owl:DatatypeProperty
