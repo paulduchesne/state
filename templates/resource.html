@@ -2,6 +2,8 @@
     <title>state</title>
 </head>
 
+<div style="width: 800px; display: block; margin: 0 auto;">
+
 <h3>{{ data.label }}</h3>
 [<a href="{{ data.type.entity_link }}">{{ data.type.entity_label }}</a>]<br><br>
 {{ data.comment | safe }}<br>
@@ -16,3 +18,5 @@
 {{ data.label }} → <a href="{{ s.property_link }}">{{ s.property_label }}</a> → {{ s.literal }}<br>
 {% endif %}
 {% endfor %}
+
+</div>
