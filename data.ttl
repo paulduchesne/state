@@ -8,6 +8,9 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:comment "Paul Duchesne is a film archivist and software developer, based in Canberra. He has worked for the <a href='https://paulduchesne.github.io/state/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c'>NFSA</a> and <a href='https://paulduchesne.github.io/state/resource/b8744ea7-c182-47c2-bf31-37e6ed6df396'>TIB</a>, and is a member of the <a href=''>FIAF</a> <a href=''>Cataloguing and Documentation Commission</a>." ;
     ont:memberOf <https://paulduchesne.github.io/state/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c> ;
     ont:participatedIn <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/86477d45-4c1a-4f95-841d-a3fc2d8ffa25> ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/fe923883-a71b-460f-99a0-d8abf05a2281> ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/df0b77c1-6b2c-4bd4-904e-9921848978d0> ;
     ont:wikidataIdentifier "Q115057988" ;
 .
 
@@ -83,6 +86,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:comment "1997 book by Annie Ernaux." ;
     ont:hasAuthor <https://paulduchesne.github.io/state/resource/585e1cc0-3883-40f9-a036-7e9bae25077e> ;    
     ont:identifier "9781910695975" ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/86477d45-4c1a-4f95-841d-a3fc2d8ffa25> ;
 .
 
 <https://paulduchesne.github.io/state/resource/fe923883-a71b-460f-99a0-d8abf05a2281>
@@ -109,6 +113,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:comment "2024 book by Slavoj Zizek." ;
     ont:hasAuthor <https://paulduchesne.github.io/state/resource/b7315610-4737-4c68-934a-0a1fbe09d281> ;
     ont:identifier "9781350515857" ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/fe923883-a71b-460f-99a0-d8abf05a2281> ;
 .
 
 <https://paulduchesne.github.io/state/resource/df0b77c1-6b2c-4bd4-904e-9921848978d0>
@@ -135,4 +140,5 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:comment "Book by Anna Kavan." ;
     ont:identifier "9781681374147" ;
     ont:hasAuthor <https://paulduchesne.github.io/state/resource/3b811069-fff1-4393-b16b-ef02de3b5ff9> ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/df0b77c1-6b2c-4bd4-904e-9921848978d0> ;
 .
