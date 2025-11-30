@@ -4,53 +4,94 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 # owl:Class
 
+<https://paulduchesne.github.io/state/ontology/Person>
+    a owl:Class ;
+    rdfs:label "Person"@en ; 
+    rdfs:comment "Generally speaking, some Homo sapian."@en ;  
+.
+
+<https://paulduchesne.github.io/state/ontology/Organisation>
+    a owl:Class ;
+    rdfs:label "Organisation"@en ; 
+    rdfs:comment "Generally speaking, some ordered collection of Homo sapians."@en ;  
+.
+
+<https://paulduchesne.github.io/state/ontology/Institution>
+    a owl:Class ;
+    rdfs:label "Institution"@en ; 
+    rdfs:comment "An organisation of people, officially mandated by government."@en ;  
+    rdfs:subClassOf ont:Organisation ;
+.
+
+<https://paulduchesne.github.io/state/ontology/School>
+    a owl:Class ;
+    rdfs:label "School"@en ; 
+    rdfs:comment "An organisation of people, intended for the education of people."@en ;  
+    rdfs:subClassOf ont:Organisation ;
+.
+
+<https://paulduchesne.github.io/state/ontology/Band>
+    a owl:Class ;
+    rdfs:label "Band"@en ; 
+    rdfs:comment "An organisation of people, specifically to play music together."@en ;  
+    rdfs:subClassOf ont:Organisation ;
+.
+
+<https://paulduchesne.github.io/state/ontology/Event>
+    a owl:Class ;
+    rdfs:label "Event"@en ; 
+    rdfs:comment "An occurence defined by an activity taking place in a specific time, or duration of time."@en ;  
+.
+
+<https://paulduchesne.github.io/state/ontology/Marriage>
+    a owl:Class ;
+    rdfs:label "Marriage"@en ; 
+    rdfs:comment "Social event in which two people are declared to be married."@en ;  
+    rdfs:subClassOf ont:Event ;
+.
+
+<https://paulduchesne.github.io/state/ontology/Birth>
+    a owl:Class ;
+    rdfs:label "Birth"@en ; 
+    rdfs:comment "Biological event, the start of a person's life."@en ;  
+    rdfs:subClassOf ont:Event ;
+.
+
+<https://paulduchesne.github.io/state/ontology/Death>
+    a owl:Class ;
+    rdfs:label "Birth"@en ; 
+    rdfs:comment "Biological event, the end of a person's life."@en ;  
+    rdfs:subClassOf ont:Event ;
+.
+
 <https://paulduchesne.github.io/state/ontology/ReadingEvent>
     a owl:Class ;
-    rdfs:label "Reading Event"@en ;
-    rdfs:comment "Event type concerning the act of reading."@en ;
+    rdfs:label "Reading Event"@en ; 
+    rdfs:comment "The process of reading a book."@en ;  
     rdfs:subClassOf ont:Event ;
+.
+
+<https://paulduchesne.github.io/state/ontology/Object>
+    a owl:Class ;
+    rdfs:label "Object"@en ; 
+    rdfs:comment "An inanimate entity."@en ;  
 .
 
 <https://paulduchesne.github.io/state/ontology/Book>
     a owl:Class ;
     rdfs:label "Book"@en ; 
     rdfs:comment "Printed material."@en ;  
-.
-
-<https://paulduchesne.github.io/state/ontology/Event>
-    a owl:Class ;
-    rdfs:label "Event"@en ; 
-    rdfs:comment ""@en ;  
-.
-
-<https://paulduchesne.github.io/state/ontology/Person>
-    a owl:Class ;
-    rdfs:label "Person"@en ; 
-    rdfs:comment ""@en ;  
-.
-
-<https://paulduchesne.github.io/state/ontology/Organisation>
-    a owl:Class ;
-    rdfs:label "Organisation"@en ; 
-    rdfs:comment ""@en ;  
+    rdfs:subClassOf ont:Object ;
 .
 
 # owl:ObjectProperty
-
-<https://paulduchesne.github.io/state/ontology/hasAuthor>
-    a owl:ObjectProperty ;
-    rdfs:label "Has Author"@en ; 
-    rdfs:comment "Person responsible for the text of a book."@en ;
-    rdfs:domain ont:Book ;   
-    rdfs:range ont:Person ;   
-.
 
 <https://paulduchesne.github.io/state/ontology/hasParticipant>
     a owl:ObjectProperty ;
     rdfs:label "Has Participant"@en ;  
     rdfs:comment "Indicate the entities who participated in an event."@en ;
     rdfs:domain ont:Event ;   
-    rdfs:range ont:Person ;
+    rdfs:range ont:Person, ont:Object ;   
     owl:inverseOf ont:participatedIn ; 
 .
 
@@ -58,27 +99,35 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a owl:ObjectProperty ;
     rdfs:label "Participated In"@en ;  
     rdfs:comment "Indicate the event participated in by an entity."@en ;
-    rdfs:domain ont:Person ;   
+    rdfs:domain ont:Person, ont:Object ;   
     rdfs:range ont:Event ;
     owl:inverseOf ont:hasParticipant ; 
 .
 
-<https://paulduchesne.github.io/state/ontology/employeeOf>
+<https://paulduchesne.github.io/state/ontology/memberOf>
     a owl:ObjectProperty ;
-    rdfs:label "Employee Of"@en ; 
-    rdfs:comment "Indicate the organisation which employs a person."@en ;
+    rdfs:label "Member Of"@en ; 
+    rdfs:comment "Indicate the organisation of which a person is a member."@en ;
     rdfs:domain ont:Person ;   
     rdfs:range ont:Organisation ;   
-    owl:inverseOf ont:hasEmployee ;   
+    owl:inverseOf ont:hasMember ;   
 .
 
-<https://paulduchesne.github.io/state/ontology/hasEmployee>
+<https://paulduchesne.github.io/state/ontology/hasMember>
     a owl:ObjectProperty ;
-    rdfs:label "Has Employee"@en ; 
-    rdfs:comment "Indicate the person employed by an organisation."@en ;
+    rdfs:label "Has Member"@en ; 
+    rdfs:comment "Indicate the person with membership in an organisation."@en ;
     rdfs:domain ont:Organisation ;   
     rdfs:range ont:Person ;  
-    owl:inverseOf ont:employeeOf ;
+    owl:inverseOf ont:memberOf ;
+.
+
+<https://paulduchesne.github.io/state/ontology/hasAuthor>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Author"@en ; 
+    rdfs:comment "Person responsible for the text of a book."@en ;
+    rdfs:domain ont:Book ;   
+    rdfs:range ont:Person ;   
 .
 
 # owl:DatatypeProperty
