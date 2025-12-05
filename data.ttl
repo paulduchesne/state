@@ -61,7 +61,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a ont:Book ;
     rdfs:label "The School of Night"@en ;
     rdfs:comment "Book by Karl Ove Knausgaard"@en ;
-    ont:hasAuthor "https://paulduchesne.github.io/state/resource/de97655c-95a8-4cfe-954f-a48142b3ca83" ;
+    ont:hasAuthor <https://paulduchesne.github.io/state/resource/de97655c-95a8-4cfe-954f-a48142b3ca83> ;
     ont:identifier "9781787304215" ;
 .
 

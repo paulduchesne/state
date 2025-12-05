@@ -71,7 +71,7 @@ graph.add((rdflib.URIRef(data['book_id']), rdflib.RDF.type, rdflib.URIRef('https
 graph.add((rdflib.URIRef(data['book_id']), rdflib.RDFS.label, rdflib.Literal(data['book_label'], lang='en')))
 graph.add((rdflib.URIRef(data['book_id']), rdflib.RDFS.comment, rdflib.Literal(f'Book by {data['author_label']}', lang='en')))
 graph.add((rdflib.URIRef(data['book_id']), rdflib.URIRef('https://paulduchesne.github.io/state/ontology/identifier'), rdflib.Literal(data['book_isbn'])))
-graph.add((rdflib.URIRef(data['book_id']), rdflib.URIRef('https://paulduchesne.github.io/state/ontology/hasAuthor'), rdflib.Literal(data['author_id'])))
+graph.add((rdflib.URIRef(data['book_id']), rdflib.URIRef('https://paulduchesne.github.io/state/ontology/hasAuthor'), rdflib.URIRef(data['author_id'])))
 
 # detect if a reading event already exist.
 
