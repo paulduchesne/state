@@ -1,24 +1,6 @@
 PREFIX ont: <https://paulduchesne.github.io/state/ontology/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-<https://paulduchesne.github.io/state/resource/2ed97264-8762-4f68-a8ab-06b6e3b1adfe>
-    a ont:ReadingEvent ;
-    rdfs:label "Reading 'The School of Night'"@en ;
-    rdfs:comment "Reading event."@en ;
-    ont:endDate "2025-12-03" ;
-    ont:hasParticipant
-        <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
-        <https://paulduchesne.github.io/state/resource/6b433c3a-855a-4ddd-bf14-6ed6d75b472f> ;
-    ont:startDate "2025-11-23" ;
-.
-
-<https://paulduchesne.github.io/state/resource/de97655c-95a8-4cfe-954f-a48142b3ca83>
-    a ont:Person ;
-    rdfs:label "Karl Ove Knausgaard"@en ;
-    rdfs:comment "Norwegian writer."@en ;
-    ont:wikidataIdentifier "Q609317" ;
-.
-
 <https://paulduchesne.github.io/state/resource/10f8d9fa-2da2-449b-9946-3126c9584052>
     a ont:Institution ;
     rdfs:label "Bundesarchiv" ;
@@ -33,6 +15,17 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:comment "Austrian researcher." ;
     ont:memberOf <https://paulduchesne.github.io/state/resource/10f8d9fa-2da2-449b-9946-3126c9584052> ;
     ont:wikidataIdentifier "Q42369365" ;
+.
+
+<https://paulduchesne.github.io/state/resource/2ed97264-8762-4f68-a8ab-06b6e3b1adfe>
+    a ont:ReadingEvent ;
+    rdfs:label "Reading 'The School of Night'"@en ;
+    rdfs:comment "Reading event."@en ;
+    ont:endDate "2025-12-03" ;
+    ont:hasParticipant
+        <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
+        <https://paulduchesne.github.io/state/resource/6b433c3a-855a-4ddd-bf14-6ed6d75b472f> ;
+    ont:startDate "2025-11-23" ;
 .
 
 <https://paulduchesne.github.io/state/resource/3b811069-fff1-4393-b16b-ef02de3b5ff9>
@@ -74,6 +67,32 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:participatedIn <https://paulduchesne.github.io/state/resource/df0b77c1-6b2c-4bd4-904e-9921848978d0> ;
 .
 
+<https://paulduchesne.github.io/state/resource/780a127f-b83f-4ecf-9e05-752a82faecf8>
+    a ont:ReadingEvent ;
+    rdfs:label "Reading 'The Sheltering Sky'"@en ;
+    rdfs:comment "Reading event."@en ;
+    ont:endDate "" ;
+    ont:hasParticipant
+        <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
+        <https://paulduchesne.github.io/state/resource/b300b5e9-1250-43d4-81db-7fe0e3946bc9> ;
+    ont:startDate "2025-12-04" ;
+.
+
+<https://paulduchesne.github.io/state/resource/90d15936-a042-4151-944d-ac2ab282a448>
+    a ont:Person ;
+    rdfs:label "Paul Bowles"@en ;
+    rdfs:comment "American writer."@en ;
+    ont:wikidataIdentifier "Q358342" ;
+.
+
+<https://paulduchesne.github.io/state/resource/b300b5e9-1250-43d4-81db-7fe0e3946bc9>
+    a ont:Book ;
+    rdfs:label "The Sheltering Sky"@en ;
+    rdfs:comment "Book by Paul Bowles"@en ;
+    ont:hasAuthor <https://paulduchesne.github.io/state/resource/90d15936-a042-4151-944d-ac2ab282a448> ;
+    ont:identifier "9780141187778" ;
+.
+
 <https://paulduchesne.github.io/state/resource/b7315610-4737-4c68-934a-0a1fbe09d281>
     a ont:Person ;
     rdfs:label "Slavoj Zizek" ;
@@ -107,6 +126,13 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:memberOf <https://paulduchesne.github.io/state/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c> ;
     ont:participatedIn <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ;
     ont:wikidataIdentifier "Q57970405" ;
+.
+
+<https://paulduchesne.github.io/state/resource/de97655c-95a8-4cfe-954f-a48142b3ca83>
+    a ont:Person ;
+    rdfs:label "Karl Ove Knausgaard"@en ;
+    rdfs:comment "Norwegian writer."@en ;
+    ont:wikidataIdentifier "Q609317" ;
 .
 
 <https://paulduchesne.github.io/state/resource/ec0545af-f371-4df8-a0ef-5196c8a27859>
@@ -174,9 +200,10 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:memberOf <https://paulduchesne.github.io/state/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c> ;
     ont:participatedIn
         <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ,
+        <https://paulduchesne.github.io/state/resource/2ed97264-8762-4f68-a8ab-06b6e3b1adfe> ,
+        <https://paulduchesne.github.io/state/resource/780a127f-b83f-4ecf-9e05-752a82faecf8> ,
         <https://paulduchesne.github.io/state/resource/86477d45-4c1a-4f95-841d-a3fc2d8ffa25> ,
         <https://paulduchesne.github.io/state/resource/df0b77c1-6b2c-4bd4-904e-9921848978d0> ,
-        <https://paulduchesne.github.io/state/resource/2ed97264-8762-4f68-a8ab-06b6e3b1adfe> ,
         <https://paulduchesne.github.io/state/resource/fe923883-a71b-460f-99a0-d8abf05a2281> ;
     ont:wikidataIdentifier "Q115057988" ;
 .

@@ -10,13 +10,13 @@ import uuid
 
 data = {
     'reader_uuid': '0ef53722-52ca-49c8-873d-3549a74914e8', 
-    'book_label': 'The School of Night',
-    'book_isbn': '9781787304215',
-    'author_label': 'Karl Ove Knausgaard',
-    'author_decription': 'Norwegian writer.',
-    'author_wikidata': 'Q609317',
-    'event_start': '2025-11-23',
-    'event_end': '2025-12-03'
+    'book_label': 'The Sheltering Sky',
+    'book_isbn': '9780141187778',
+    'author_label': 'Paul Bowles',
+    'author_decription': 'American writer.',
+    'author_wikidata': 'Q358342',
+    'event_start': '2025-12-04',
+    'event_end': ''
 }
 
 # load existing graph.
@@ -97,8 +97,7 @@ if write_reading_event:
     graph.add((event_uri, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/hasParticipant'), rdflib.URIRef(data['book_id'])))
     graph.add((event_uri, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/startDate'), rdflib.Literal(data['event_start'])))
     graph.add((event_uri, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/endDate'), rdflib.Literal(data['event_end'])))
-
-# TODO you need to write reading event to reader and book as inverse properties.
+    graph.add((rdflib.URIRef(f'https://paulduchesne.github.io/state/resource/{data['reader_uuid']}'), rdflib.URIRef('https://paulduchesne.github.io/state/ontology/participatedIn'), event_uri))
 
 # write to graph.
 
