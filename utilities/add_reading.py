@@ -10,12 +10,12 @@ import uuid
 
 data = {
     'reader_uuid': '0ef53722-52ca-49c8-873d-3549a74914e8', 
-    'book_label': 'The Sheltering Sky',
-    'book_isbn': '9780141187778',
-    'author_label': 'Paul Bowles',
-    'author_decription': 'American writer.',
-    'author_wikidata': 'Q358342',
-    'event_start': '2025-12-04',
+    'book_label': 'Our Share of Night',
+    'book_isbn': '9780451495150',
+    'author_label': 'Mariana Enríquez',
+    'author_decription': 'Argentinian writer.',
+    'author_wikidata': 'Q5997426',
+    'event_start': '2025-12-08',
     'event_end': ''
 }
 
@@ -25,8 +25,6 @@ graph_path = pathlib.Path.cwd().parent / 'data.ttl'
 if not graph_path.exists():
     raise Exception('File not found.')
 graph = rdflib.Graph().parse(graph_path)
-
-print(len(graph))
 
 # pull or mind author id.
 

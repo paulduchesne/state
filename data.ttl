@@ -9,6 +9,13 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q685753" ;
 .
 
+<https://paulduchesne.github.io/state/resource/15ba58be-34a3-4380-baed-733ae0c5f07a>
+    a ont:Person ;
+    rdfs:label "Mariana Enríquez"@en ;
+    rdfs:comment "Argentinian writer."@en ;
+    ont:wikidataIdentifier "Q5997426" ;
+.
+
 <https://paulduchesne.github.io/state/resource/2b9cb0d4-cf35-4426-b448-114e7cdacccb>
     a ont:Person ;
     rdfs:label "Adelheid Heftberger" ;
@@ -58,6 +65,17 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:identifier "9781787304215" ;
 .
 
+<https://paulduchesne.github.io/state/resource/6b440e4a-fbcd-45b9-a3fd-8a2dbf930877>
+    a ont:ReadingEvent ;
+    rdfs:label "Reading 'Our Share of Night'"@en ;
+    rdfs:comment "Reading event."@en ;
+    ont:endDate "" ;
+    ont:hasParticipant
+        <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
+        <https://paulduchesne.github.io/state/resource/90c8c4ca-4ccf-4aca-b021-d480efd1abb6> ;
+    ont:startDate "2025-12-08" ;
+.
+
 <https://paulduchesne.github.io/state/resource/727f0b29-fd9c-429d-a264-5af913651d73>
     a ont:Book ;
     rdfs:label "Machines in the Head" ;
@@ -71,11 +89,19 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a ont:ReadingEvent ;
     rdfs:label "Reading 'The Sheltering Sky'"@en ;
     rdfs:comment "Reading event."@en ;
-    ont:endDate "" ;
+    ont:endDate "2025-12-08" ;
     ont:hasParticipant
         <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
         <https://paulduchesne.github.io/state/resource/b300b5e9-1250-43d4-81db-7fe0e3946bc9> ;
     ont:startDate "2025-12-04" ;
+.
+
+<https://paulduchesne.github.io/state/resource/90c8c4ca-4ccf-4aca-b021-d480efd1abb6>
+    a ont:Book ;
+    rdfs:label "Our Share of Night"@en ;
+    rdfs:comment "Book by Mariana Enríquez"@en ;
+    ont:hasAuthor <https://paulduchesne.github.io/state/resource/15ba58be-34a3-4380-baed-733ae0c5f07a> ;
+    ont:identifier "9780451495150" ;
 .
 
 <https://paulduchesne.github.io/state/resource/90d15936-a042-4151-944d-ac2ab282a448>
@@ -201,6 +227,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:participatedIn
         <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ,
         <https://paulduchesne.github.io/state/resource/2ed97264-8762-4f68-a8ab-06b6e3b1adfe> ,
+        <https://paulduchesne.github.io/state/resource/6b440e4a-fbcd-45b9-a3fd-8a2dbf930877> ,
         <https://paulduchesne.github.io/state/resource/780a127f-b83f-4ecf-9e05-752a82faecf8> ,
         <https://paulduchesne.github.io/state/resource/86477d45-4c1a-4f95-841d-a3fc2d8ffa25> ,
         <https://paulduchesne.github.io/state/resource/df0b77c1-6b2c-4bd4-904e-9921848978d0> ,
