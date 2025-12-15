@@ -5,6 +5,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a ont:Organisation ;
     rdfs:label "iPRES"@en ;
     rdfs:comment "International community of Digital Preservation archivists."@en ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ;
 .
 
 <https://paulduchesne.github.io/state/resource/ad8600ce-fe98-4212-b3d8-0105abdaa567>
@@ -246,17 +247,18 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a>
     a ont:OrganisationalEvent ;
     rdfs:label "iPRES 2025" ;
-    rdfs:comment "The 2025 iteration of the [iPRES](18763a7b-9ee2-46f1-a0b8-3c5cc4eb8ee2) conference, held in [Wellington]()." ;
+    rdfs:comment "The 2025 iteration of the [iPRES](18763a7b-9ee2-46f1-a0b8-3c5cc4eb8ee2) conference, held in [Wellington](fff8c988-6198-4536-9298-28a2d395c705)." ;
     ont:hasLocation <https://paulduchesne.github.io/state/resource/fff8c988-6198-4536-9298-28a2d395c705> ;
     ont:hasParticipant
         <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
+        <https://paulduchesne.github.io/state/resource/18763a7b-9ee2-46f1-a0b8-3c5cc4eb8ee2> ,
         <https://paulduchesne.github.io/state/resource/d2d8ae17-8d48-4256-931e-4f24ecf61f60> ;
 .
 
 <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8>
     a ont:Person ;
     rdfs:label "Paul Duchesne" ;
-    rdfs:comment "Paul Duchesne is a film archivist and software developer, based in Canberra. He has worked for the [NFSA](https://paulduchesne.github.io/state/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c) and [TIB](https://paulduchesne.github.io/state/resource/b8744ea7-c182-47c2-bf31-37e6ed6df396), and is a member of the [FIAF](https://paulduchesne.github.io/state/resource/ad8600ce-fe98-4212-b3d8-0105abdaa567) [Cataloguing and Documentation Commission]()." ;
+    rdfs:comment "Paul Duchesne is a film archivist and software developer, based in Canberra. He has worked for the [NFSA](e5e95fdb-dda9-4c40-9273-395fe34aba3c) and [TIB](b8744ea7-c182-47c2-bf31-37e6ed6df396), and is a member of the [FIAF](ad8600ce-fe98-4212-b3d8-0105abdaa567) [Cataloguing and Documentation Commission]()." ;
     ont:memberOf
         <https://paulduchesne.github.io/state/resource/b8744ea7-c182-47c2-bf31-37e6ed6df396> ,
         <https://paulduchesne.github.io/state/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c> ;
