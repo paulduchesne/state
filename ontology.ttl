@@ -37,10 +37,16 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:subClassOf ont:Organisation ;
 .
 
+<https://paulduchesne.github.io/state/ontology/Location>
+    a owl:Class ;
+    rdfs:label "Location"@en ; 
+    rdfs:comment "An entity which is most significantly defined geographically."@en ;  
+.
+
 <https://paulduchesne.github.io/state/ontology/Event>
     a owl:Class ;
     rdfs:label "Event"@en ; 
-    rdfs:comment "An occurence defined by an activity taking place in a specific time, or duration of time."@en ;  
+    rdfs:comment "An entity which is most significantly defined by a moment, or duration, in time."@en ;  
 .
 
 <https://paulduchesne.github.io/state/ontology/Marriage>
@@ -145,6 +151,24 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:domain ont:Person ;   
     rdfs:range ont:Book ;   
     owl:inverseOf ont:hasAuthor ;
+.
+
+<https://paulduchesne.github.io/state/ontology/hasLocation>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Location"@en ; 
+    rdfs:comment "Location where an event was held."@en ;
+    rdfs:domain ont:Event ;   
+    rdfs:range ont:Location ;  
+    owl:inverseOf ont:locationOf ; 
+.
+
+<https://paulduchesne.github.io/state/ontology/locationOf>
+    a owl:ObjectProperty ;
+    rdfs:label "Location Of"@en ; 
+    rdfs:comment "Event held in a location."@en ;
+    rdfs:domain ont:Location ;   
+    rdfs:range ont:Event ;   
+    owl:inverseOf ont:hasLocation ;
 .
 
 # owl:DatatypeProperty
