@@ -59,7 +59,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <https://paulduchesne.github.io/state/ontology/Death>
     a owl:Class ;
-    rdfs:label "Birth"@en ; 
+    rdfs:label "Death"@en ; 
     rdfs:comment "Biological event, the end of a person's life."@en ;  
     rdfs:subClassOf ont:Event ;
 .
@@ -68,6 +68,13 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a owl:Class ;
     rdfs:label "Reading Event"@en ; 
     rdfs:comment "The process of reading a book."@en ;  
+    rdfs:subClassOf ont:Event ;
+.
+
+<https://paulduchesne.github.io/state/ontology/OrganisationalEvent>
+    a owl:Class ;
+    rdfs:label "Organisational Event"@en ; 
+    rdfs:comment "Annual event tied to an organisation. Also known as a Conference, a Congress or a Symposium, the distinguishing facets escape me."@en ;  
     rdfs:subClassOf ont:Event ;
 .
 

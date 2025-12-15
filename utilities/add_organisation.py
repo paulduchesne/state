@@ -9,9 +9,9 @@ import uuid
 # information to be added.
 
 org = {
-    "label": "International Federation of Film Archives",
-    "comment": "Primary international association of film archives.",
-    "wikidata": "Q586693",
+    "label": "iPRES",
+    "comment": "International community of Digital Preservation archivists.",
+    'wikidata': '',
 }
 
 # load existing graph.
@@ -29,8 +29,6 @@ for p in orgs:
     for a,b,c in data.triples((p, rdflib.RDFS.label, None)):
         if str(c) == org['label']:
             org['id'] = p
-
-print(org)
 
 # add label.
 
