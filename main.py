@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from flask_frozen import Freezer
+import markdown
 import pathlib
 import pydash
 import rdflib
@@ -51,7 +52,7 @@ for x in node_array.keys():
 # node comment.
 
 for x in node_array.keys():
-    node_array[x]['comment'] = extract_text(x, rdflib.RDFS.comment)
+    node_array[x]['comment'] = markdown.markdown(extract_text(x, rdflib.RDFS.comment))
 
 # node statements.
 

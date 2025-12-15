@@ -127,7 +127,17 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "Has Author"@en ; 
     rdfs:comment "Person responsible for the text of a book."@en ;
     rdfs:domain ont:Book ;   
-    rdfs:range ont:Person ;   
+    rdfs:range ont:Person ;  
+    owl:inverseOf ont:authorOf ; 
+.
+
+<https://paulduchesne.github.io/state/ontology/authorOf>
+    a owl:ObjectProperty ;
+    rdfs:label "Author Of"@en ; 
+    rdfs:comment "Books written by the author."@en ;
+    rdfs:domain ont:Person ;   
+    rdfs:range ont:Book ;   
+    owl:inverseOf ont:hasAuthor ;
 .
 
 # owl:DatatypeProperty
