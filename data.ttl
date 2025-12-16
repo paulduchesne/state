@@ -1,13 +1,6 @@
 PREFIX ont: <https://paulduchesne.github.io/state/ontology/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-<https://paulduchesne.github.io/state/resource/18763a7b-9ee2-46f1-a0b8-3c5cc4eb8ee2>
-    a ont:Organisation ;
-    rdfs:label "iPRES"@en ;
-    rdfs:comment "International community of Digital Preservation archivists."@en ;
-    ont:participatedIn <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ;
-.
-
 <https://paulduchesne.github.io/state/resource/ad8600ce-fe98-4212-b3d8-0105abdaa567>
     a ont:Organisation ;
     rdfs:label "International Federation of Film Archives"@en ;
@@ -29,6 +22,13 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:comment "Argentinian writer."@en ;
     ont:authorOf <https://paulduchesne.github.io/state/resource/90c8c4ca-4ccf-4aca-b021-d480efd1abb6> ;
     ont:wikidataIdentifier "Q5997426" ;
+.
+
+<https://paulduchesne.github.io/state/resource/18763a7b-9ee2-46f1-a0b8-3c5cc4eb8ee2>
+    a ont:Organisation ;
+    rdfs:label "iPRES"@en ;
+    rdfs:comment "International community of Digital Preservation archivists."@en ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ;
 .
 
 <https://paulduchesne.github.io/state/resource/2b9cb0d4-cf35-4426-b448-114e7cdacccb>
