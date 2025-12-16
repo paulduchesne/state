@@ -8,19 +8,17 @@ The term "state" refers both to the representation of "states" of myself, and as
 
 **Utilities**
 
-There a number of supplied helper functions for adding to the graph.
+There are a number of helper functions for adding data to the graph.
 
 ```python
 # add a person.
 
-person_id = state.person(
+state.person(
     label="Adelheid Heftberger", 
     comment="Austrian researcher.", 
     member="Bundesarchiv", 
-    wikidata="Q42369365"
+    wikidata="Q42369365",
     )
-
-print(person_id)
 ```
 
 **Example**
