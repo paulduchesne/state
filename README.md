@@ -19,6 +19,14 @@ state.person(
     member="Bundesarchiv", 
     wikidata="Q42369365",
     )
+
+# add a location.
+
+state.location(
+    label="Rabat", 
+    comment="Capital city of Morocco.", 
+    wikidata="Q3551",
+    )
 ```
 
 **Example**

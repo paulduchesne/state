@@ -1,6 +1,13 @@
 PREFIX ont: <https://paulduchesne.github.io/state/ontology/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
+<https://paulduchesne.github.io/state/resource/a2e9cb60-f35b-487a-add9-a9044fa64d85>
+    a ont:Location ;
+    rdfs:label "Rabat"@en ;
+    rdfs:comment "Capital city of Morocco."@en ;
+    ont:wikidataIdentifier "Q3551" ;
+.
+
 <https://paulduchesne.github.io/state/resource/ad8600ce-fe98-4212-b3d8-0105abdaa567>
     a ont:Organisation ;
     rdfs:label "International Federation of Film Archives"@en ;
