@@ -26,7 +26,7 @@ def person(label: str, comment: str, member: str, wikidata: str) -> str:
         raise Exception('File not found.')
     graph = rdflib.Graph().parse(graph_path)
 
-    # pull or mind id.
+    # pull or mint id.
 
     uri = f"https://paulduchesne.github.io/state/resource/{str(uuid.uuid4())}"
     persons = [s for s,p,o in graph.triples((None, rdflib.RDF.type, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/Person')))]
@@ -95,7 +95,7 @@ def location(label: str, comment: str, wikidata: str) -> str:
         raise Exception('File not found.')
     graph = rdflib.Graph().parse(graph_path)
 
-    # pull or mind id.
+    # pull or mint id.
 
     uri = f"https://paulduchesne.github.io/state/resource/{str(uuid.uuid4())}"
     entities = [s for s,p,o in graph.triples((None, rdflib.RDF.type, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/Location')))]
@@ -136,5 +136,152 @@ def location(label: str, comment: str, wikidata: str) -> str:
     # return entity uri.
 
     return uri
+
+def reading_event(
+        reader_id: str, 
+        book_label: str, 
+        book_isbn: str,
+        author_label: str,
+        author_decription: str,
+        author_wikidata: str,
+        event_start: str,
+        event_end: str,
+        ) -> str:
+    
+    """
+    Generate/update a reading event record.
+    Note that this currently assumes no two entities share the same name,
+    also multiple readings of the same book is currently not supported.
+    
+    :param reader_id: uuid of the reader entity.
+    :param book_label: title of the book.
+    :param book_isbn: isbn of the book.
+    :param author_label: name of the author.
+    :param author_decription: description of the author.
+    :param author_wikidata: corresponding wikidata id.
+    :param event_start: date which the event began.
+    :param event_end: date which the event ended.
+    """
+
+    # load existing graph.
+
+    graph_path = pathlib.Path.cwd() / 'data.ttl'
+    if not graph_path.exists():
+        raise Exception('File not found.')
+    graph = rdflib.Graph().parse(graph_path)
+
+    # verify if reader exists, and is a person.
+
+    reader_uri = rdflib.URIRef(f'https://paulduchesne.github.io/state/resource/{reader_id}')
+    persons = [s for s,p,o in graph.triples((None, rdflib.RDF.type, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/Person')))]
+    if reader_uri not in persons:
+        raise Exception('Reader does not exist in graph.')
+
+    # pull or mint author id.
+
+    author_uri = rdflib.URIRef(f"https://paulduchesne.github.io/state/resource/{str(uuid.uuid4())}")
+    persons = [s for s,p,o in graph.triples((None, rdflib.RDF.type, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/Person')))]
+    for p in persons:
+        for a,b,c in graph.triples((p, rdflib.RDFS.label, None)):
+            if str(c) == author_label:
+                author_uri = p
+
+    # declare author.
+
+    graph.add((author_uri, rdflib.RDF.type, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/Person')))
+
+    # add author label.
+
+    if author_label:
+        labels = [o for s,p,o in graph.triples((author_uri, rdflib.RDFS.label, None))]
+        if not len(labels):
+            graph.add((author_uri, rdflib.RDFS.label, rdflib.Literal(author_label, lang='en')))
+
+    # add author comment.
+
+    if author_decription:
+        comments = [o for s,p,o in graph.triples((author_uri, rdflib.RDFS.comment, None))]
+        if not len(comments):
+            graph.add((author_uri, rdflib.RDFS.comment, rdflib.Literal(author_decription, lang='en')))
+
+    # add author wikidata.
+
+    if author_wikidata:
+        wikidatas = [o for s,p,o in graph.triples((author_uri, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/wikidataIdentifier'), None))]
+        if not len(wikidatas):
+            graph.add((author_uri, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/wikidataIdentifier'), rdflib.Literal(author_wikidata)))
+
+    # pull or mint book id.
+
+    book_uri = rdflib.URIRef(f"https://paulduchesne.github.io/state/resource/{str(uuid.uuid4())}")
+    books = [s for s,p,o in graph.triples((None, rdflib.RDF.type, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/Book')))]
+    for x in books:
+        for a,b,c in graph.triples((x, rdflib.RDFS.label, None)):
+            if str(c) == book_label:
+                book_uri = x
+
+    # declare book.
+
+    graph.add((book_uri, rdflib.RDF.type, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/Book')))
+
+    # declare book author.
+
+    graph.add((book_uri, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/hasAuthor'), author_uri))
+    graph.add((author_uri, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/authorOf'), book_uri))
+
+    # declare book isbn.
+
+    if book_isbn:
+        graph.add((book_uri, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/identifier'), rdflib.Literal(book_isbn)))
+
+   # add book label.
+
+    if book_label:
+        labels = [o for s,p,o in graph.triples((book_uri, rdflib.RDFS.label, None))]
+        if not len(labels):
+            graph.add((book_uri, rdflib.RDFS.label, rdflib.Literal(book_label, lang='en')))
+
+    # add book description.
+
+    book_description = [o for s,p,o in graph.triples((book_uri, rdflib.RDFS.comment, None))]
+    if not len(book_description):
+        graph.add((book_uri, rdflib.RDFS.comment,  rdflib.Literal(f'Book by {author_label}', lang='en')))
+
+    # detect if a reading event already exist.
+
+    # TODO this currently assumes that a reader never re-reads a book!
+    # fix would be to also factor in the event start date as a filter on extant event.
+
+    write_reading_event = True
+    reading_events = [s for s,p,o in graph.triples((None, rdflib.RDF.type, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/ReadingEvent')))]
+    for r in reading_events:
+        matching_reader = [s for s,p,o in graph.triples((r, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/hasParticipant'), reader_uri))]
+        matching_book = [s for s,p,o in graph.triples((r, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/hasParticipant'), book_uri))]
+        if len(matching_reader) and len(matching_book):
+            write_reading_event = False
+
+    # if required, write reading event.
+    # TODO, this does not currently update new info provided (most obvious, an event end date.)
+
+    if write_reading_event:
+        event_uri = rdflib.URIRef(f'https://paulduchesne.github.io/state/resource/{str(uuid.uuid4())}')
+        graph.add((event_uri, rdflib.RDF.type, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/ReadingEvent')))
+        graph.add((event_uri, rdflib.RDFS.label, rdflib.Literal(f"Reading '{book_label}'", lang='en')))
+        graph.add((event_uri, rdflib.RDFS.comment, rdflib.Literal(f'Reading event.', lang='en')))
+        graph.add((event_uri, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/hasParticipant'), reader_uri))
+        graph.add((event_uri, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/hasParticipant'), book_uri))
+        graph.add((event_uri, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/startDate'), rdflib.Literal(event_start)))
+        graph.add((event_uri, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/endDate'), rdflib.Literal(event_end)))
+        graph.add((reader_uri, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/participatedIn'), event_uri))
+        graph.add((book_uri, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/participatedIn'), event_uri))
+
+    # write to graph.
+
+    graph.serialize(graph_path, format='longturtle')
+
+    # return entity uri.
+
+    return author_uri
+
 
 

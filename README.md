@@ -27,6 +27,18 @@ state.location(
     comment="Capital city of Morocco.", 
     wikidata="Q3551",
     )
+
+# add a reading event.
+
+state.reading_event(
+    reader_id='0ef53722-52ca-49c8-873d-3549a74914e8', 
+    book_label='This Is for Everyone',
+    book_isbn='9781035023684',
+    author_label='Tim Berners-Lee',
+    author_decription='English computer scientist.',
+    author_wikidata='Q80',
+    event_start='2025-12-22',
+    event_end='2025-12-24')
 ```
 
 **Example**
