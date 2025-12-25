@@ -283,5 +283,54 @@ def reading_event(
 
     return author_uri
 
+def attendance(
+        attendee_label: str, 
+        event_label: str, 
+        ) -> str:
+    
+    """
+    Generate/update an event attendance.
+    Note that this currently assumes no two entities share the same name,
 
+    :param attendee_label: name of the person attending the event.
+    :param event_label: name of the event being attended.
+    """
+
+    # load existing graph.
+
+    graph_path = pathlib.Path.cwd() / 'data.ttl'
+    if not graph_path.exists():
+        raise Exception('File not found.')
+    graph = rdflib.Graph().parse(graph_path)
+
+    # validate attendee.
+
+    attendee_uri = None
+    persons = [s for s,p,o in graph.triples((None, rdflib.RDF.type, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/Person')))]
+    for p in persons:
+        for a,b,c in graph.triples((p, rdflib.RDFS.label, None)):
+            if str(c) == attendee_label:
+                attendee_uri = p
+    if not attendee_uri:
+        raise Exception('Person does not exist in graph.')
+    
+    # validate event.
+
+    event_uri = None
+    events = [s for s,p,o in graph.triples((None, rdflib.RDF.type, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/OrganisationalEvent')))]
+    for p in events:
+        for a,b,c in graph.triples((p, rdflib.RDFS.label, None)):
+            if str(c) == event_label:
+                event_uri = p
+    if not event_uri:
+        raise Exception('Event does not exist in graph.')
+    
+    # add attendee triples.
+
+    graph.add((attendee_uri, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/participatedIn'), event_uri))
+    graph.add((event_uri, rdflib.URIRef('https://paulduchesne.github.io/state/ontology/hasParticipant'), attendee_uri))
+
+    # write to graph.
+
+    graph.serialize(graph_path, format='longturtle')
 

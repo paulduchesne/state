@@ -220,6 +220,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q2399120" ;
 .
 
+<https://paulduchesne.github.io/state/resource/ba11aa05-dfd9-452f-9ef3-c3711b8bc11c>
+    a ont:Person ;
+    rdfs:label "Hannah Lamond-Hallett"@en ;
+    rdfs:comment "Australian digital preservation archivist."@en ;
+    ont:memberOf <https://paulduchesne.github.io/state/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c> ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ;
+.
+
 <https://paulduchesne.github.io/state/resource/ba8048d3-a13c-4964-9d80-a04e0c50c0ba>
     a ont:Book ;
     rdfs:label "Against Progress" ;
@@ -249,14 +257,12 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:startDate "2025-11-15" ;
 .
 
-<https://paulduchesne.github.io/state/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c>
-    a ont:Institution ;
-    rdfs:label "National Film and Sound Archive" ;
-    rdfs:comment "The National Film and Sound Archive of Australia, based in Canberra." ;
-    ont:hasMember
-        <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
-        <https://paulduchesne.github.io/state/resource/d2d8ae17-8d48-4256-931e-4f24ecf61f60> ;
-    ont:wikidataIdentifier "Q2565882" ;
+<https://paulduchesne.github.io/state/resource/eac8d8d9-1424-46d7-b6e8-47ecd1789dc9>
+    a ont:Person ;
+    rdfs:label "Keir Winesmith"@en ;
+    rdfs:comment "Australian author and archivist."@en ;
+    ont:memberOf <https://paulduchesne.github.io/state/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c> ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ;
 .
 
 <https://paulduchesne.github.io/state/resource/ec0545af-f371-4df8-a0ef-5196c8a27859>
@@ -279,6 +285,18 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:startDate "2025-11-11" ;
 .
 
+<https://paulduchesne.github.io/state/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c>
+    a ont:Institution ;
+    rdfs:label "National Film and Sound Archive" ;
+    rdfs:comment "The National Film and Sound Archive of Australia, based in Canberra." ;
+    ont:hasMember
+        <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
+        <https://paulduchesne.github.io/state/resource/ba11aa05-dfd9-452f-9ef3-c3711b8bc11c> ,
+        <https://paulduchesne.github.io/state/resource/d2d8ae17-8d48-4256-931e-4f24ecf61f60> ,
+        <https://paulduchesne.github.io/state/resource/eac8d8d9-1424-46d7-b6e8-47ecd1789dc9> ;
+    ont:wikidataIdentifier "Q2565882" ;
+.
+
 <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a>
     a ont:OrganisationalEvent ;
     rdfs:label "iPRES 2025" ;
@@ -287,7 +305,9 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:hasParticipant
         <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
         <https://paulduchesne.github.io/state/resource/18763a7b-9ee2-46f1-a0b8-3c5cc4eb8ee2> ,
-        <https://paulduchesne.github.io/state/resource/d2d8ae17-8d48-4256-931e-4f24ecf61f60> ;
+        <https://paulduchesne.github.io/state/resource/ba11aa05-dfd9-452f-9ef3-c3711b8bc11c> ,
+        <https://paulduchesne.github.io/state/resource/d2d8ae17-8d48-4256-931e-4f24ecf61f60> ,
+        <https://paulduchesne.github.io/state/resource/eac8d8d9-1424-46d7-b6e8-47ecd1789dc9> ;
 .
 
 <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8>
