@@ -122,5 +122,13 @@ def resource_generator():
                 p = pathlib.Path(n).name
                 yield (t, {t: p})
 
+# transform README to index page.
+
+with open(pathlib.Path.cwd() / 'README.md') as index_in:
+    index_in = index_in.read()
+
+with open(pathlib.Path.cwd() / 'templates' / 'index.html', 'w') as index_out:
+    index_out.write(markdown.markdown(index_in))
+
 if __name__ == '__main__':
     freezer.freeze()
