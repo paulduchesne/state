@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 from flask_frozen import Freezer
 import markdown
+import pandas
 import pathlib
 import pydash
 import rdflib
@@ -62,36 +63,21 @@ for x in node_array.keys():
     props = [p for s,p,o in graph.triples((x, None, None))]
     props = [p for p in props if p not in extant_props]
 
-    statements = list()
+    df = pandas.DataFrame(columns=['type', 'property_link', 'property_label', 'entity_link', 'entity_label'])
     for p in sorted(props):
         for a,b,c in graph.triples((x, p, None)):
             if pathlib.Path(p).name == 'wikidataIdentifier':
-                statements.append({
-                    'type': 'entity', 
-                    'property_link': p, 
-                    'property_label': extract_text(p, rdflib.RDFS.label), 
-                    'entity_link': f'https://www.wikidata.org/wiki/{c}', 
-                    'entity_label': c
-                    })
+                df.loc[len(df)] = ['entity', p, extract_text(p, rdflib.RDFS.label), f'https://www.wikidata.org/wiki/{c}', str(c)]
             elif type(c) is rdflib.term.URIRef:
-                statements.append({
-                    'type': 'entity', 
-                    'property_link': p, 
-                    'property_label': extract_text(p, rdflib.RDFS.label), 
-                    'entity_link': c, 
-                    'entity_label': extract_text(c, rdflib.RDFS.label)
-                    })
+                df.loc[len(df)] = ['entity', p, extract_text(p, rdflib.RDFS.label), c, str(extract_text(c, rdflib.RDFS.label))]
             elif type(c) is rdflib.term.Literal:
-                statements.append({
-                    'type': 'literal', 
-                    'property_link': p, 
-                    'property_label': extract_text(p, rdflib.RDFS.label), 
-                    'literal': c
-                    })
+                df.loc[len(df)] = ['literal', p, extract_text(p, rdflib.RDFS.label), '', str(c)]
             else:
                 raise Exception('Type unknown.')
 
-    node_array[x]['statements'] = pydash.uniq(statements)
+    df = df.drop_duplicates()
+    df.sort_values(by=['property_label', 'entity_label'], key=lambda col: col.str.lower(), inplace=True)
+    node_array[x]['statements'] = df.to_dict('records')
 
 # define app.
 

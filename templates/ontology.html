@@ -6,8 +6,7 @@
 
 <h3>{{ data.label }}</h3>
 [<a href="{{ data.type.entity_link }}">{{ data.type.entity_label }}</a>]<br><br>
-{{ data.comment | safe }}<br>
-<br>
+{{ data.comment | safe }}
 <strong>Statements</strong>
 <br>
 {% for s in data.statements %}
@@ -15,7 +14,7 @@
 {{ data.label }} → <a href="{{ s.property_link }}">{{ s.property_label }}</a> → <a href="{{ s.entity_link }}">{{ s.entity_label }}</a><br>
 {% endif %}
 {% if s.type == 'literal' %}
-{{ data.label }} → <a href="{{ s.property_link }}">{{ s.property_label }}</a> → {{ s.literal }}<br>
+{{ data.label }} → <a href="{{ s.property_link }}">{{ s.property_label }}</a> → {{ s.entity_label }}<br>
 {% endif %}
 {% endfor %}
 
