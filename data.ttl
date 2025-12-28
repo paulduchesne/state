@@ -54,6 +54,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q287679" ;
 .
 
+<https://paulduchesne.github.io/state/resource/46ee3c7a-b39d-406b-9a73-9252dc8a87db>
+    a ont:Person ;
+    rdfs:label "Vincenzo Latronico"@en ;
+    rdfs:comment "Italian writer."@en ;
+    ont:authorOf <https://paulduchesne.github.io/state/resource/9115bd42-8cd7-45d5-8ac2-7e64feab0d71> ;
+    ont:wikidataIdentifier "Q4013338" ;
+.
+
 <https://paulduchesne.github.io/state/resource/4a87654b-2dc1-4f10-b331-8d8ffc4c11f3>
     a ont:Person ;
     rdfs:label "Ina Blümel"@en ;
@@ -209,6 +217,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:participatedIn <https://paulduchesne.github.io/state/resource/6b440e4a-fbcd-45b9-a3fd-8a2dbf930877> ;
 .
 
+<https://paulduchesne.github.io/state/resource/9115bd42-8cd7-45d5-8ac2-7e64feab0d71>
+    a ont:Book ;
+    rdfs:label "Perfection"@en ;
+    rdfs:comment "Book by Vincenzo Latronico"@en ;
+    ont:hasAuthor <https://paulduchesne.github.io/state/resource/46ee3c7a-b39d-406b-9a73-9252dc8a87db> ;
+    ont:identifier "9781681378725" ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/cae5aa0d-b13e-4424-8053-8006caab11c2> ;
+.
+
 <https://paulduchesne.github.io/state/resource/b300b5e9-1250-43d4-81db-7fe0e3946bc9>
     a ont:Book ;
     rdfs:label "The Sheltering Sky"@en ;
@@ -254,6 +271,17 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
         <https://paulduchesne.github.io/state/resource/ccb2c6a9-761e-494a-9a44-c57245cd1553> ;
     ont:startDate "2025-12-25" ;
+.
+
+<https://paulduchesne.github.io/state/resource/cae5aa0d-b13e-4424-8053-8006caab11c2>
+    a ont:ReadingEvent ;
+    rdfs:label "Reading 'Perfection'"@en ;
+    rdfs:comment "Reading event."@en ;
+    ont:endDate "2025-12-28" ;
+    ont:hasParticipant
+        <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
+        <https://paulduchesne.github.io/state/resource/9115bd42-8cd7-45d5-8ac2-7e64feab0d71> ;
+    ont:startDate "2025-12-28" ;
 .
 
 <https://paulduchesne.github.io/state/resource/ccb2c6a9-761e-494a-9a44-c57245cd1553>
@@ -353,6 +381,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://paulduchesne.github.io/state/resource/780a127f-b83f-4ecf-9e05-752a82faecf8> ,
         <https://paulduchesne.github.io/state/resource/86477d45-4c1a-4f95-841d-a3fc2d8ffa25> ,
         <https://paulduchesne.github.io/state/resource/cac1db2e-8f8d-4c39-aa5e-838167352444> ,
+        <https://paulduchesne.github.io/state/resource/cae5aa0d-b13e-4424-8053-8006caab11c2> ,
         <https://paulduchesne.github.io/state/resource/df0b77c1-6b2c-4bd4-904e-9921848978d0> ,
         <https://paulduchesne.github.io/state/resource/fe923883-a71b-460f-99a0-d8abf05a2281> ;
     ont:wikidataIdentifier "Q115057988" ;
