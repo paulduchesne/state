@@ -21,7 +21,7 @@ def person(label: str, comment: str, member: str, wikidata: str) -> str:
 
     # load existing graph.
 
-    graph_path = pathlib.Path.cwd() / 'data.ttl'
+    graph_path = pathlib.Path.cwd() / 'public.ttl'
     if not graph_path.exists():
         raise Exception('File not found.')
     graph = rdflib.Graph().parse(graph_path)
@@ -90,7 +90,7 @@ def location(label: str, comment: str, wikidata: str) -> str:
 
     # load existing graph.
 
-    graph_path = pathlib.Path.cwd() / 'data.ttl'
+    graph_path = pathlib.Path.cwd() / 'public.ttl'
     if not graph_path.exists():
         raise Exception('File not found.')
     graph = rdflib.Graph().parse(graph_path)
@@ -165,7 +165,7 @@ def reading_event(
 
     # load existing graph.
 
-    graph_path = pathlib.Path.cwd() / 'data.ttl'
+    graph_path = pathlib.Path.cwd() / 'public.ttl'
     if not graph_path.exists():
         raise Exception('File not found.')
     graph = rdflib.Graph().parse(graph_path)
@@ -298,7 +298,7 @@ def attendance(
 
     # load existing graph.
 
-    graph_path = pathlib.Path.cwd() / 'data.ttl'
+    graph_path = pathlib.Path.cwd() / 'public.ttl'
     if not graph_path.exists():
         raise Exception('File not found.')
     graph = rdflib.Graph().parse(graph_path)

@@ -21,7 +21,7 @@ data = {
 
 # load existing graph.
 
-graph_path = pathlib.Path.cwd().parent / 'data.ttl'
+graph_path = pathlib.Path.cwd().parent / 'public.ttl'
 if not graph_path.exists():
     raise Exception('File not found.')
 graph = rdflib.Graph().parse(graph_path)

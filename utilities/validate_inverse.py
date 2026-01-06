@@ -29,7 +29,7 @@ inverse_pairs = pydash.uniq(inverse_pairs)
 
 # load data.
 
-data_path = pathlib.Path.cwd().parent / 'data.ttl'
+data_path = pathlib.Path.cwd().parent / 'public.ttl'
 if not data_path.exists():
     raise Exception('File not found.')
 data = rdflib.Graph().parse(data_path)

@@ -25,7 +25,7 @@ def extract_text(uriref, prop):
 
 # load triples.
 
-graph = rdflib.Graph().parse(pathlib.Path.cwd() / 'data.ttl')
+graph = rdflib.Graph().parse(pathlib.Path.cwd() / 'public.ttl')
 graph += rdflib.Graph().parse(pathlib.Path.cwd() / 'ontology.ttl')
 
 # external ontologies.
