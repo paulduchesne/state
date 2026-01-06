@@ -86,6 +86,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q1153825" ;
 .
 
+<https://paulduchesne.github.io/state/resource/745e4032-1491-4e42-8f65-aa28e065ec0c>
+    a ont:Person ;
+    rdfs:label "Yukio Mishima"@en ;
+    rdfs:comment "Japanese writer."@en ;
+    ont:authorOf <https://paulduchesne.github.io/state/resource/700dd5b5-8509-4d04-adcf-b53739c772c8> ;
+    ont:wikidataIdentifier "Q134456" ;
+.
+
 <https://paulduchesne.github.io/state/resource/90d15936-a042-4151-944d-ac2ab282a448>
     a ont:Person ;
     rdfs:label "Paul Bowles"@en ;
@@ -219,6 +227,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:startDate "2025-12-08" ;
 .
 
+<https://paulduchesne.github.io/state/resource/700dd5b5-8509-4d04-adcf-b53739c772c8>
+    a ont:Book ;
+    rdfs:label "Sun and Steel"@en ;
+    rdfs:comment "Book by Yukio Mishima"@en ;
+    ont:hasAuthor <https://paulduchesne.github.io/state/resource/745e4032-1491-4e42-8f65-aa28e065ec0c> ;
+    ont:identifier "9798331097240" ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/9f47fa31-05ff-4bee-bfd5-fdaa16058dac> ;
+.
+
 <https://paulduchesne.github.io/state/resource/727f0b29-fd9c-429d-a264-5af913651d73>
     a ont:Book ;
     rdfs:label "Machines in the Head" ;
@@ -275,6 +292,17 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:hasAuthor <https://paulduchesne.github.io/state/resource/46ee3c7a-b39d-406b-9a73-9252dc8a87db> ;
     ont:identifier "9781681378725" ;
     ont:participatedIn <https://paulduchesne.github.io/state/resource/cae5aa0d-b13e-4424-8053-8006caab11c2> ;
+.
+
+<https://paulduchesne.github.io/state/resource/9f47fa31-05ff-4bee-bfd5-fdaa16058dac>
+    a ont:ReadingEvent ;
+    rdfs:label "Reading 'Sun and Steel'"@en ;
+    rdfs:comment "Reading event."@en ;
+    ont:endDate "2026-01-06" ;
+    ont:hasParticipant
+        <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
+        <https://paulduchesne.github.io/state/resource/700dd5b5-8509-4d04-adcf-b53739c772c8> ;
+    ont:startDate "2026-01-03" ;
 .
 
 <https://paulduchesne.github.io/state/resource/b300b5e9-1250-43d4-81db-7fe0e3946bc9>
@@ -464,6 +492,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://paulduchesne.github.io/state/resource/6b440e4a-fbcd-45b9-a3fd-8a2dbf930877> ,
         <https://paulduchesne.github.io/state/resource/780a127f-b83f-4ecf-9e05-752a82faecf8> ,
         <https://paulduchesne.github.io/state/resource/86477d45-4c1a-4f95-841d-a3fc2d8ffa25> ,
+        <https://paulduchesne.github.io/state/resource/9f47fa31-05ff-4bee-bfd5-fdaa16058dac> ,
         <https://paulduchesne.github.io/state/resource/cac1db2e-8f8d-4c39-aa5e-838167352444> ,
         <https://paulduchesne.github.io/state/resource/cae5aa0d-b13e-4424-8053-8006caab11c2> ,
         <https://paulduchesne.github.io/state/resource/cda1ee67-c4a1-4c37-9a94-d51ba5ed5499> ,
