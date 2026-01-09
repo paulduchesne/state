@@ -23,6 +23,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q1509177" ;
 .
 
+<https://paulduchesne.github.io/state/resource/0530f07f-ae3f-4693-becc-2ccd8914c932>
+    a ont:Person ;
+    rdfs:label "Samanta Schweblin"@en ;
+    rdfs:comment "Argentinian writer."@en ;
+    ont:authorOf <https://paulduchesne.github.io/state/resource/8c827882-23c4-45d3-b54c-0f7df578389f> ;
+    ont:wikidataIdentifier "Q7408607" ;
+.
+
 <https://paulduchesne.github.io/state/resource/10f8d9fa-2da2-449b-9946-3126c9584052>
     a ont:Institution ;
     rdfs:label "Bundesarchiv" ;
@@ -267,6 +275,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:startDate "2025-11-09" ;
 .
 
+<https://paulduchesne.github.io/state/resource/8c827882-23c4-45d3-b54c-0f7df578389f>
+    a ont:Book ;
+    rdfs:label "Fever Dream"@en ;
+    rdfs:comment "Book by Samanta Schweblin"@en ;
+    ont:hasAuthor <https://paulduchesne.github.io/state/resource/0530f07f-ae3f-4693-becc-2ccd8914c932> ;
+    ont:identifier "9780399184604" ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/9614c25b-a271-4750-a4cf-245ad1a722ee> ;
+.
+
 <https://paulduchesne.github.io/state/resource/8f8628dc-9e7c-480f-8c8b-d1124bbf16b3>
     a ont:Book ;
     rdfs:label "Tender is the Flesh"@en ;
@@ -292,6 +309,17 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:hasAuthor <https://paulduchesne.github.io/state/resource/46ee3c7a-b39d-406b-9a73-9252dc8a87db> ;
     ont:identifier "9781681378725" ;
     ont:participatedIn <https://paulduchesne.github.io/state/resource/cae5aa0d-b13e-4424-8053-8006caab11c2> ;
+.
+
+<https://paulduchesne.github.io/state/resource/9614c25b-a271-4750-a4cf-245ad1a722ee>
+    a ont:ReadingEvent ;
+    rdfs:label "Reading 'Fever Dream'"@en ;
+    rdfs:comment "Reading event."@en ;
+    ont:endDate "" ;
+    ont:hasParticipant
+        <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
+        <https://paulduchesne.github.io/state/resource/8c827882-23c4-45d3-b54c-0f7df578389f> ;
+    ont:startDate "2026-01-07" ;
 .
 
 <https://paulduchesne.github.io/state/resource/9f47fa31-05ff-4bee-bfd5-fdaa16058dac>
@@ -492,6 +520,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://paulduchesne.github.io/state/resource/6b440e4a-fbcd-45b9-a3fd-8a2dbf930877> ,
         <https://paulduchesne.github.io/state/resource/780a127f-b83f-4ecf-9e05-752a82faecf8> ,
         <https://paulduchesne.github.io/state/resource/86477d45-4c1a-4f95-841d-a3fc2d8ffa25> ,
+        <https://paulduchesne.github.io/state/resource/9614c25b-a271-4750-a4cf-245ad1a722ee> ,
         <https://paulduchesne.github.io/state/resource/9f47fa31-05ff-4bee-bfd5-fdaa16058dac> ,
         <https://paulduchesne.github.io/state/resource/cac1db2e-8f8d-4c39-aa5e-838167352444> ,
         <https://paulduchesne.github.io/state/resource/cae5aa0d-b13e-4424-8053-8006caab11c2> ,
