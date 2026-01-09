@@ -102,6 +102,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q134456" ;
 .
 
+<https://paulduchesne.github.io/state/resource/7da5c89d-ae12-43cd-8d7b-41ff3f067a8b>
+    a ont:Person ;
+    rdfs:label "Sigizmund Krzhizhanovsky"@en ;
+    rdfs:comment "Russian writer."@en ;
+    ont:authorOf <https://paulduchesne.github.io/state/resource/e2a312a1-cb35-4760-b3bf-4e04e2935065> ;
+    ont:wikidataIdentifier "Q1813169" ;
+.
+
 <https://paulduchesne.github.io/state/resource/90d15936-a042-4151-944d-ac2ab282a448>
     a ont:Person ;
     rdfs:label "Paul Bowles"@en ;
@@ -204,6 +212,17 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
         <https://paulduchesne.github.io/state/resource/6b433c3a-855a-4ddd-bf14-6ed6d75b472f> ;
     ont:startDate "2025-11-23" ;
+.
+
+<https://paulduchesne.github.io/state/resource/3b5ea998-21b9-4b09-b910-b1c1ba6b91c5>
+    a ont:ReadingEvent ;
+    rdfs:label "Reading 'Memories Of The Future'"@en ;
+    rdfs:comment "Reading event."@en ;
+    ont:endDate "" ;
+    ont:hasParticipant
+        <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
+        <https://paulduchesne.github.io/state/resource/e2a312a1-cb35-4760-b3bf-4e04e2935065> ;
+    ont:startDate "2026-01-10" ;
 .
 
 <https://paulduchesne.github.io/state/resource/47805c8f-a351-494c-a3cd-335d796b321a>
@@ -315,7 +334,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a ont:ReadingEvent ;
     rdfs:label "Reading 'Fever Dream'"@en ;
     rdfs:comment "Reading event."@en ;
-    ont:endDate "" ;
+    ont:endDate "2026-01-10" ;
     ont:hasParticipant
         <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
         <https://paulduchesne.github.io/state/resource/8c827882-23c4-45d3-b54c-0f7df578389f> ;
@@ -442,6 +461,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:startDate "2025-11-15" ;
 .
 
+<https://paulduchesne.github.io/state/resource/e2a312a1-cb35-4760-b3bf-4e04e2935065>
+    a ont:Book ;
+    rdfs:label "Memories Of The Future"@en ;
+    rdfs:comment "Book by Sigizmund Krzhizhanovsky"@en ;
+    ont:hasAuthor <https://paulduchesne.github.io/state/resource/7da5c89d-ae12-43cd-8d7b-41ff3f067a8b> ;
+    ont:identifier "9781590173190" ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/3b5ea998-21b9-4b09-b910-b1c1ba6b91c5> ;
+.
+
 <https://paulduchesne.github.io/state/resource/e44ca924-764e-4dfb-be0f-356d8a1733d5>
     a ont:ReadingEvent ;
     rdfs:label "Reading 'Death and the Gardener'"@en ;
@@ -517,6 +545,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://paulduchesne.github.io/state/resource/2da336c1-f4d6-4fbe-9cdb-500383ffab38> ,
         <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ,
         <https://paulduchesne.github.io/state/resource/2ed97264-8762-4f68-a8ab-06b6e3b1adfe> ,
+        <https://paulduchesne.github.io/state/resource/3b5ea998-21b9-4b09-b910-b1c1ba6b91c5> ,
         <https://paulduchesne.github.io/state/resource/6b440e4a-fbcd-45b9-a3fd-8a2dbf930877> ,
         <https://paulduchesne.github.io/state/resource/780a127f-b83f-4ecf-9e05-752a82faecf8> ,
         <https://paulduchesne.github.io/state/resource/86477d45-4c1a-4f95-841d-a3fc2d8ffa25> ,
