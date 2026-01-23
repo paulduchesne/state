@@ -110,6 +110,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q1813169" ;
 .
 
+<https://paulduchesne.github.io/state/resource/8104f052-ebd5-4910-8695-1be0312337d5>
+    a ont:Person ;
+    rdfs:label "John Williams"@en ;
+    rdfs:comment "American writer."@en ;
+    ont:authorOf <https://paulduchesne.github.io/state/resource/92bce14e-7168-4df0-a5aa-96fc819d2142> ;
+    ont:wikidataIdentifier "Q2077062" ;
+.
+
 <https://paulduchesne.github.io/state/resource/90d15936-a042-4151-944d-ac2ab282a448>
     a ont:Person ;
     rdfs:label "Paul Bowles"@en ;
@@ -225,6 +233,17 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:startDate "2026-01-10" ;
 .
 
+<https://paulduchesne.github.io/state/resource/447fd9f5-0093-494a-a536-98d8c234f134>
+    a ont:ReadingEvent ;
+    rdfs:label "Reading 'Stoner'"@en ;
+    rdfs:comment "Reading event."@en ;
+    ont:endDate "" ;
+    ont:hasParticipant
+        <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
+        <https://paulduchesne.github.io/state/resource/92bce14e-7168-4df0-a5aa-96fc819d2142> ;
+    ont:startDate "2026-01-20" ;
+.
+
 <https://paulduchesne.github.io/state/resource/47805c8f-a351-494c-a3cd-335d796b321a>
     a ont:Book ;
     rdfs:label "Below Ambition"@en ;
@@ -328,6 +347,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:hasAuthor <https://paulduchesne.github.io/state/resource/46ee3c7a-b39d-406b-9a73-9252dc8a87db> ;
     ont:identifier "9781681378725" ;
     ont:participatedIn <https://paulduchesne.github.io/state/resource/cae5aa0d-b13e-4424-8053-8006caab11c2> ;
+.
+
+<https://paulduchesne.github.io/state/resource/92bce14e-7168-4df0-a5aa-96fc819d2142>
+    a ont:Book ;
+    rdfs:label "Stoner"@en ;
+    rdfs:comment "Book by John Williams"@en ;
+    ont:hasAuthor <https://paulduchesne.github.io/state/resource/8104f052-ebd5-4910-8695-1be0312337d5> ;
+    ont:identifier "9781590171998" ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/447fd9f5-0093-494a-a536-98d8c234f134> ;
 .
 
 <https://paulduchesne.github.io/state/resource/9614c25b-a271-4750-a4cf-245ad1a722ee>
@@ -546,6 +574,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ,
         <https://paulduchesne.github.io/state/resource/2ed97264-8762-4f68-a8ab-06b6e3b1adfe> ,
         <https://paulduchesne.github.io/state/resource/3b5ea998-21b9-4b09-b910-b1c1ba6b91c5> ,
+        <https://paulduchesne.github.io/state/resource/447fd9f5-0093-494a-a536-98d8c234f134> ,
         <https://paulduchesne.github.io/state/resource/6b440e4a-fbcd-45b9-a3fd-8a2dbf930877> ,
         <https://paulduchesne.github.io/state/resource/780a127f-b83f-4ecf-9e05-752a82faecf8> ,
         <https://paulduchesne.github.io/state/resource/86477d45-4c1a-4f95-841d-a3fc2d8ffa25> ,
