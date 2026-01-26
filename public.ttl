@@ -31,6 +31,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q7408607" ;
 .
 
+<https://paulduchesne.github.io/state/resource/08efa78a-d20f-408a-916a-c86046ca32cb>
+    a ont:Person ;
+    rdfs:label "Miranda July"@en ;
+    rdfs:comment "American writer."@en ;
+    ont:authorOf <https://paulduchesne.github.io/state/resource/d7e5b2e8-09ab-43f7-9711-21280c906c3b> ;
+    ont:wikidataIdentifier "Q256671" ;
+.
+
 <https://paulduchesne.github.io/state/resource/10f8d9fa-2da2-449b-9946-3126c9584052>
     a ont:Institution ;
     rdfs:label "Bundesarchiv" ;
@@ -237,7 +245,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a ont:ReadingEvent ;
     rdfs:label "Reading 'Stoner'"@en ;
     rdfs:comment "Reading event."@en ;
-    ont:endDate "" ;
+    ont:endDate "2026-01-25" ;
     ont:hasParticipant
         <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
         <https://paulduchesne.github.io/state/resource/92bce14e-7168-4df0-a5aa-96fc819d2142> ;
@@ -478,6 +486,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q57970405" ;
 .
 
+<https://paulduchesne.github.io/state/resource/d7e5b2e8-09ab-43f7-9711-21280c906c3b>
+    a ont:Book ;
+    rdfs:label "The First Bad Man"@en ;
+    rdfs:comment "Book by Miranda July"@en ;
+    ont:hasAuthor <https://paulduchesne.github.io/state/resource/08efa78a-d20f-408a-916a-c86046ca32cb> ;
+    ont:identifier "9781782115076" ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/e1143363-8ef5-4178-9f22-4de39500925e> ;
+.
+
 <https://paulduchesne.github.io/state/resource/df0b77c1-6b2c-4bd4-904e-9921848978d0>
     a ont:ReadingEvent ;
     rdfs:label "Reading 'Machines in the Head'"@en ;
@@ -487,6 +504,17 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
         <https://paulduchesne.github.io/state/resource/727f0b29-fd9c-429d-a264-5af913651d73> ;
     ont:startDate "2025-11-15" ;
+.
+
+<https://paulduchesne.github.io/state/resource/e1143363-8ef5-4178-9f22-4de39500925e>
+    a ont:ReadingEvent ;
+    rdfs:label "Reading 'The First Bad Man'"@en ;
+    rdfs:comment "Reading event."@en ;
+    ont:endDate "" ;
+    ont:hasParticipant
+        <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
+        <https://paulduchesne.github.io/state/resource/d7e5b2e8-09ab-43f7-9711-21280c906c3b> ;
+    ont:startDate "2026-01-25" ;
 .
 
 <https://paulduchesne.github.io/state/resource/e2a312a1-cb35-4760-b3bf-4e04e2935065>
@@ -585,6 +613,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://paulduchesne.github.io/state/resource/cda1ee67-c4a1-4c37-9a94-d51ba5ed5499> ,
         <https://paulduchesne.github.io/state/resource/ce5f919c-40e3-4b77-9f59-fd908e1ad58b> ,
         <https://paulduchesne.github.io/state/resource/df0b77c1-6b2c-4bd4-904e-9921848978d0> ,
+        <https://paulduchesne.github.io/state/resource/e1143363-8ef5-4178-9f22-4de39500925e> ,
         <https://paulduchesne.github.io/state/resource/e44ca924-764e-4dfb-be0f-356d8a1733d5> ,
         <https://paulduchesne.github.io/state/resource/fe923883-a71b-460f-99a0-d8abf05a2281> ;
     ont:wikidataIdentifier "Q115057988" ;
