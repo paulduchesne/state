@@ -134,6 +134,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q358342" ;
 .
 
+<https://paulduchesne.github.io/state/resource/939e26b2-b0da-4645-a431-f2502a708785>
+    a ont:Person ;
+    rdfs:label "Aoko Matsuda"@en ;
+    rdfs:comment "Japanese writer."@en ;
+    ont:authorOf <https://paulduchesne.github.io/state/resource/46d4896a-e56b-40a6-9b3d-cb9329d87ffd> ;
+    ont:wikidataIdentifier "Q17223651" ;
+.
+
 <https://paulduchesne.github.io/state/resource/9542bec3-4005-451d-ba96-cd6df24c9f13>
     a ont:Person ;
     rdfs:label "Agustina Bazterrica"@en ;
@@ -188,6 +196,17 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:comment "Capital city of New Zealand."@en ;
     ont:locationOf <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ;
     ont:wikidataIdentifier "Q23661" ;
+.
+
+<https://paulduchesne.github.io/state/resource/0c410f97-9ca0-43ee-aedb-e1a2a89a1162>
+    a ont:ReadingEvent ;
+    rdfs:label "Reading 'The Woman Dies'"@en ;
+    rdfs:comment "Reading event."@en ;
+    ont:endDate "" ;
+    ont:hasParticipant
+        <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
+        <https://paulduchesne.github.io/state/resource/46d4896a-e56b-40a6-9b3d-cb9329d87ffd> ;
+    ont:startDate "2026-01-29" ;
 .
 
 <https://paulduchesne.github.io/state/resource/0de58f5f-2354-4d07-a5a2-db35f9d0f2da>
@@ -250,6 +269,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
         <https://paulduchesne.github.io/state/resource/92bce14e-7168-4df0-a5aa-96fc819d2142> ;
     ont:startDate "2026-01-20" ;
+.
+
+<https://paulduchesne.github.io/state/resource/46d4896a-e56b-40a6-9b3d-cb9329d87ffd>
+    a ont:Book ;
+    rdfs:label "The Woman Dies"@en ;
+    rdfs:comment "Book by Aoko Matsuda"@en ;
+    ont:hasAuthor <https://paulduchesne.github.io/state/resource/939e26b2-b0da-4645-a431-f2502a708785> ;
+    ont:identifier "9781787705876" ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/0c410f97-9ca0-43ee-aedb-e1a2a89a1162> ;
 .
 
 <https://paulduchesne.github.io/state/resource/47805c8f-a351-494c-a3cd-335d796b321a>
@@ -510,7 +538,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a ont:ReadingEvent ;
     rdfs:label "Reading 'The First Bad Man'"@en ;
     rdfs:comment "Reading event."@en ;
-    ont:endDate "" ;
+    ont:endDate "2026-01-28" ;
     ont:hasParticipant
         <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
         <https://paulduchesne.github.io/state/resource/d7e5b2e8-09ab-43f7-9711-21280c906c3b> ;
@@ -598,6 +626,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://paulduchesne.github.io/state/resource/b8744ea7-c182-47c2-bf31-37e6ed6df396> ,
         <https://paulduchesne.github.io/state/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c> ;
     ont:participatedIn
+        <https://paulduchesne.github.io/state/resource/0c410f97-9ca0-43ee-aedb-e1a2a89a1162> ,
         <https://paulduchesne.github.io/state/resource/2da336c1-f4d6-4fbe-9cdb-500383ffab38> ,
         <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ,
         <https://paulduchesne.github.io/state/resource/2ed97264-8762-4f68-a8ab-06b6e3b1adfe> ,
