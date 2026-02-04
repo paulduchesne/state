@@ -158,6 +158,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q33200722" ;
 .
 
+<https://paulduchesne.github.io/state/resource/b1842528-4244-4573-bbb7-5211bf598669>
+    a ont:Person ;
+    rdfs:label "Vincent Delecroix"@en ;
+    rdfs:comment "French writer."@en ;
+    ont:authorOf <https://paulduchesne.github.io/state/resource/40cb7f74-d570-416d-95f1-d4d5e83ec810> ;
+    ont:wikidataIdentifier "Q3559576" ;
+.
+
 <https://paulduchesne.github.io/state/resource/b7315610-4737-4c68-934a-0a1fbe09d281>
     a ont:Person ;
     rdfs:label "Slavoj Zizek" ;
@@ -202,7 +210,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a ont:ReadingEvent ;
     rdfs:label "Reading 'The Woman Dies'"@en ;
     rdfs:comment "Reading event."@en ;
-    ont:endDate "" ;
+    ont:endDate "2026-02-04" ;
     ont:hasParticipant
         <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
         <https://paulduchesne.github.io/state/resource/46d4896a-e56b-40a6-9b3d-cb9329d87ffd> ;
@@ -260,6 +268,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:startDate "2026-01-10" ;
 .
 
+<https://paulduchesne.github.io/state/resource/40cb7f74-d570-416d-95f1-d4d5e83ec810>
+    a ont:Book ;
+    rdfs:label "Small Boat"@en ;
+    rdfs:comment "Book by Vincent Delecroix"@en ;
+    ont:hasAuthor <https://paulduchesne.github.io/state/resource/b1842528-4244-4573-bbb7-5211bf598669> ;
+    ont:identifier "9781913109370" ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/48052b54-e4f7-42a6-9bb2-a8b033926e3f> ;
+.
+
 <https://paulduchesne.github.io/state/resource/447fd9f5-0093-494a-a536-98d8c234f134>
     a ont:ReadingEvent ;
     rdfs:label "Reading 'Stoner'"@en ;
@@ -287,6 +304,17 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:hasAuthor <https://paulduchesne.github.io/state/resource/f9852676-8b80-4856-8c56-feca14d999b4> ;
     ont:identifier "9781683965497" ;
     ont:participatedIn <https://paulduchesne.github.io/state/resource/ce5f919c-40e3-4b77-9f59-fd908e1ad58b> ;
+.
+
+<https://paulduchesne.github.io/state/resource/48052b54-e4f7-42a6-9bb2-a8b033926e3f>
+    a ont:ReadingEvent ;
+    rdfs:label "Reading 'Small Boat'"@en ;
+    rdfs:comment "Reading event."@en ;
+    ont:endDate "" ;
+    ont:hasParticipant
+        <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
+        <https://paulduchesne.github.io/state/resource/40cb7f74-d570-416d-95f1-d4d5e83ec810> ;
+    ont:startDate "2026-02-05" ;
 .
 
 <https://paulduchesne.github.io/state/resource/6b433c3a-855a-4ddd-bf14-6ed6d75b472f>
@@ -632,6 +660,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://paulduchesne.github.io/state/resource/2ed97264-8762-4f68-a8ab-06b6e3b1adfe> ,
         <https://paulduchesne.github.io/state/resource/3b5ea998-21b9-4b09-b910-b1c1ba6b91c5> ,
         <https://paulduchesne.github.io/state/resource/447fd9f5-0093-494a-a536-98d8c234f134> ,
+        <https://paulduchesne.github.io/state/resource/48052b54-e4f7-42a6-9bb2-a8b033926e3f> ,
         <https://paulduchesne.github.io/state/resource/6b440e4a-fbcd-45b9-a3fd-8a2dbf930877> ,
         <https://paulduchesne.github.io/state/resource/780a127f-b83f-4ecf-9e05-752a82faecf8> ,
         <https://paulduchesne.github.io/state/resource/86477d45-4c1a-4f95-841d-a3fc2d8ffa25> ,
