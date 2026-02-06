@@ -110,6 +110,13 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q134456" ;
 .
 
+<https://paulduchesne.github.io/state/resource/750ee9fc-5227-4348-bc1e-84cae017ad5a>
+    a ont:Person ;
+    rdfs:label "Eldritch Priest"@en ;
+    rdfs:comment "Canadian writer."@en ;
+    ont:authorOf <https://paulduchesne.github.io/state/resource/6d640efd-b316-4ea7-b16d-409d521b3557> ;
+.
+
 <https://paulduchesne.github.io/state/resource/7da5c89d-ae12-43cd-8d7b-41ff3f067a8b>
     a ont:Person ;
     rdfs:label "Sigizmund Krzhizhanovsky"@en ;
@@ -310,7 +317,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a ont:ReadingEvent ;
     rdfs:label "Reading 'Small Boat'"@en ;
     rdfs:comment "Reading event."@en ;
-    ont:endDate "" ;
+    ont:endDate "2026-02-06" ;
     ont:hasParticipant
         <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
         <https://paulduchesne.github.io/state/resource/40cb7f74-d570-416d-95f1-d4d5e83ec810> ;
@@ -335,6 +342,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
         <https://paulduchesne.github.io/state/resource/90c8c4ca-4ccf-4aca-b021-d480efd1abb6> ;
     ont:startDate "2025-12-08" ;
+.
+
+<https://paulduchesne.github.io/state/resource/6d640efd-b316-4ea7-b16d-409d521b3557>
+    a ont:Book ;
+    rdfs:label "Boring Formless Nonsense"@en ;
+    rdfs:comment "Book by Eldritch Priest"@en ;
+    ont:hasAuthor <https://paulduchesne.github.io/state/resource/750ee9fc-5227-4348-bc1e-84cae017ad5a> ;
+    ont:identifier "9781441122131" ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/bd289923-774e-4550-89a1-c7faac5bcaa9> ;
 .
 
 <https://paulduchesne.github.io/state/resource/700dd5b5-8509-4d04-adcf-b53739c772c8>
@@ -478,6 +494,17 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:hasAuthor <https://paulduchesne.github.io/state/resource/b7315610-4737-4c68-934a-0a1fbe09d281> ;
     ont:identifier "9781350515857" ;
     ont:participatedIn <https://paulduchesne.github.io/state/resource/fe923883-a71b-460f-99a0-d8abf05a2281> ;
+.
+
+<https://paulduchesne.github.io/state/resource/bd289923-774e-4550-89a1-c7faac5bcaa9>
+    a ont:ReadingEvent ;
+    rdfs:label "Reading 'Boring Formless Nonsense'"@en ;
+    rdfs:comment "Reading event."@en ;
+    ont:endDate "" ;
+    ont:hasParticipant
+        <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
+        <https://paulduchesne.github.io/state/resource/6d640efd-b316-4ea7-b16d-409d521b3557> ;
+    ont:startDate "2026-02-07" ;
 .
 
 <https://paulduchesne.github.io/state/resource/cac1db2e-8f8d-4c39-aa5e-838167352444>
@@ -666,6 +693,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://paulduchesne.github.io/state/resource/86477d45-4c1a-4f95-841d-a3fc2d8ffa25> ,
         <https://paulduchesne.github.io/state/resource/9614c25b-a271-4750-a4cf-245ad1a722ee> ,
         <https://paulduchesne.github.io/state/resource/9f47fa31-05ff-4bee-bfd5-fdaa16058dac> ,
+        <https://paulduchesne.github.io/state/resource/bd289923-774e-4550-89a1-c7faac5bcaa9> ,
         <https://paulduchesne.github.io/state/resource/cac1db2e-8f8d-4c39-aa5e-838167352444> ,
         <https://paulduchesne.github.io/state/resource/cae5aa0d-b13e-4424-8053-8006caab11c2> ,
         <https://paulduchesne.github.io/state/resource/cda1ee67-c4a1-4c37-9a94-d51ba5ed5499> ,
