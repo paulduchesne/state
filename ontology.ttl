@@ -104,6 +104,13 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:subClassOf ont:Object ;
 .
 
+<https://paulduchesne.github.io/state/ontology/Protocol>
+    a owl:Class ;
+    rdfs:label "Protocol"@en ; 
+    rdfs:comment "A shared definition for communication between digital systems."@en ;  
+.
+
+
 # owl:ObjectProperty
 
 <https://paulduchesne.github.io/state/ontology/hasParticipant>
