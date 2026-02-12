@@ -97,6 +97,13 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:subClassOf ont:Object ;
 .
 
+<https://paulduchesne.github.io/state/ontology/Album>
+    a owl:Class ;
+    rdfs:label "Album"@en ; 
+    rdfs:comment "Manifestation of music."@en ;  
+    rdfs:subClassOf ont:Object ;
+.
+
 # owl:ObjectProperty
 
 <https://paulduchesne.github.io/state/ontology/hasParticipant>
@@ -150,6 +157,24 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:comment "Books written by the author."@en ;
     rdfs:domain ont:Person ;   
     rdfs:range ont:Book ;   
+    owl:inverseOf ont:hasAuthor ;
+.
+
+<https://paulduchesne.github.io/state/ontology/hasCreator>
+    a owl:ObjectProperty ;
+    rdfs:label "Has Creator"@en ; 
+    rdfs:comment "Agent responsible for the creation of an artwork."@en ;
+    rdfs:domain ont:Album ;   
+    rdfs:range ont:Person, ont:Organisation ;  
+    owl:inverseOf ont:authorOf ; 
+.
+
+<https://paulduchesne.github.io/state/ontology/creatorOf>
+    a owl:ObjectProperty ;
+    rdfs:label "Creator Of"@en ; 
+    rdfs:comment "Artwork created by the agent."@en ;
+    rdfs:domain ont:Person, ont:Organisation ;   
+    rdfs:range ont:Album ;   
     owl:inverseOf ont:hasAuthor ;
 .
 
