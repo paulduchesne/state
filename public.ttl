@@ -15,12 +15,41 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q586693" ;
 .
 
+<https://paulduchesne.github.io/state/resource/014369b3-d66a-429d-98f9-77caec9e5cd0>
+    a ont:Album ;
+    rdfs:label "Excavation"@en ;
+    rdfs:comment "Album by Bobby Krlic"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/14017918-e915-4a3a-a067-380b9d536a1c> ;
+    ont:wikidataIdentifier "Q17047752" ;
+.
+
+<https://paulduchesne.github.io/state/resource/01ce23b4-dcca-4d7e-82d4-1e4dd647946e>
+    a ont:Album ;
+    rdfs:label "Everything Everything"@en ;
+    rdfs:comment "Album by Leo Chadburn"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/4ad6ff33-4bbf-431b-9a3c-18be6fed6997> ;
+.
+
+<https://paulduchesne.github.io/state/resource/024ba9e7-4788-4d22-b9f6-2e0f4ff6c455>
+    a ont:Album ;
+    rdfs:label "Even Clean Hands Damage The Work"@en ;
+    rdfs:comment "Album by John Chantler"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/11dca4d3-279b-40ab-98ce-5ef437c553f8> ;
+.
+
 <https://paulduchesne.github.io/state/resource/043b75f5-3f6e-41ce-a234-a3f63a71de91>
     a ont:Person ;
     rdfs:label "Georgi Gospodinov"@en ;
     rdfs:comment "Bulgarian writer."@en ;
     ont:authorOf <https://paulduchesne.github.io/state/resource/243492e0-1eaa-4d45-8721-12985d1cd9b3> ;
     ont:wikidataIdentifier "Q1509177" ;
+.
+
+<https://paulduchesne.github.io/state/resource/04bf0c12-218e-40cb-b9e5-cc72d55831a7>
+    a ont:Album ;
+    rdfs:label "Inflatable Graveyard"@en ;
+    rdfs:comment "Album by Tropical Fuck Storm"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/ed5bc93d-ea96-4532-98a1-48b5c389435e> ;
 .
 
 <https://paulduchesne.github.io/state/resource/0530f07f-ae3f-4693-becc-2ccd8914c932>
@@ -31,6 +60,43 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q7408607" ;
 .
 
+<https://paulduchesne.github.io/state/resource/0536fe2e-39c4-4356-b771-e6f69690608c>
+    a ont:Album ;
+    rdfs:label "As Truth Mixtape"@en ;
+    rdfs:comment "Album by Amnesia Scanner"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/64f8af27-a61a-4a76-9363-74c7072104d8> ;
+.
+
+<https://paulduchesne.github.io/state/resource/05f3308a-4cdf-4f4c-b304-67c7df4b1350>
+    a ont:Album ;
+    rdfs:label "Unflesh"@en ;
+    rdfs:comment "Album by Elizabeth Bernho"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/d4ea7e0c-0eda-44a3-8f11-d2daee6a5b0c> ;
+    ont:wikidataIdentifier "Q18713869" ;
+.
+
+<https://paulduchesne.github.io/state/resource/061e250f-fe97-4d30-b337-246ce1ecc560>
+    a ont:Album ;
+    rdfs:label "Raj"@en ;
+    rdfs:comment "Album by Derek Piotr"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/aca795e6-2538-4b79-9f6e-bdc9eef13b95> ;
+.
+
+<https://paulduchesne.github.io/state/resource/06aed4c4-dce0-4fb7-b599-071edfb0b15e>
+    a ont:Album ;
+    rdfs:label "Beta Tape Warp"@en ;
+    rdfs:comment "Album by Tim Dwyer"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/dedb9378-0b04-4661-ab46-0cfcb461f255> ;
+.
+
+<https://paulduchesne.github.io/state/resource/084b6c9c-7732-4b9b-a87b-b4c4cbbce9dd>
+    a ont:Album ;
+    rdfs:label "Cellulite Soul"@en ;
+    rdfs:comment "Album by Witch Hats"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/1e9fa16b-98cb-491a-8148-a7dda2246968> ;
+    ont:wikidataIdentifier "Q5058381" ;
+.
+
 <https://paulduchesne.github.io/state/resource/08efa78a-d20f-408a-916a-c86046ca32cb>
     a ont:Person ;
     rdfs:label "Miranda July"@en ;
@@ -39,12 +105,107 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q256671" ;
 .
 
+<https://paulduchesne.github.io/state/resource/0c1ab77c-8ca5-4ada-9246-156f8dc03dac>
+    a ont:Person ;
+    rdfs:label "Paul Gough"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/b506945b-b5de-43ba-83ad-f79fdb8da5ea> ;
+    ont:wikidataIdentifier "Q7194665" ;
+.
+
+<https://paulduchesne.github.io/state/resource/0d47cc42-fe4a-44cc-b4eb-d08391783d79>
+    a ont:Person ;
+    rdfs:label "James Holden"@en ;
+    rdfs:comment "British composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/f3fec9ad-8c78-48e5-8795-5e2c82f05afe> ;
+    ont:wikidataIdentifier "Q718772" ;
+.
+
+<https://paulduchesne.github.io/state/resource/0de01e56-8283-4834-bd51-55424aba4a5e>
+    a ont:Album ;
+    rdfs:label "Animism"@en ;
+    rdfs:comment "Album by Tanya Tagaq"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/8acaa52b-c1d8-4c55-91d3-66df0c8df196> ;
+    ont:wikidataIdentifier "Q18148838" ;
+.
+
+<https://paulduchesne.github.io/state/resource/0e238ada-e438-4bdb-a513-b28164ad6e6f>
+    a ont:Organisation ;
+    rdfs:label "Godzilla Black"@en ;
+    rdfs:comment "British group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/8e19e416-df37-4c59-b781-83a35f8fb717> ;
+.
+
+<https://paulduchesne.github.io/state/resource/0f1c2c7f-25ee-40a8-bb17-2230e08790ef>
+    a ont:Album ;
+    rdfs:label "Beatnadel"@en ;
+    rdfs:comment "Album by Antye Greie"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/88db9a41-e263-45f6-9de4-e8c59b031b56> ;
+.
+
+<https://paulduchesne.github.io/state/resource/0fddd67c-6e77-47b0-beec-8f90845f1849>
+    a ont:Person ;
+    rdfs:label "Hannah de Feyter"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/6cf5efee-ef14-4b4d-8659-e7a85be4ede0> ;
+.
+
 <https://paulduchesne.github.io/state/resource/10f8d9fa-2da2-449b-9946-3126c9584052>
     a ont:Institution ;
     rdfs:label "Bundesarchiv" ;
     rdfs:comment "The German National Archives." ;
     ont:hasMember <https://paulduchesne.github.io/state/resource/2b9cb0d4-cf35-4426-b448-114e7cdacccb> ;
     ont:wikidataIdentifier "Q685753" ;
+.
+
+<https://paulduchesne.github.io/state/resource/115fe815-0114-4a57-83fe-badb2f6428f2>
+    a ont:Album ;
+    rdfs:label "I"@en ;
+    rdfs:comment "Album by Tangents"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/68fee855-3343-4680-9e6a-f299399de5e5> ;
+.
+
+<https://paulduchesne.github.io/state/resource/119dac0d-fc53-4d79-91fb-94f39a662fa5>
+    a ont:Album ;
+    rdfs:label "Iconoclast"@en ;
+    rdfs:comment "Album by Cracked Actor"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/3407bf85-4b83-4670-8682-82eb4c3a0f1b> ;
+.
+
+<https://paulduchesne.github.io/state/resource/11affb1e-110b-4413-8cad-aa297536a27a>
+    a ont:Album ;
+    rdfs:label "7"@en ;
+    rdfs:comment "Album by Supersilent"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/67855a20-ffe3-4e65-999c-e281d1099c9f> ;
+.
+
+<https://paulduchesne.github.io/state/resource/11dca4d3-279b-40ab-98ce-5ef437c553f8>
+    a ont:Person ;
+    rdfs:label "John Chantler"@en ;
+    rdfs:comment "British composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/024ba9e7-4788-4d22-b9f6-2e0f4ff6c455> ;
+.
+
+<https://paulduchesne.github.io/state/resource/11e94fde-ef87-407f-be45-b0d2de29efe1>
+    a ont:Album ;
+    rdfs:label "Privilege And Obscenity"@en ;
+    rdfs:comment "Album by Dead Boomers"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/0d4a84eb-8ece-49d2-9151-d82b0a843046> ;
+.
+
+<https://paulduchesne.github.io/state/resource/134e2e20-9d1e-437a-9c96-bf0c9d98320f>
+    a ont:Organisation ;
+    rdfs:label "Standish Carlyon"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/d31ee844-25d4-43df-b3bc-64759580de00> ;
+.
+
+<https://paulduchesne.github.io/state/resource/14487cba-ed9e-4703-8614-83530a3cb5df>
+    a ont:Person ;
+    rdfs:label "Lasse Marhaug"@en ;
+    rdfs:comment "Norwegian composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/2e76bae6-e461-49ce-a4e7-ff02e2cf74f4> ;
+    ont:wikidataIdentifier "Q6493913" ;
 .
 
 <https://paulduchesne.github.io/state/resource/15ba58be-34a3-4380-baed-733ae0c5f07a>
@@ -62,12 +223,345 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:participatedIn <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ;
 .
 
+<https://paulduchesne.github.io/state/resource/1965638d-0570-4588-8faa-0fe78acc8461>
+    a ont:Organisation ;
+    rdfs:label "The Necks"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/7e4e5540-d470-4182-a2fe-27635c3b7e70> ;
+    ont:wikidataIdentifier "Q1531070" ;
+.
+
+<https://paulduchesne.github.io/state/resource/19cad5c0-060e-414d-839b-8606362a43cb>
+    a ont:Album ;
+    rdfs:label "Chrysanthenum"@en ;
+    rdfs:comment "Album by Kris Keogh"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/dd8407fa-b77b-4d4f-ad6b-895dbc6570e5> ;
+.
+
+<https://paulduchesne.github.io/state/resource/1a004ac3-416a-4fba-902c-7474f739a387>
+    a ont:Album ;
+    rdfs:label "Tarquin Magnet"@en ;
+    rdfs:comment "Album by Tarquin Manek"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/60f443b7-14ec-486b-9e02-e3f8b6cc169a> ;
+.
+
+<https://paulduchesne.github.io/state/resource/1bae641c-b1d3-4fac-b61f-061ee864fc13>
+    a ont:Album ;
+    rdfs:label "Ett"@en ;
+    rdfs:comment "Album by Klara Lewis"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/b32144b9-0223-43a9-b00e-e89032c09d97> ;
+.
+
+<https://paulduchesne.github.io/state/resource/1ec95913-4a90-4063-a9c5-9f32b23cb667>
+    a ont:Album ;
+    rdfs:label "Swans Are Dead"@en ;
+    rdfs:comment "Album by Swans"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/67739b53-0ac8-4f97-ba94-86e24dbb4ffd> ;
+.
+
+<https://paulduchesne.github.io/state/resource/1f6ed568-58c5-4f73-b5c6-1cd2d64cd521>
+    a ont:Album ;
+    rdfs:label "Hubris"@en ;
+    rdfs:comment "Album by Oren Ambarchi"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/ffc03abd-3406-473f-a1bb-b207887efc21> ;
+    ont:wikidataIdentifier "Q137762916" ;
+.
+
+<https://paulduchesne.github.io/state/resource/1f72aff9-072d-4d75-b66a-829982b1d71d>
+    a ont:Album ;
+    rdfs:label "Resurrection"@en ;
+    rdfs:comment "Album by John Burton"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/8723f25f-18a8-4e08-8adf-1ba204e67520> ;
+.
+
+<https://paulduchesne.github.io/state/resource/1fd3ff8c-d2a7-4a17-bacb-071e9d17ec00>
+    a ont:Organisation ;
+    rdfs:label "Mandy, Indiana"@en ;
+    rdfs:comment "French/British group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/7a7cf4b6-7a50-42f7-9cf9-c21941e77fd0> ;
+    ont:wikidataIdentifier "Q119036137" ;
+.
+
+<https://paulduchesne.github.io/state/resource/1ffb0ac1-4bd2-4ab3-b4b2-46b453f3f483>
+    a ont:Album ;
+    rdfs:label "Learn To Dance"@en ;
+    rdfs:comment "Album by Finnigan And Brother"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/21935384-f63f-460a-9fc7-48878d715790> ;
+.
+
+<https://paulduchesne.github.io/state/resource/2417fb79-2d8c-45f3-ab3f-a352970e50c1>
+    a ont:Organisation ;
+    rdfs:label "Chat Pile"@en ;
+    rdfs:comment "American group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/d1e06e08-4cdf-405d-9306-d545b6dc9098> ;
+    ont:wikidataIdentifier "Q113511441" ;
+.
+
+<https://paulduchesne.github.io/state/resource/25f0e727-c909-4874-a1a8-ae1da9922a93>
+    a ont:Album ;
+    rdfs:label "Movement"@en ;
+    rdfs:comment "Album by Holly Herndon"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/06872df7-82b1-4042-b7bb-e02a3aa03681> ;
+.
+
+<https://paulduchesne.github.io/state/resource/2661a5e2-71a6-4839-af19-c6d441f4df7b>
+    a ont:Album ;
+    rdfs:label "Another Life"@en ;
+    rdfs:comment "Album by Amnesia Scanner"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/64f8af27-a61a-4a76-9363-74c7072104d8> ;
+    ont:wikidataIdentifier "Q60537954" ;
+.
+
+<https://paulduchesne.github.io/state/resource/269dae52-074d-4be0-9dd4-29a1f4f1f3c3>
+    a ont:Album ;
+    rdfs:label "For Varying Degrees Of Winter"@en ;
+    rdfs:comment "Album by Lawrence English"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/c930c0b6-b485-4482-a3db-6a7299d38a55> ;
+.
+
+<https://paulduchesne.github.io/state/resource/292bd3f8-5ac8-418a-988f-650414f9c6bf>
+    a ont:Album ;
+    rdfs:label "Waltz With Bashir"@en ;
+    rdfs:comment "Album by Max Richter"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/86360ed4-381d-4129-87cd-eea5e62b6fb0> ;
+.
+
+<https://paulduchesne.github.io/state/resource/29dc3210-2d8b-443a-bfa4-b65dc8a5f5d9>
+    a ont:Album ;
+    rdfs:label "The Horse, The Rat and The Swan"@en ;
+    rdfs:comment "Album by Snowman"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/203c7ff6-ba8b-43c9-a7a3-7c87d26ab293> ;
+    ont:wikidataIdentifier "Q7740337" ;
+.
+
+<https://paulduchesne.github.io/state/resource/2b3e44ea-61c3-4048-9768-0b1a3d958d3b>
+    a ont:Album ;
+    rdfs:label "The Marriage of True Minds"@en ;
+    rdfs:comment "Album by Matmos"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/e148d18b-daaa-4aed-b5cd-fae1c4c6a3fc> ;
+    ont:wikidataIdentifier "Q19894219" ;
+.
+
+<https://paulduchesne.github.io/state/resource/2b616b2d-a1eb-4cd0-b65f-21b14975feda>
+    a ont:Album ;
+    rdfs:label "R Plus Seven"@en ;
+    rdfs:comment "Album by Daniel Lopatin"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/7991263f-8455-4d38-bbd3-d0f215871cf5> ;
+    ont:wikidataIdentifier "Q17065975" ;
+.
+
 <https://paulduchesne.github.io/state/resource/2b9cb0d4-cf35-4426-b448-114e7cdacccb>
     a ont:Person ;
     rdfs:label "Adelheid Heftberger" ;
     rdfs:comment "Austrian researcher." ;
     ont:memberOf <https://paulduchesne.github.io/state/resource/10f8d9fa-2da2-449b-9946-3126c9584052> ;
     ont:wikidataIdentifier "Q42369365" ;
+.
+
+<https://paulduchesne.github.io/state/resource/2ba572fa-0619-45ea-9d45-1fdb8a9481c8>
+    a ont:Person ;
+    rdfs:label "Kara-Lis Coverdale"@en ;
+    rdfs:comment "Canadian composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/87664044-a8cb-48cc-9cb0-b37bea003770> ;
+    ont:wikidataIdentifier "Q20740744" ;
+.
+
+<https://paulduchesne.github.io/state/resource/2c6a1d72-e9cb-4075-ac51-f8af05695664>
+    a ont:Album ;
+    rdfs:label "Lovetune for Vacuum"@en ;
+    rdfs:comment "Album by Anja Plaschg"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/aa2c3445-389c-42ac-b5f2-200e7c2b5c74> ;
+    ont:wikidataIdentifier "Q1325626" ;
+.
+
+<https://paulduchesne.github.io/state/resource/2da17134-4168-4e55-9d3f-5ee9a3f4d028>
+    a ont:Person ;
+    rdfs:label "Joe McKee"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/ead8fc9a-f4bd-4572-914d-a315c8c49ae2> ;
+    ont:wikidataIdentifier "Q6211266" ;
+.
+
+<https://paulduchesne.github.io/state/resource/2e76bae6-e461-49ce-a4e7-ff02e2cf74f4>
+    a ont:Album ;
+    rdfs:label "How To Avoid Ants"@en ;
+    rdfs:comment "Album by Lasse Marhaug"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/14487cba-ed9e-4703-8614-83530a3cb5df> ;
+.
+
+<https://paulduchesne.github.io/state/resource/2ed7589d-2dae-4442-bacf-fa14658d34d7>
+    a ont:Album ;
+    rdfs:label "Crazy Clown Time"@en ;
+    rdfs:comment "Album by David Lynch"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/931c5d1f-7748-476e-990d-5894c97034c5> ;
+    ont:wikidataIdentifier "Q1939106" ;
+.
+
+<https://paulduchesne.github.io/state/resource/2f41ce18-0d23-4145-acb0-f1b20b1ff997>
+    a ont:Person ;
+    rdfs:label "Mark Groves"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/fa7b6117-c714-40bb-bd3c-935db3b990bc> ;
+.
+
+<https://paulduchesne.github.io/state/resource/2f7ce81a-6f3a-4f1d-8ff3-d59940fe881d>
+    a ont:Album ;
+    rdfs:label "Heart And Soul"@en ;
+    rdfs:comment "Album by Joy Division"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/fa59a268-88da-48c6-b6e9-dbf8dbc4880e> ;
+.
+
+<https://paulduchesne.github.io/state/resource/2f8d1630-3174-489d-8986-0dcc38360a4e>
+    a ont:Album ;
+    rdfs:label "Ghosting The Collapse"@en ;
+    rdfs:comment "Album by Jonathan Black"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/24946da4-9a3d-413e-8ab5-ab3d978ede15> ;
+.
+
+<https://paulduchesne.github.io/state/resource/2fd1ff1f-3e92-40bc-83f9-de188b5f594a>
+    a ont:Album ;
+    rdfs:label "20 Jazz Funk Greats"@en ;
+    rdfs:comment "Album by Throbbing Gristle"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/326415e1-05e0-4cc2-aed0-a0c2e9dd6fdb> ;
+    ont:wikidataIdentifier "Q4356849" ;
+.
+
+<https://paulduchesne.github.io/state/resource/2fd90a17-7582-43cf-af54-f4647b2ed676>
+    a ont:Album ;
+    rdfs:label "Live At The South Bank"@en ;
+    rdfs:comment "Album by Hebden Reid Gustafsson"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/524bdd1b-f156-48ed-9c52-7ae7e45a91ac> ;
+.
+
+<https://paulduchesne.github.io/state/resource/30a37543-0315-49a0-b732-44d8ac5c9fda>
+    a ont:Album ;
+    rdfs:label "Silence Is Sexy"@en ;
+    rdfs:comment "Album by Einstürzende Neubauten"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/8c9810c3-f221-4b75-bd03-1fe8fb89c7a4> ;
+.
+
+<https://paulduchesne.github.io/state/resource/326415e1-05e0-4cc2-aed0-a0c2e9dd6fdb>
+    a ont:Organisation ;
+    rdfs:label "Throbbing Gristle"@en ;
+    rdfs:comment "British group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/2fd1ff1f-3e92-40bc-83f9-de188b5f594a> ;
+    ont:wikidataIdentifier "Q1165655" ;
+.
+
+<https://paulduchesne.github.io/state/resource/32eb496b-6022-4ee6-9633-8a21f0c0e50f>
+    a ont:Album ;
+    rdfs:label "Circuitous"@en ;
+    rdfs:comment "Album by Te"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/7dd6f50c-74fd-4c51-acc5-0c0b17ce65f7> ;
+.
+
+<https://paulduchesne.github.io/state/resource/332d15ee-d915-46d1-b8b7-08b8b5957b0f>
+    a ont:Album ;
+    rdfs:label "Mirrored"@en ;
+    rdfs:comment "Album by Battles"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/dae0ceb0-aa26-4f41-8057-b26528ded644> ;
+    ont:wikidataIdentifier "Q539555" ;
+.
+
+<https://paulduchesne.github.io/state/resource/33c1b5e4-b7bb-4ad6-ab92-7185535acaac>
+    a ont:Album ;
+    rdfs:label "Aphthae Epizooticae"@en ;
+    rdfs:comment "Album by Feet Teeth"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/74d826fc-872c-435e-a062-a8876ef3a2a1> ;
+.
+
+<https://paulduchesne.github.io/state/resource/3407bf85-4b83-4670-8682-82eb4c3a0f1b>
+    a ont:Organisation ;
+    rdfs:label "Cracked Actor"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/119dac0d-fc53-4d79-91fb-94f39a662fa5> ;
+.
+
+<https://paulduchesne.github.io/state/resource/343df74f-5482-434d-ae90-dfcf915cb9b8>
+    a ont:Person ;
+    rdfs:label "Frederikke Hoffmeier"@en ;
+    rdfs:comment "Danish composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/8c63e6b3-7ce5-4bc0-b2d8-14eec12bfc9a> ;
+    ont:wikidataIdentifier "Q66425353" ;
+.
+
+<https://paulduchesne.github.io/state/resource/34a7122c-47e6-48e2-8667-d9820d5c8946>
+    a ont:Album ;
+    rdfs:label "To Be Kind"@en ;
+    rdfs:comment "Album by Swans"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/67739b53-0ac8-4f97-ba94-86e24dbb4ffd> ;
+.
+
+<https://paulduchesne.github.io/state/resource/35aa6aba-9366-4545-bbfb-c046b5acd68c>
+    a ont:Person ;
+    rdfs:label "Brian Chippendale"@en ;
+    rdfs:comment "American composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/6323f545-f103-409a-936b-3d586c60be69> ;
+    ont:wikidataIdentifier "Q2924872" ;
+.
+
+<https://paulduchesne.github.io/state/resource/35f6f7dd-d6fa-4917-889c-860adb4cc95c>
+    a ont:Album ;
+    rdfs:label "Wilderness of Mirrors"@en ;
+    rdfs:comment "Album by Lawrence English"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/c930c0b6-b485-4482-a3db-6a7299d38a55> ;
+    ont:wikidataIdentifier "Q134429257" ;
+.
+
+<https://paulduchesne.github.io/state/resource/3719b026-1548-4d2f-ad10-3cd21244cd30>
+    a ont:Album ;
+    rdfs:label "The Photographer"@en ;
+    rdfs:comment "Album by Philip Glass"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/8df3f5fd-d72c-41f4-9451-fcc145654c0e> ;
+.
+
+<https://paulduchesne.github.io/state/resource/37a1fbfd-e172-4e02-99df-9c93ff20d3e4>
+    a ont:Album ;
+    rdfs:label "Grains"@en ;
+    rdfs:comment "Album by Rainbow Chan"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/b22af9f9-e9d2-41c2-a467-f91ce1ec79ed> ;
+.
+
+<https://paulduchesne.github.io/state/resource/383a501f-3169-4886-9e7f-e0026739726d>
+    a ont:Album ;
+    rdfs:label "Dealt"@en ;
+    rdfs:comment "Album by Reuben Ingall"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/4d3d3d94-438e-4585-abe7-f9a74ac09371> ;
+.
+
+<https://paulduchesne.github.io/state/resource/397890fa-7506-4a86-98f7-ddfa51b2cfd3>
+    a ont:Album ;
+    rdfs:label "Microwave Drone Ritual"@en ;
+    rdfs:comment "Album by Reuben Ingall"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/4d3d3d94-438e-4585-abe7-f9a74ac09371> ;
+.
+
+<https://paulduchesne.github.io/state/resource/3a4d54c4-925b-4b30-b295-6b5e60b1c1c5>
+    a ont:Organisation ;
+    rdfs:label "Primary Colours"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/c87775a9-f887-4e14-8eaf-679cd01ff1cd> ;
+.
+
+<https://paulduchesne.github.io/state/resource/3a878bbd-2b40-4ea7-93c8-3f129e156d3f>
+    a ont:Album ;
+    rdfs:label "Not Here Not Now"@en ;
+    rdfs:comment "Album by Swans"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/67739b53-0ac8-4f97-ba94-86e24dbb4ffd> ;
+.
+
+<https://paulduchesne.github.io/state/resource/3ad2afc2-6d1f-4732-8684-b513d1fb5da9>
+    a ont:Album ;
+    rdfs:label "Elepian"@en ;
+    rdfs:comment "Album by Jordan Marson "@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/d5cb13de-680d-402c-a783-7fc33b12fb74> ;
+.
+
+<https://paulduchesne.github.io/state/resource/3b6fa604-9dd2-48f0-bb74-3ec898b2f228>
+    a ont:Album ;
+    rdfs:label "Horses A Coda"@en ;
+    rdfs:comment "Album by Sia Ahmad"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/c0927b8f-0ed9-4382-a7ff-8401f32059b1> ;
 .
 
 <https://paulduchesne.github.io/state/resource/3b811069-fff1-4393-b16b-ef02de3b5ff9>
@@ -78,12 +572,167 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q287679" ;
 .
 
+<https://paulduchesne.github.io/state/resource/3be192c4-a16d-499d-8aca-3e37d6823cf0>
+    a ont:Album ;
+    rdfs:label "Paradise"@en ;
+    rdfs:comment "Album by My Disco"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/a6633a8b-dc56-40de-b285-598e19c49e55> ;
+.
+
+<https://paulduchesne.github.io/state/resource/3c454a9e-631a-4381-a737-418c711f448b>
+    a ont:Album ;
+    rdfs:label "Auk/Blood"@en ;
+    rdfs:comment "Album by Tanya Tagaq"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/8acaa52b-c1d8-4c55-91d3-66df0c8df196> ;
+    ont:wikidataIdentifier "Q4821633" ;
+.
+
+<https://paulduchesne.github.io/state/resource/3cf5cdff-3b31-48a0-96be-283477aa6153>
+    a ont:Organisation ;
+    rdfs:label "TV Colours"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/e78843fd-46fe-4abb-a486-8096644c14a9> ;
+.
+
+<https://paulduchesne.github.io/state/resource/3f4cf469-d2b8-4d12-a386-db5f99014897>
+    a ont:Album ;
+    rdfs:label "Grain Loops"@en ;
+    rdfs:comment "Album by Austin Buckett"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/0e3566bd-2a4f-49ba-8b5f-f4cd4604d24b> ;
+.
+
+<https://paulduchesne.github.io/state/resource/41164b71-66ac-40c9-a0a7-218c05f999b2>
+    a ont:Album ;
+    rdfs:label "Everyone Alive Wants Answers"@en ;
+    rdfs:comment "Album by Cécile Schott"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/51c8029c-bbd7-44a1-8b6d-48786503c98e> ;
+    ont:wikidataIdentifier "Q5417881" ;
+.
+
+<https://paulduchesne.github.io/state/resource/41e5d58a-dca0-4390-8924-ec269a3345d1>
+    a ont:Organisation ;
+    rdfs:label "Yellow Swans"@en ;
+    rdfs:comment "American group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/89d88953-6633-4eb5-82eb-dfde57a84fdb> ;
+    ont:wikidataIdentifier "Q8051843" ;
+.
+
+<https://paulduchesne.github.io/state/resource/4494806c-d687-447c-9d55-0afe2411ded0>
+    a ont:Album ;
+    rdfs:label "Marry Me Tonight"@en ;
+    rdfs:comment "Album by HTRK"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/8435c1b2-5b98-4b8e-ba5d-39492670b546> ;
+    ont:wikidataIdentifier "Q6773053" ;
+.
+
+<https://paulduchesne.github.io/state/resource/450ac813-cfc8-4127-8cbb-e2afcbeefe49>
+    a ont:Album ;
+    rdfs:label "Theory Of Machines"@en ;
+    rdfs:comment "Album by Ben Frost"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/a985587e-2420-4999-966a-0372e2a04af6> ;
+.
+
+<https://paulduchesne.github.io/state/resource/452958cd-9773-4f02-a82d-d0db5e5c9766>
+    a ont:Album ;
+    rdfs:label "Bunyi Bunyi Tumbal"@en ;
+    rdfs:comment "Album by  Aditya Surya Taruna "@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/74f2c977-392a-4340-8e92-a0e24cbb2a9d> ;
+.
+
+<https://paulduchesne.github.io/state/resource/45a3fc22-c0d0-4028-8ebb-556684a0214c>
+    a ont:Album ;
+    rdfs:label "The Little Match Girl Passion"@en ;
+    rdfs:comment "Album by David Lang"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/bc951de5-1866-4382-94b9-af5a1760c890> ;
+.
+
+<https://paulduchesne.github.io/state/resource/460a2d45-9ba0-4ffa-817f-b7a1acc407d1>
+    a ont:Album ;
+    rdfs:label "Stuttershine"@en ;
+    rdfs:comment "Album by Austin Buckett"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/0e3566bd-2a4f-49ba-8b5f-f4cd4604d24b> ;
+.
+
+<https://paulduchesne.github.io/state/resource/4660f75c-85c8-4514-aaf8-da475f704eca>
+    a ont:Person ;
+    rdfs:label "Marie Davidson"@en ;
+    rdfs:comment "Canadian composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/6c7b72b6-ada0-4c40-bfdb-96fafa1ddbba> ;
+    ont:wikidataIdentifier "Q28363465" ;
+.
+
+<https://paulduchesne.github.io/state/resource/46e20a2a-e4e6-48c5-ab85-e6693bfa431e>
+    a ont:Organisation ;
+    rdfs:label "Pivixki"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/d4fec829-2adb-4657-a0fa-3f12173fa82c> ;
+.
+
 <https://paulduchesne.github.io/state/resource/46ee3c7a-b39d-406b-9a73-9252dc8a87db>
     a ont:Person ;
     rdfs:label "Vincenzo Latronico"@en ;
     rdfs:comment "Italian writer."@en ;
     ont:authorOf <https://paulduchesne.github.io/state/resource/9115bd42-8cd7-45d5-8ac2-7e64feab0d71> ;
     ont:wikidataIdentifier "Q4013338" ;
+.
+
+<https://paulduchesne.github.io/state/resource/46fdd5fd-9f8e-40df-97f8-abd666186d7c>
+    a ont:Album ;
+    rdfs:label "Paradise 94"@en ;
+    rdfs:comment "Album by Lucy Railton"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/90aeac79-84dc-4e2f-8cc1-8540fe4b6929> ;
+.
+
+<https://paulduchesne.github.io/state/resource/475fde08-0374-4ce7-a191-1d26a7eff778>
+    a ont:Album ;
+    rdfs:label "Hey What"@en ;
+    rdfs:comment "Album by Low"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/2569fc55-4a93-492c-8290-c0bf511e4a90> ;
+    ont:wikidataIdentifier "Q108803735" ;
+.
+
+<https://paulduchesne.github.io/state/resource/481f1725-0eaa-4d06-9b4b-79b9bb99532b>
+    a ont:Album ;
+    rdfs:label "Lily Of The Valley Return Of Happiness"@en ;
+    rdfs:comment "Album by Dominick Fernow"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/f41743c3-f2cd-494c-913b-196df9de247b> ;
+.
+
+<https://paulduchesne.github.io/state/resource/48bedd05-4eb9-4496-9233-f5789d0d4549>
+    a ont:Album ;
+    rdfs:label "Transverse"@en ;
+    rdfs:comment "Album by Carter Tutti Void"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/cbb2e901-9b37-4398-b012-b4c3d55a1e4f> ;
+    ont:wikidataIdentifier "Q135111543" ;
+.
+
+<https://paulduchesne.github.io/state/resource/491a5020-0cfe-4bae-b5d8-c8acdcdf6731>
+    a ont:Person ;
+    rdfs:label "Chris Hearn"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/c3ceed21-278a-4ca5-a212-a08949f4b687> ;
+.
+
+<https://paulduchesne.github.io/state/resource/49490a00-aeef-4c46-abfe-63fdab5eccf9>
+    a ont:Album ;
+    rdfs:label "Drum's Not Dead"@en ;
+    rdfs:comment "Album by Liars"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/ff31e84f-69c2-4850-870b-0eb1839a831d> ;
+    ont:wikidataIdentifier "Q3040109" ;
+.
+
+<https://paulduchesne.github.io/state/resource/496727b7-d53c-4909-84b0-906e77568e51>
+    a ont:Album ;
+    rdfs:label "Romeo Must Cry"@en ;
+    rdfs:comment "Album by Jonathan Black"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/24946da4-9a3d-413e-8ab5-ab3d978ede15> ;
+.
+
+<https://paulduchesne.github.io/state/resource/4a19403a-5a2a-4190-9c44-9b2f2618cd96>
+    a ont:Album ;
+    rdfs:label "Microclimates"@en ;
+    rdfs:comment "Album by Reuben Ingall"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/4d3d3d94-438e-4585-abe7-f9a74ac09371> ;
 .
 
 <https://paulduchesne.github.io/state/resource/4a87654b-2dc1-4f10-b331-8d8ffc4c11f3>
@@ -94,12 +743,398 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q57697004" ;
 .
 
+<https://paulduchesne.github.io/state/resource/4ad6ff33-4bbf-431b-9a3c-18be6fed6997>
+    a ont:Person ;
+    rdfs:label "Leo Chadburn"@en ;
+    rdfs:comment "British composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/01ce23b4-dcca-4d7e-82d4-1e4dd647946e> ;
+    ont:wikidataIdentifier "Q7518310" ;
+.
+
+<https://paulduchesne.github.io/state/resource/4b4a0e7f-a203-4d5c-9494-2bc6cb1805a7>
+    a ont:Album ;
+    rdfs:label "Load Blown"@en ;
+    rdfs:comment "Album by Black Dice"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/61b411fc-d144-4cb5-8a79-0284498b5ce7> ;
+    ont:wikidataIdentifier "Q16961044" ;
+.
+
+<https://paulduchesne.github.io/state/resource/4b8464f4-6d20-4fb7-bf3c-d8470ba3d7cb>
+    a ont:Album ;
+    rdfs:label "The Pig In The Python"@en ;
+    rdfs:comment "Album by Dead Boomers"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/0d4a84eb-8ece-49d2-9151-d82b0a843046> ;
+.
+
+<https://paulduchesne.github.io/state/resource/4bc24d43-49b1-40b4-8a3f-27f0e48e7a5a>
+    a ont:Organisation ;
+    rdfs:label "Sky Needle"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/b943201a-debc-4620-831a-17a60b1d5e2c> ;
+.
+
+<https://paulduchesne.github.io/state/resource/4be5809b-0bf1-47f0-970e-9f5e31ea436e>
+    a ont:Album ;
+    rdfs:label "Times Arrow"@en ;
+    rdfs:comment "Album by Dominick Fernow"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/f41743c3-f2cd-494c-913b-196df9de247b> ;
+.
+
+<https://paulduchesne.github.io/state/resource/4cbdad28-a3cb-4954-a484-ab240f31dc88>
+    a ont:Album ;
+    rdfs:label "Third Law"@en ;
+    rdfs:comment "Album by Roly Porter"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/adad4018-5b7e-4f62-bf57-f74fa837e41b> ;
+.
+
+<https://paulduchesne.github.io/state/resource/4d4af50e-d50e-497b-865c-d75a066540e7>
+    a ont:Album ;
+    rdfs:label "Embracism"@en ;
+    rdfs:comment "Album by Kirin J. Callinan"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/52254db8-e5d1-4f30-abad-e364258c326c> ;
+.
+
+<https://paulduchesne.github.io/state/resource/4e74c0ba-fb97-4b5a-85b1-b62cd1f7af7a>
+    a ont:Album ;
+    rdfs:label "One Pig"@en ;
+    rdfs:comment "Album by Matthew Herbert"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/2dfba8e5-3f9d-42d7-90d3-90149c9ba44e> ;
+    ont:wikidataIdentifier "Q4045807" ;
+.
+
+<https://paulduchesne.github.io/state/resource/524bdd1b-f156-48ed-9c52-7ae7e45a91ac>
+    a ont:Organisation ;
+    rdfs:label "Hebden Reid Gustafsson"@en ;
+    rdfs:comment "British/American/Swedish group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/2fd90a17-7582-43cf-af54-f4647b2ed676> ;
+.
+
+<https://paulduchesne.github.io/state/resource/52ccfd21-c2d6-48c1-b81e-a2a26d395d7a>
+    a ont:Album ;
+    rdfs:label "Liars"@en ;
+    rdfs:comment "Album by Liars"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/ff31e84f-69c2-4850-870b-0eb1839a831d> ;
+    ont:wikidataIdentifier "Q2734566" ;
+.
+
+<https://paulduchesne.github.io/state/resource/5486381d-6fc5-41f7-90b2-307916a80ada>
+    a ont:Organisation ;
+    rdfs:label "Ex-Easter Island Head"@en ;
+    rdfs:comment "British group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/73f26750-0e60-4170-9975-ad6f4dd336af> ;
+    ont:wikidataIdentifier "Q132132143" ;
+.
+
+<https://paulduchesne.github.io/state/resource/549e7e4a-7ddd-4e04-93e6-22c47027f87a>
+    a ont:Organisation ;
+    rdfs:label "Health"@en ;
+    rdfs:comment "American group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/be82ac4e-843d-4c5f-9f70-8eff4d01ac46> ;
+    ont:wikidataIdentifier "Q656287" ;
+.
+
+<https://paulduchesne.github.io/state/resource/54dc674a-3f2b-4016-bf60-a47e8ddec759>
+    a ont:Album ;
+    rdfs:label "The Seer"@en ;
+    rdfs:comment "Album by Swans"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/67739b53-0ac8-4f97-ba94-86e24dbb4ffd> ;
+    ont:wikidataIdentifier "Q7763235" ;
+.
+
+<https://paulduchesne.github.io/state/resource/56af7b27-1ed0-4671-826b-aa489c0585a0>
+    a ont:Album ;
+    rdfs:label "She"@en ;
+    rdfs:comment "Album by Kirin J. Callinan"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/52254db8-e5d1-4f30-abad-e364258c326c> ;
+.
+
+<https://paulduchesne.github.io/state/resource/573756ab-f067-42c7-bdef-a1254430a048>
+    a ont:Album ;
+    rdfs:label "Street Magick"@en ;
+    rdfs:comment "Album by Assassins 88"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/16e2df74-028b-4482-a3f8-1c734af74515> ;
+.
+
+<https://paulduchesne.github.io/state/resource/5755cd7d-c571-4e13-a987-f26e1ef234b8>
+    a ont:Album ;
+    rdfs:label "Work Work Work"@en ;
+    rdfs:comment "Album by HTRK"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/8435c1b2-5b98-4b8e-ba5d-39492670b546> ;
+.
+
 <https://paulduchesne.github.io/state/resource/585e1cc0-3883-40f9-a036-7e9bae25077e>
     a ont:Person ;
     rdfs:label "Annie Ernaux" ;
     rdfs:comment "French Nobel-prize winning author." ;
     ont:authorOf <https://paulduchesne.github.io/state/resource/ec0545af-f371-4df8-a0ef-5196c8a27859> ;
     ont:wikidataIdentifier "Q1153825" ;
+.
+
+<https://paulduchesne.github.io/state/resource/58b85621-9253-43cd-b7be-983c5e4778f0>
+    a ont:Album ;
+    rdfs:label "Dont Give Up"@en ;
+    rdfs:comment "Album by Reuben Ingall"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/4d3d3d94-438e-4585-abe7-f9a74ac09371> ;
+.
+
+<https://paulduchesne.github.io/state/resource/5a9a6a40-e16f-4f95-8292-e72939b018ec>
+    a ont:Album ;
+    rdfs:label "Family Money"@en ;
+    rdfs:comment "Album by Dead Boomers"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/0d4a84eb-8ece-49d2-9151-d82b0a843046> ;
+.
+
+<https://paulduchesne.github.io/state/resource/5cc3b7ad-b5ca-4c10-b297-b56338c8a7ff>
+    a ont:Album ;
+    rdfs:label "Kesto"@en ;
+    rdfs:comment "Album by Pan Sonic"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/f6d3c940-bbe9-4910-9d80-979f6ee9f32d> ;
+.
+
+<https://paulduchesne.github.io/state/resource/5d35aca1-fde5-4149-804e-46ba9baf16e9>
+    a ont:Person ;
+    rdfs:label "Scott Walker"@en ;
+    rdfs:comment "American composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/fb0a0340-3984-4db9-98e9-174746cd682c> ;
+    ont:wikidataIdentifier "Q488603" ;
+.
+
+<https://paulduchesne.github.io/state/resource/5d446f92-c046-4679-910a-ea2123d8174d>
+    a ont:Album ;
+    rdfs:label "The Invisibles"@en ;
+    rdfs:comment "Album by Ben Frost"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/a985587e-2420-4999-966a-0372e2a04af6> ;
+.
+
+<https://paulduchesne.github.io/state/resource/5de39763-15b3-4578-9203-d84bb6968a06>
+    a ont:Album ;
+    rdfs:label "In The Sudden Distance"@en ;
+    rdfs:comment "Album by Jimmy Behan"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/d98be5a6-50b7-4007-9ea7-3af0dac221cd> ;
+.
+
+<https://paulduchesne.github.io/state/resource/5faa1251-cb45-426a-aebc-b1977426e67b>
+    a ont:Person ;
+    rdfs:label "Cathy Petocz"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/d6058fb2-a663-4bb4-8c48-d0b6ecda3206> ;
+.
+
+<https://paulduchesne.github.io/state/resource/5face8c9-8e6d-411f-a863-272dcef91bfe>
+    a ont:Album ;
+    rdfs:label "Hidden"@en ;
+    rdfs:comment "Album by These New Puritans"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/64c67e99-647b-4c1e-ab99-3facc6959d16> ;
+    ont:wikidataIdentifier "Q5751708" ;
+.
+
+<https://paulduchesne.github.io/state/resource/60f443b7-14ec-486b-9e02-e3f8b6cc169a>
+    a ont:Person ;
+    rdfs:label "Tarquin Manek"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/1a004ac3-416a-4fba-902c-7474f739a387> ;
+.
+
+<https://paulduchesne.github.io/state/resource/60fb697c-ae6f-4286-872f-96f9fadcce0a>
+    a ont:Person ;
+    rdfs:label "Kristin Hayter"@en ;
+    rdfs:comment "American composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/9a451737-abf9-4a41-960f-e07783373ebe> ;
+    ont:wikidataIdentifier "Q64744924" ;
+.
+
+<https://paulduchesne.github.io/state/resource/614450b5-5f68-4cc9-872f-7cd6217d6c58>
+    a ont:Organisation ;
+    rdfs:label "Zs"@en ;
+    rdfs:comment "American group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/c928ada4-8fdf-40ac-a2a2-b6ea06949f0d> ;
+    ont:wikidataIdentifier "Q8074779" ;
+.
+
+<https://paulduchesne.github.io/state/resource/61be6c2b-7ccc-4732-b035-78454edf9369>
+    a ont:Album ;
+    rdfs:label "Bermuda Drain"@en ;
+    rdfs:comment "Album by Dominick Fernow"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/f41743c3-f2cd-494c-913b-196df9de247b> ;
+    ont:wikidataIdentifier "Q20014325" ;
+.
+
+<https://paulduchesne.github.io/state/resource/61d83df5-7228-4cce-bb7d-ad0f88ec32df>
+    a ont:Album ;
+    rdfs:label "Elephant Shoe"@en ;
+    rdfs:comment "Album by Arab Strap"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/ccdb324f-e96b-4f2b-ae94-2da67c57e101> ;
+    ont:wikidataIdentifier "Q5359365" ;
+.
+
+<https://paulduchesne.github.io/state/resource/61f0314a-a76c-4f5a-aaaf-257654a01b73>
+    a ont:Person ;
+    rdfs:label " Dominick Fernow"@en ;
+    rdfs:comment "American composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/9e011ded-6556-4d54-b2fc-2601fc823dfe> ;
+    ont:wikidataIdentifier "Q287486" ;
+.
+
+<https://paulduchesne.github.io/state/resource/6323f545-f103-409a-936b-3d586c60be69>
+    a ont:Album ;
+    rdfs:label "All My Relations"@en ;
+    rdfs:comment "Album by Brian Chippendale"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/35aa6aba-9366-4545-bbfb-c046b5acd68c> ;
+.
+
+<https://paulduchesne.github.io/state/resource/64c67e99-647b-4c1e-ab99-3facc6959d16>
+    a ont:Organisation ;
+    rdfs:label "These New Puritans"@en ;
+    rdfs:comment "British group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/5face8c9-8e6d-411f-a863-272dcef91bfe> ;
+    ont:wikidataIdentifier "Q1286899" ;
+.
+
+<https://paulduchesne.github.io/state/resource/65dce59f-e823-48cd-b8d8-3af4131aa94c>
+    a ont:Album ;
+    rdfs:label "Filth Body To Body Job To Job"@en ;
+    rdfs:comment "Album by Swans"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/67739b53-0ac8-4f97-ba94-86e24dbb4ffd> ;
+.
+
+<https://paulduchesne.github.io/state/resource/668150a0-1d55-4389-b3e7-d6613d0f64f4>
+    a ont:Album ;
+    rdfs:label "Five Points"@en ;
+    rdfs:comment "Album by Spartak"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/da225c83-0f4e-4bb9-9271-d6333e48e6f2> ;
+.
+
+<https://paulduchesne.github.io/state/resource/66a80ccb-3c30-4186-9e40-161845703155>
+    a ont:Album ;
+    rdfs:label "Bottomless_Prayer"@en ;
+    rdfs:comment "Album by Reuben Ingall"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/4d3d3d94-438e-4585-abe7-f9a74ac09371> ;
+.
+
+<https://paulduchesne.github.io/state/resource/67855a20-ffe3-4e65-999c-e281d1099c9f>
+    a ont:Organisation ;
+    rdfs:label "Supersilent"@en ;
+    rdfs:comment "Norwegian group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/11affb1e-110b-4413-8cad-aa297536a27a> ;
+    ont:wikidataIdentifier "Q1777788" ;
+.
+
+<https://paulduchesne.github.io/state/resource/67bb8750-c17e-40c7-8cc3-e11d91615623>
+    a ont:Album ;
+    rdfs:label "Nordlig Vinter"@en ;
+    rdfs:comment "Album by Charles Martin"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/80d12b96-15b7-4b83-a7ef-9bc4f30521ea> ;
+.
+
+<https://paulduchesne.github.io/state/resource/68fee855-3343-4680-9e6a-f299399de5e5>
+    a ont:Organisation ;
+    rdfs:label "Tangents"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/115fe815-0114-4a57-83fe-badb2f6428f2> ;
+.
+
+<https://paulduchesne.github.io/state/resource/69b12380-b360-4e0f-ab8f-52f0583fa9e2>
+    a ont:Person ;
+    rdfs:label "Anohni Hegarty"@en ;
+    rdfs:comment "British composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/ad878774-a626-44aa-869a-6599015f79d9> ;
+    ont:wikidataIdentifier "Q1262889" ;
+.
+
+<https://paulduchesne.github.io/state/resource/6a210b50-2b53-4e3b-8e5a-39a4301ffe2e>
+    a ont:Album ;
+    rdfs:label "Arak"@en ;
+    rdfs:comment "Album by Dead Boomers"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/0d4a84eb-8ece-49d2-9151-d82b0a843046> ;
+.
+
+<https://paulduchesne.github.io/state/resource/6aaaa2b2-d904-4da4-9bff-b5fcfb2aecbf>
+    a ont:Album ;
+    rdfs:label "Ravedeath, 1972"@en ;
+    rdfs:comment "Album by Tim Hecker"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/78e89a0f-2ad8-40bb-8b37-4dd14a538020> ;
+    ont:wikidataIdentifier "Q7296355" ;
+.
+
+<https://paulduchesne.github.io/state/resource/6bcc125f-9933-451f-8449-d11f5a60d01e>
+    a ont:Album ;
+    rdfs:label "Public Castration Is a Good Idea"@en ;
+    rdfs:comment "Album by Swans"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/67739b53-0ac8-4f97-ba94-86e24dbb4ffd> ;
+    ont:wikidataIdentifier "Q7257337" ;
+.
+
+<https://paulduchesne.github.io/state/resource/6c653d29-d7e6-42b6-93b1-a4fbf456e849>
+    a ont:Album ;
+    rdfs:label "The Haxan Cloak"@en ;
+    rdfs:comment "Album by Bobby Krlic"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/14017918-e915-4a3a-a067-380b9d536a1c> ;
+.
+
+<https://paulduchesne.github.io/state/resource/6c73c85b-49a9-4147-99dc-14ab611a7d2c>
+    a ont:Album ;
+    rdfs:label "Medúlla"@en ;
+    rdfs:comment "Album by Björk"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/ff1d4d22-e4ad-4b84-a8b0-fc4611054bec> ;
+    ont:wikidataIdentifier "Q842502" ;
+.
+
+<https://paulduchesne.github.io/state/resource/6c78904e-2628-48b9-90f8-b63d5d3ddfd2>
+    a ont:Album ;
+    rdfs:label "The End Of Silence"@en ;
+    rdfs:comment "Album by Matthew Herbert"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/2dfba8e5-3f9d-42d7-90d3-90149c9ba44e> ;
+.
+
+<https://paulduchesne.github.io/state/resource/6c7b72b6-ada0-4c40-bfdb-96fafa1ddbba>
+    a ont:Album ;
+    rdfs:label "Perte D Identite"@en ;
+    rdfs:comment "Album by Marie Davidson"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/4660f75c-85c8-4514-aaf8-da475f704eca> ;
+.
+
+<https://paulduchesne.github.io/state/resource/6cf5efee-ef14-4b4d-8659-e7a85be4ede0>
+    a ont:Album ;
+    rdfs:label "Boy Noise Mothers Nature"@en ;
+    rdfs:comment "Album by Hannah de Feyter"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/0fddd67c-6e77-47b0-beec-8f90845f1849> ;
+.
+
+<https://paulduchesne.github.io/state/resource/6e26340c-66d2-4e22-a817-b37d46570e35>
+    a ont:Album ;
+    rdfs:label "By the Throat"@en ;
+    rdfs:comment "Album by Ben Frost"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/a985587e-2420-4999-966a-0372e2a04af6> ;
+    ont:wikidataIdentifier "Q5003891" ;
+.
+
+<https://paulduchesne.github.io/state/resource/6fbb59e7-a233-4b0a-a523-70e085c15d9b>
+    a ont:Album ;
+    rdfs:label "After The Rain My Heart Still Dreams"@en ;
+    rdfs:comment "Album by Captain Ahab"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/951a3ac2-4e0a-4eed-b718-9a483f78c6ef> ;
+.
+
+<https://paulduchesne.github.io/state/resource/7243e4a9-e898-4139-a912-9d9f5463dce2>
+    a ont:Album ;
+    rdfs:label "Platform"@en ;
+    rdfs:comment "Album by Holly Herndon"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/06872df7-82b1-4042-b7bb-e02a3aa03681> ;
+    ont:wikidataIdentifier "Q20012270" ;
+.
+
+<https://paulduchesne.github.io/state/resource/73f26750-0e60-4170-9975-ad6f4dd336af>
+    a ont:Album ;
+    rdfs:label "Mallet Guitars Two Music For Moai Hava"@en ;
+    rdfs:comment "Album by Ex-Easter Island Head"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/5486381d-6fc5-41f7-90b2-307916a80ada> ;
+.
+
+<https://paulduchesne.github.io/state/resource/740fa718-543e-4dac-9a40-aadce05db7f3>
+    a ont:Organisation ;
+    rdfs:label "Klumpes Ahmad"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/83af37a7-8e13-4b18-919e-264fad49f63b> ;
 .
 
 <https://paulduchesne.github.io/state/resource/745e4032-1491-4e42-8f65-aa28e065ec0c>
@@ -110,11 +1145,113 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q134456" ;
 .
 
+<https://paulduchesne.github.io/state/resource/74d826fc-872c-435e-a062-a8876ef3a2a1>
+    a ont:Organisation ;
+    rdfs:label "Feet Teeth"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/33c1b5e4-b7bb-4ad6-ab92-7185535acaac> ;
+.
+
+<https://paulduchesne.github.io/state/resource/74f2c977-392a-4340-8e92-a0e24cbb2a9d>
+    a ont:Person ;
+    rdfs:label " Aditya Surya Taruna "@en ;
+    rdfs:comment "Indonesian composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/452958cd-9773-4f02-a82d-d0db5e5c9766> ;
+.
+
 <https://paulduchesne.github.io/state/resource/750ee9fc-5227-4348-bc1e-84cae017ad5a>
     a ont:Person ;
     rdfs:label "Eldritch Priest"@en ;
     rdfs:comment "Canadian writer."@en ;
     ont:authorOf <https://paulduchesne.github.io/state/resource/6d640efd-b316-4ea7-b16d-409d521b3557> ;
+.
+
+<https://paulduchesne.github.io/state/resource/757fce51-ecac-4de3-84b3-c299e3077a2c>
+    a ont:Organisation ;
+    rdfs:label "Forest Swords"@en ;
+    rdfs:comment "British group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/b641fb65-c63a-4ca7-b5ef-767e5ef17c4b> ;
+    ont:wikidataIdentifier "Q14518205" ;
+.
+
+<https://paulduchesne.github.io/state/resource/758eb90d-23e3-4e8d-905e-7020cd3561c9>
+    a ont:Organisation ;
+    rdfs:label "Fourteen Nights At Sea"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/c220ee49-4436-4255-80c4-3ffa399d9be8> ;
+.
+
+<https://paulduchesne.github.io/state/resource/7604525e-e402-4579-9479-ef851b0c576c>
+    a ont:Organisation ;
+    rdfs:label "Paint Your Golden Face"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/dbf58da6-530a-48e8-a996-f06ccf498248> ;
+.
+
+<https://paulduchesne.github.io/state/resource/77ff6987-971f-4d55-9906-b1d345bd5d3d>
+    a ont:Album ;
+    rdfs:label "Cured Pink"@en ;
+    rdfs:comment "Album by Andrew McLellan"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/d70e0f16-2fbf-4822-8d15-70b6176191a4> ;
+.
+
+<https://paulduchesne.github.io/state/resource/79716519-a42e-42d6-8472-9a06fb9f446b>
+    a ont:Album ;
+    rdfs:label "Grapes from the Estate"@en ;
+    rdfs:comment "Album by Oren Ambarchi"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/ffc03abd-3406-473f-a1bb-b207887efc21> ;
+    ont:wikidataIdentifier "Q5597019" ;
+.
+
+<https://paulduchesne.github.io/state/resource/7a7cf4b6-7a50-42f7-9cf9-c21941e77fd0>
+    a ont:Album ;
+    rdfs:label "i've seen a way"@en ;
+    rdfs:comment "Album by Mandy, Indiana"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/1fd3ff8c-d2a7-4a17-bacb-071e9d17ec00> ;
+    ont:wikidataIdentifier "Q119036586" ;
+.
+
+<https://paulduchesne.github.io/state/resource/7a9d1065-a91a-432b-ae24-28f97a1bab70>
+    a ont:Album ;
+    rdfs:label "Westernization Completed"@en ;
+    rdfs:comment "Album by Antye Greie"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/88db9a41-e263-45f6-9de4-e8c59b031b56> ;
+.
+
+<https://paulduchesne.github.io/state/resource/7aa67428-c4a0-49d2-92ee-9b509eb7060e>
+    a ont:Album ;
+    rdfs:label "No One Is An Island"@en ;
+    rdfs:comment "Album by Bérangère Maximin"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/01b44df7-0879-4edd-ad95-944a43ee8bcd> ;
+.
+
+<https://paulduchesne.github.io/state/resource/7cafd19a-296b-48a6-9c94-a0108ab6e327>
+    a ont:Album ;
+    rdfs:label "Songs About Fucking"@en ;
+    rdfs:comment "Album by Big Black"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/d1d27a46-c0f1-4de7-8995-c78b2389ec96> ;
+    ont:wikidataIdentifier "Q1424916" ;
+.
+
+<https://paulduchesne.github.io/state/resource/7ce2038e-5f28-4b95-8a73-0e0a2b77da9b>
+    a ont:Organisation ;
+    rdfs:label "Clipping"@en ;
+    rdfs:comment "American group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/e33e3923-ddb3-4d5e-8a16-13bb86c21df2> ;
+.
+
+<https://paulduchesne.github.io/state/resource/7d635d6b-b54b-4adf-9461-155915ab8063>
+    a ont:Album ;
+    rdfs:label "Soundtracks For The Blind"@en ;
+    rdfs:comment "Album by Swans"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/67739b53-0ac8-4f97-ba94-86e24dbb4ffd> ;
+.
+
+<https://paulduchesne.github.io/state/resource/7d8e4952-4e24-471c-97ea-2d5ca253b8bc>
+    a ont:Album ;
+    rdfs:label "As"@en ;
+    rdfs:comment "Album by Amnesia Scanner"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/64f8af27-a61a-4a76-9363-74c7072104d8> ;
 .
 
 <https://paulduchesne.github.io/state/resource/7da5c89d-ae12-43cd-8d7b-41ff3f067a8b>
@@ -125,12 +1262,286 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q1813169" ;
 .
 
+<https://paulduchesne.github.io/state/resource/7dd6f50c-74fd-4c51-acc5-0c0b17ce65f7>
+    a ont:Organisation ;
+    rdfs:label "Te"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/32eb496b-6022-4ee6-9633-8a21f0c0e50f> ;
+.
+
+<https://paulduchesne.github.io/state/resource/7e4e5540-d470-4182-a2fe-27635c3b7e70>
+    a ont:Album ;
+    rdfs:label "Silverwater"@en ;
+    rdfs:comment "Album by The Necks"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/1965638d-0570-4588-8faa-0fe78acc8461> ;
+    ont:wikidataIdentifier "Q7516869" ;
+.
+
+<https://paulduchesne.github.io/state/resource/7f04ef58-db72-478f-b2ab-2ca5d99ae1d9>
+    a ont:Album ;
+    rdfs:label "Midnight Express"@en ;
+    rdfs:comment "Album by Giorgio Moroder"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/ffd6c94c-9468-463d-8d46-a7826cf88166> ;
+    ont:wikidataIdentifier "Q135619078" ;
+.
+
+<https://paulduchesne.github.io/state/resource/7f1ad375-ca9c-4c31-b7d9-8a1b2d57c380>
+    a ont:Person ;
+    rdfs:label "Clint Mansell"@en ;
+    rdfs:comment "British composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/bc6f5f35-98ee-478e-a854-af0b8bbf2b22> ;
+    ont:wikidataIdentifier "Q297232" ;
+.
+
+<https://paulduchesne.github.io/state/resource/80a0d35b-ece8-4002-8aa6-e081215c6cb9>
+    a ont:Album ;
+    rdfs:label "Blood Bitch"@en ;
+    rdfs:comment "Album by Jenny Hval"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/8378f57e-597c-4b5a-8fdc-5d32b8cc03fa> ;
+    ont:wikidataIdentifier "Q27816905" ;
+.
+
+<https://paulduchesne.github.io/state/resource/80d12b96-15b7-4b83-a7ef-9bc4f30521ea>
+    a ont:Person ;
+    rdfs:label "Charles Martin"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/67bb8750-c17e-40c7-8cc3-e11d91615623> ;
+.
+
 <https://paulduchesne.github.io/state/resource/8104f052-ebd5-4910-8695-1be0312337d5>
     a ont:Person ;
     rdfs:label "John Williams"@en ;
     rdfs:comment "American writer."@en ;
     ont:authorOf <https://paulduchesne.github.io/state/resource/92bce14e-7168-4df0-a5aa-96fc819d2142> ;
     ont:wikidataIdentifier "Q2077062" ;
+.
+
+<https://paulduchesne.github.io/state/resource/81a44127-f818-43d6-bf74-26347e054225>
+    a ont:Album ;
+    rdfs:label "Plat du Jour"@en ;
+    rdfs:comment "Album by Matthew Herbert"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/2dfba8e5-3f9d-42d7-90d3-90149c9ba44e> ;
+    ont:wikidataIdentifier "Q22907794" ;
+.
+
+<https://paulduchesne.github.io/state/resource/828d7b73-2224-439c-ba7b-ebb21a460784>
+    a ont:Album ;
+    rdfs:label "High And Mighty"@en ;
+    rdfs:comment "Album by Ben Snaith"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/362206f7-fbc6-4f94-9648-e95a832178aa> ;
+.
+
+<https://paulduchesne.github.io/state/resource/82b1f1a4-86e3-45ba-a273-913c48e511ee>
+    a ont:Album ;
+    rdfs:label "The Inland Sea"@en ;
+    rdfs:comment "Album by Voss"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/99455e18-3b66-46ff-a243-7397bffd947f> ;
+.
+
+<https://paulduchesne.github.io/state/resource/83064a89-fbca-45d5-ab11-e022bcfa8efb>
+    a ont:Album ;
+    rdfs:label "Jonny Telafone"@en ;
+    rdfs:comment "Album by Jonathan Black"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/24946da4-9a3d-413e-8ab5-ab3d978ede15> ;
+.
+
+<https://paulduchesne.github.io/state/resource/8346fea1-47d3-4885-a9a6-c2804ed3f0b8>
+    a ont:Album ;
+    rdfs:label "Wait Long By The River And The Bodies Of Your Enemies Will Float By"@en ;
+    rdfs:comment "Album by The Drones"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/19558d46-add2-41c2-9a06-cae1cff370ca> ;
+.
+
+<https://paulduchesne.github.io/state/resource/8378f57e-597c-4b5a-8fdc-5d32b8cc03fa>
+    a ont:Person ;
+    rdfs:label "Jenny Hval"@en ;
+    rdfs:comment "Norwegian composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/80a0d35b-ece8-4002-8aa6-e081215c6cb9> ;
+    ont:wikidataIdentifier "Q11352289" ;
+.
+
+<https://paulduchesne.github.io/state/resource/83af37a7-8e13-4b18-919e-264fad49f63b>
+    a ont:Album ;
+    rdfs:label "In Bed We Trust"@en ;
+    rdfs:comment "Album by Klumpes Ahmad"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/740fa718-543e-4dac-9a40-aadce05db7f3> ;
+.
+
+<https://paulduchesne.github.io/state/resource/84a1f6bd-69fe-4786-a613-4c13533aadba>
+    a ont:Album ;
+    rdfs:label "My Father Will Guide Me up a Rope to the Sky"@en ;
+    rdfs:comment "Album by Swans"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/67739b53-0ac8-4f97-ba94-86e24dbb4ffd> ;
+    ont:wikidataIdentifier "Q959540" ;
+.
+
+<https://paulduchesne.github.io/state/resource/84c492b4-a9da-4b29-aa04-be1aed1fe628>
+    a ont:Album ;
+    rdfs:label "Finnigan And Brother Spend A Month In Colombia"@en ;
+    rdfs:comment "Album by Finnigan And Brother"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/21935384-f63f-460a-9fc7-48878d715790> ;
+.
+
+<https://paulduchesne.github.io/state/resource/86360ed4-381d-4129-87cd-eea5e62b6fb0>
+    a ont:Person ;
+    rdfs:label "Max Richter"@en ;
+    rdfs:comment "British composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/292bd3f8-5ac8-418a-988f-650414f9c6bf> ;
+    ont:wikidataIdentifier "Q714325" ;
+.
+
+<https://paulduchesne.github.io/state/resource/869917fd-f21f-4e10-abb1-291df0ca7d80>
+    a ont:Album ;
+    rdfs:label "The Glowing Man"@en ;
+    rdfs:comment "Album by Swans"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/67739b53-0ac8-4f97-ba94-86e24dbb4ffd> ;
+    ont:wikidataIdentifier "Q23762955" ;
+.
+
+<https://paulduchesne.github.io/state/resource/86b2e22f-f333-493e-8d77-dd93fc9f3cc8>
+    a ont:Album ;
+    rdfs:label "Andromeda Is Coming"@en ;
+    rdfs:comment "Album by Andromeda Is Coming"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/c46883ea-5959-4f25-9708-dc3bbeced615> ;
+.
+
+<https://paulduchesne.github.io/state/resource/87664044-a8cb-48cc-9cb0-b37bea003770>
+    a ont:Album ;
+    rdfs:label "Aftertouches"@en ;
+    rdfs:comment "Album by Kara-Lis Coverdale"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/2ba572fa-0619-45ea-9d45-1fdb8a9481c8> ;
+.
+
+<https://paulduchesne.github.io/state/resource/87fd083b-2f52-487f-b1ea-f026df8eeeb8>
+    a ont:Person ;
+    rdfs:label "Gareth Liddiard"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/d58c52c6-a72c-45e4-b84b-74bea2ca235a> ;
+    ont:wikidataIdentifier "Q5522894" ;
+.
+
+<https://paulduchesne.github.io/state/resource/882d3e21-3e29-48b0-8757-563557baa7dd>
+    a ont:Album ;
+    rdfs:label "Tales From The Colony Room"@en ;
+    rdfs:comment "Album by Spartak"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/da225c83-0f4e-4bb9-9271-d6333e48e6f2> ;
+.
+
+<https://paulduchesne.github.io/state/resource/89d88953-6633-4eb5-82eb-dfde57a84fdb>
+    a ont:Album ;
+    rdfs:label "Bring The Neon War Home"@en ;
+    rdfs:comment "Album by Yellow Swans"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/41e5d58a-dca0-4390-8924-ec269a3345d1> ;
+.
+
+<https://paulduchesne.github.io/state/resource/89ea2e61-be20-4a06-b5e7-a54319753a29>
+    a ont:Person ;
+    rdfs:label "Chris Finnigan"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/e129a41a-67f3-48de-bba1-ec98d3f69e8a> ;
+.
+
+<https://paulduchesne.github.io/state/resource/89ff5c4e-0cf9-4654-a9a6-a91cafe83c16>
+    a ont:Album ;
+    rdfs:label "Wound Of A Little Horse"@en ;
+    rdfs:comment "Album by Witch Hats"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/1e9fa16b-98cb-491a-8148-a7dda2246968> ;
+.
+
+<https://paulduchesne.github.io/state/resource/8b0463a5-6891-4fa0-8e2a-d64d871714f1>
+    a ont:Album ;
+    rdfs:label "Source Voice"@en ;
+    rdfs:comment "Album by Antye Greie"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/88db9a41-e263-45f6-9de4-e8c59b031b56> ;
+.
+
+<https://paulduchesne.github.io/state/resource/8b5c68e2-2ad6-4e36-a617-2777a07bbdbf>
+    a ont:Album ;
+    rdfs:label "As Truth"@en ;
+    rdfs:comment "Album by Amnesia Scanner"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/64f8af27-a61a-4a76-9363-74c7072104d8> ;
+.
+
+<https://paulduchesne.github.io/state/resource/8c420ced-2c51-4a84-90e0-91d52ffac126>
+    a ont:Album ;
+    rdfs:label "Region Regulation"@en ;
+    rdfs:comment "Album by John Mackenzie"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/a2fe1610-a800-4d45-a37c-ef1cf10b31e9> ;
+.
+
+<https://paulduchesne.github.io/state/resource/8c63e6b3-7ce5-4bc0-b2d8-14eec12bfc9a>
+    a ont:Album ;
+    rdfs:label "The Spiral"@en ;
+    rdfs:comment "Album by Frederikke Hoffmeier"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/343df74f-5482-434d-ae90-dfcf915cb9b8> ;
+.
+
+<https://paulduchesne.github.io/state/resource/8cf78a58-90cb-4a88-8c76-e39851ec77ff>
+    a ont:Person ;
+    rdfs:label "Aaron Funk"@en ;
+    rdfs:comment "Canadian composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/d4a6127f-b60e-4090-a355-e2e70482379a> ;
+    ont:wikidataIdentifier "Q120204" ;
+.
+
+<https://paulduchesne.github.io/state/resource/8d508b62-a614-4393-a6e1-2f185c0b29ac>
+    a ont:Album ;
+    rdfs:label "Spacings"@en ;
+    rdfs:comment "Album by Rainbow Chan"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/b22af9f9-e9d2-41c2-a467-f91ce1ec79ed> ;
+.
+
+<https://paulduchesne.github.io/state/resource/8dd6c03a-499f-4e3c-81fa-b4fe024f8cbc>
+    a ont:Album ;
+    rdfs:label "Fifth Edition"@en ;
+    rdfs:comment "Album by Spartak"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/da225c83-0f4e-4bb9-9271-d6333e48e6f2> ;
+.
+
+<https://paulduchesne.github.io/state/resource/8df3f5fd-d72c-41f4-9451-fcc145654c0e>
+    a ont:Person ;
+    rdfs:label "Philip Glass"@en ;
+    rdfs:comment "American composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/3719b026-1548-4d2f-ad10-3cd21244cd30> ;
+    ont:wikidataIdentifier "Q189729" ;
+.
+
+<https://paulduchesne.github.io/state/resource/8e19e416-df37-4c59-b781-83a35f8fb717>
+    a ont:Album ;
+    rdfs:label "The Great Terror"@en ;
+    rdfs:comment "Album by Godzilla Black"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/0e238ada-e438-4bdb-a513-b28164ad6e6f> ;
+.
+
+<https://paulduchesne.github.io/state/resource/8f9e9098-7a65-4ae1-b5cc-61167e18c667>
+    a ont:Album ;
+    rdfs:label "Rampen"@en ;
+    rdfs:comment "Album by Einstürzende Neubauten"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/8c9810c3-f221-4b75-bd03-1fe8fb89c7a4> ;
+.
+
+<https://paulduchesne.github.io/state/resource/901599b7-91dd-49fd-8c03-f383c6ae592e>
+    a ont:Album ;
+    rdfs:label "Saul Williams"@en ;
+    rdfs:comment "Album by Saul Williams"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/c22cfdd3-1d07-499e-a528-b067f31103b0> ;
+    ont:wikidataIdentifier "Q7427354" ;
+.
+
+<https://paulduchesne.github.io/state/resource/90aeac79-84dc-4e2f-8cc1-8540fe4b6929>
+    a ont:Person ;
+    rdfs:label "Lucy Railton"@en ;
+    rdfs:comment "British composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/46fdd5fd-9f8e-40df-97f8-abd666186d7c> ;
+    ont:wikidataIdentifier "Q98959427" ;
+.
+
+<https://paulduchesne.github.io/state/resource/90c28f53-707f-42cf-a2b7-3a7f89f5d0e7>
+    a ont:Album ;
+    rdfs:label "Virgins"@en ;
+    rdfs:comment "Album by Tim Hecker"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/78e89a0f-2ad8-40bb-8b37-4dd14a538020> ;
+    ont:wikidataIdentifier "Q17066337" ;
 .
 
 <https://paulduchesne.github.io/state/resource/90d15936-a042-4151-944d-ac2ab282a448>
@@ -141,12 +1552,58 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q358342" ;
 .
 
+<https://paulduchesne.github.io/state/resource/91319643-01ac-4ea0-8778-2239cd9a8840>
+    a ont:Album ;
+    rdfs:label "Absence"@en ;
+    rdfs:comment "Album by Snowman"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/203c7ff6-ba8b-43c9-a7a3-7c87d26ab293> ;
+    ont:wikidataIdentifier "Q4669693" ;
+.
+
+<https://paulduchesne.github.io/state/resource/931c5d1f-7748-476e-990d-5894c97034c5>
+    a ont:Person ;
+    rdfs:label "David Lynch"@en ;
+    rdfs:comment "American composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/2ed7589d-2dae-4442-bacf-fa14658d34d7> ;
+    ont:wikidataIdentifier "Q2071" ;
+.
+
 <https://paulduchesne.github.io/state/resource/939e26b2-b0da-4645-a431-f2502a708785>
     a ont:Person ;
     rdfs:label "Aoko Matsuda"@en ;
     rdfs:comment "Japanese writer."@en ;
     ont:authorOf <https://paulduchesne.github.io/state/resource/46d4896a-e56b-40a6-9b3d-cb9329d87ffd> ;
     ont:wikidataIdentifier "Q17223651" ;
+.
+
+<https://paulduchesne.github.io/state/resource/93b0918a-4d83-4ba6-ab28-46f20204de7d>
+    a ont:Album ;
+    rdfs:label "Cancer"@en ;
+    rdfs:comment "Album by My Disco"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/a6633a8b-dc56-40de-b285-598e19c49e55> ;
+.
+
+<https://paulduchesne.github.io/state/resource/93ce3e3e-debd-44e7-ab96-a7fdc52a584b>
+    a ont:Album ;
+    rdfs:label "Mammoth Deer"@en ;
+    rdfs:comment "Album by Mankilled And Shoeb Ahmad"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/9eca5ddb-9709-408d-bd65-31f72757d506> ;
+.
+
+<https://paulduchesne.github.io/state/resource/9448856a-2a7d-4bea-9b00-d55c428a43b2>
+    a ont:Album ;
+    rdfs:label "Since I Left You"@en ;
+    rdfs:comment "Album by The Avalanches"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/bf6b6b38-3b87-480d-b45a-8e7fb6c083b2> ;
+    ont:wikidataIdentifier "Q821531" ;
+.
+
+<https://paulduchesne.github.io/state/resource/951a3ac2-4e0a-4eed-b718-9a483f78c6ef>
+    a ont:Organisation ;
+    rdfs:label "Captain Ahab"@en ;
+    rdfs:comment "American group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/6fbb59e7-a233-4b0a-a523-70e085c15d9b> ;
+    ont:wikidataIdentifier "Q5036530" ;
 .
 
 <https://paulduchesne.github.io/state/resource/9542bec3-4005-451d-ba96-cd6df24c9f13>
@@ -165,12 +1622,362 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q33200722" ;
 .
 
+<https://paulduchesne.github.io/state/resource/95ef7e30-3822-4df1-b212-d1ad96d2f62c>
+    a ont:Person ;
+    rdfs:label "Thomas Jenkinson"@en ;
+    rdfs:comment "British composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/a658cdfa-7e5b-4613-85bb-841083ff9f1b> ;
+    ont:wikidataIdentifier "Q553861" ;
+.
+
+<https://paulduchesne.github.io/state/resource/97a35baf-8acd-4227-8eda-379cf1679e62>
+    a ont:Album ;
+    rdfs:label "Barabbas"@en ;
+    rdfs:comment "Album by Mario Nascimbene"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/b2cc51e9-c632-4bda-9fec-bf5c7a0dae65> ;
+.
+
+<https://paulduchesne.github.io/state/resource/97a3af25-4f96-445a-981d-0371e65597ba>
+    a ont:Album ;
+    rdfs:label "A Laughing Death in Meatspace"@en ;
+    rdfs:comment "Album by Tropical Fuck Storm"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/ed5bc93d-ea96-4532-98a1-48b5c389435e> ;
+    ont:wikidataIdentifier "Q60768852" ;
+.
+
+<https://paulduchesne.github.io/state/resource/98df73bb-f139-4ec6-b742-056ae88da726>
+    a ont:Album ;
+    rdfs:label "The Weighing Of The Heart"@en ;
+    rdfs:comment "Album by Cécile Schott"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/51c8029c-bbd7-44a1-8b6d-48786503c98e> ;
+.
+
+<https://paulduchesne.github.io/state/resource/99455e18-3b66-46ff-a243-7397bffd947f>
+    a ont:Organisation ;
+    rdfs:label "Voss"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/82b1f1a4-86e3-45ba-a273-913c48e511ee> ;
+.
+
+<https://paulduchesne.github.io/state/resource/9946a9d3-83cd-444b-be14-0701d9e5d1ee>
+    a ont:Album ;
+    rdfs:label "Gwen"@en ;
+    rdfs:comment "Album by Golden Blonde"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/aae92102-df92-4a29-a6f8-667f1e48322d> ;
+.
+
+<https://paulduchesne.github.io/state/resource/99773de8-f62b-4062-ba6d-7032f02b2331>
+    a ont:Album ;
+    rdfs:label "Churn"@en ;
+    rdfs:comment "Album by Marcus Whale"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/79225f2a-bb17-4354-8911-16c93e8c50a0> ;
+.
+
+<https://paulduchesne.github.io/state/resource/9a1b8780-261e-4eb4-9aa6-9a9803e0fa81>
+    a ont:Album ;
+    rdfs:label "Observatory"@en ;
+    rdfs:comment "Album by Bobby Krlic"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/14017918-e915-4a3a-a067-380b9d536a1c> ;
+.
+
+<https://paulduchesne.github.io/state/resource/9a451737-abf9-4a41-960f-e07783373ebe>
+    a ont:Album ;
+    rdfs:label "Caligula"@en ;
+    rdfs:comment "Album by Kristin Hayter"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/60fb697c-ae6f-4286-872f-96f9fadcce0a> ;
+    ont:wikidataIdentifier "Q96374289" ;
+.
+
+<https://paulduchesne.github.io/state/resource/9b288c83-4c88-4b0c-b280-afd75bbc62f1>
+    a ont:Album ;
+    rdfs:label "Far"@en ;
+    rdfs:comment "Album by Ben Frost"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/a985587e-2420-4999-966a-0372e2a04af6> ;
+.
+
+<https://paulduchesne.github.io/state/resource/9c8b0684-8a11-41fd-b077-a1aa0c612779>
+    a ont:Album ;
+    rdfs:label "Live 81 82"@en ;
+    rdfs:comment "Album by The Birthday Party"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/e3bf00ba-9f45-4011-b31e-51a81f1ea724> ;
+.
+
+<https://paulduchesne.github.io/state/resource/9cf9b5d5-b83c-493e-b5a9-0ce453670e0b>
+    a ont:Album ;
+    rdfs:label "The Omega Man"@en ;
+    rdfs:comment "Album by Ron Grainer"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/fc16c24a-e99c-4391-b115-9380a97ca87b> ;
+.
+
+<https://paulduchesne.github.io/state/resource/9d61b786-460a-4af7-b57c-aa02bfd657cc>
+    a ont:Album ;
+    rdfs:label "Frozen Niagara Falls"@en ;
+    rdfs:comment "Album by Dominick Fernow"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/f41743c3-f2cd-494c-913b-196df9de247b> ;
+    ont:wikidataIdentifier "Q19954448" ;
+.
+
+<https://paulduchesne.github.io/state/resource/9e011ded-6556-4d54-b2fc-2601fc823dfe>
+    a ont:Album ;
+    rdfs:label "Remember Your Black Day"@en ;
+    rdfs:comment "Album by  Dominick Fernow"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/61f0314a-a76c-4f5a-aaaf-257654a01b73> ;
+.
+
+<https://paulduchesne.github.io/state/resource/9ebfc2b0-dc2d-45c0-8cdc-b2378f1b5bc2>
+    a ont:Album ;
+    rdfs:label "Severe"@en ;
+    rdfs:comment "Album by My Disco"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/a6633a8b-dc56-40de-b285-598e19c49e55> ;
+.
+
+<https://paulduchesne.github.io/state/resource/9eca5ddb-9709-408d-bd65-31f72757d506>
+    a ont:Organisation ;
+    rdfs:label "Mankilled And Shoeb Ahmad"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/93ce3e3e-debd-44e7-ab96-a7fdc52a584b> ;
+.
+
+<https://paulduchesne.github.io/state/resource/a08ab9ed-5fac-46fd-8115-96eeb35e6bc0>
+    a ont:Album ;
+    rdfs:label "Parting Waves"@en ;
+    rdfs:comment "Album by Lawrence English"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/c930c0b6-b485-4482-a3db-6a7299d38a55> ;
+.
+
+<https://paulduchesne.github.io/state/resource/a0fa1b25-2259-4aa2-a342-bab2867eaa96>
+    a ont:Album ;
+    rdfs:label "Harmony in Ultraviolet"@en ;
+    rdfs:comment "Album by Tim Hecker"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/78e89a0f-2ad8-40bb-8b37-4dd14a538020> ;
+    ont:wikidataIdentifier "Q5659638" ;
+.
+
+<https://paulduchesne.github.io/state/resource/a1d4e532-acb8-41a7-9dc8-22283e19d7d7>
+    a ont:Person ;
+    rdfs:label "Chris Watson"@en ;
+    rdfs:comment "British composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/ba73e1d1-4044-4c7d-a4f7-31a27c3d868e> ;
+    ont:wikidataIdentifier "Q5108433" ;
+.
+
+<https://paulduchesne.github.io/state/resource/a2fe1610-a800-4d45-a37c-ef1cf10b31e9>
+    a ont:Person ;
+    rdfs:label "John Mackenzie"@en ;
+    rdfs:comment "British composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/8c420ced-2c51-4a84-90e0-91d52ffac126> ;
+.
+
+<https://paulduchesne.github.io/state/resource/a4a7b63b-2bdf-40f9-a89d-de4ae9b5215f>
+    a ont:Album ;
+    rdfs:label "Broken English"@en ;
+    rdfs:comment "Album by Marcus Whale"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/79225f2a-bb17-4354-8911-16c93e8c50a0> ;
+.
+
+<https://paulduchesne.github.io/state/resource/a658cdfa-7e5b-4613-85bb-841083ff9f1b>
+    a ont:Album ;
+    rdfs:label "Damogen Furies"@en ;
+    rdfs:comment "Album by Thomas Jenkinson"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/95ef7e30-3822-4df1-b212-d1ad96d2f62c> ;
+    ont:wikidataIdentifier "Q19824617" ;
+.
+
+<https://paulduchesne.github.io/state/resource/a6f6f00d-2a9e-4fb1-8e14-e7983cd3a996>
+    a ont:Organisation ;
+    rdfs:label "Caught Ship"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/b1a6969d-48b6-49a5-b602-29ef84fc85c0> ;
+.
+
+<https://paulduchesne.github.io/state/resource/a81f6cc7-efd2-4d5c-bcde-14a69a2444a7>
+    a ont:Album ;
+    rdfs:label "Kill Climate Deniers"@en ;
+    rdfs:comment "Album by Reuben Ingall And David Finnigan"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/ad0ad10b-0334-4fc4-a752-5ab812579fc6> ;
+.
+
+<https://paulduchesne.github.io/state/resource/aa5037db-6221-4a7a-96bc-1dca3b905483>
+    a ont:Album ;
+    rdfs:label "Localities"@en ;
+    rdfs:comment "Album by Marcus Whale And Tom Smith"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/f9c6075b-1f66-4b52-a947-b75be264ec41> ;
+.
+
+<https://paulduchesne.github.io/state/resource/aabf82de-06c8-458d-8535-ebf35a3ef956>
+    a ont:Album ;
+    rdfs:label "Garden of Delete"@en ;
+    rdfs:comment "Album by Daniel Lopatin"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/7991263f-8455-4d38-bbd3-d0f215871cf5> ;
+    ont:wikidataIdentifier "Q20967628" ;
+.
+
+<https://paulduchesne.github.io/state/resource/aae92102-df92-4a29-a6f8-667f1e48322d>
+    a ont:Organisation ;
+    rdfs:label "Golden Blonde"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/9946a9d3-83cd-444b-be14-0701d9e5d1ee> ;
+.
+
+<https://paulduchesne.github.io/state/resource/aca795e6-2538-4b79-9f6e-bdc9eef13b95>
+    a ont:Person ;
+    rdfs:label "Derek Piotr"@en ;
+    rdfs:comment "Polish composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/061e250f-fe97-4d30-b337-246ce1ecc560> ;
+    ont:wikidataIdentifier "Q70757506" ;
+.
+
+<https://paulduchesne.github.io/state/resource/ad0ad10b-0334-4fc4-a752-5ab812579fc6>
+    a ont:Organisation ;
+    rdfs:label "Reuben Ingall And David Finnigan"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/a81f6cc7-efd2-4d5c-bcde-14a69a2444a7> ;
+.
+
+<https://paulduchesne.github.io/state/resource/ad787774-a07a-4814-80a4-71dc02b393c3>
+    a ont:Person ;
+    rdfs:label "Liz Harris"@en ;
+    rdfs:comment "American composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/b9128a0d-c5dd-4201-b751-67185640e912> ;
+    ont:wikidataIdentifier "Q4951034" ;
+.
+
+<https://paulduchesne.github.io/state/resource/ad878774-a626-44aa-869a-6599015f79d9>
+    a ont:Album ;
+    rdfs:label "Hopelessness"@en ;
+    rdfs:comment "Album by Anohni Hegarty"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/69b12380-b360-4e0f-ab8f-52f0583fa9e2> ;
+    ont:wikidataIdentifier "Q23044925" ;
+.
+
+<https://paulduchesne.github.io/state/resource/adad4018-5b7e-4f62-bf57-f74fa837e41b>
+    a ont:Person ;
+    rdfs:label "Roly Porter"@en ;
+    rdfs:comment "British composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/4cbdad28-a3cb-4954-a484-ab240f31dc88> ;
+    ont:wikidataIdentifier "Q135918856" ;
+.
+
+<https://paulduchesne.github.io/state/resource/ae5d3f1b-1056-4d84-8418-22516474618a>
+    a ont:Organisation ;
+    rdfs:label "Death Grips"@en ;
+    rdfs:comment "American group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/bcc8512f-3a74-476d-80b1-520b462a3d85> ;
+    ont:wikidataIdentifier "Q3020722" ;
+.
+
+<https://paulduchesne.github.io/state/resource/aeb19311-a812-423e-99e3-46966c51fa73>
+    a ont:Album ;
+    rdfs:label "Narrow"@en ;
+    rdfs:comment "Album by Anja Plaschg"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/aa2c3445-389c-42ac-b5f2-200e7c2b5c74> ;
+    ont:wikidataIdentifier "Q18162636" ;
+.
+
+<https://paulduchesne.github.io/state/resource/af95678e-d7ba-4365-a60b-31bad14bf67e>
+    a ont:Album ;
+    rdfs:label "Shaking the Habitual"@en ;
+    rdfs:comment "Album by The Knife"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/f9192a0a-1ef7-4f87-9044-4845b57e06f6> ;
+    ont:wikidataIdentifier "Q7462941" ;
+.
+
 <https://paulduchesne.github.io/state/resource/b1842528-4244-4573-bbb7-5211bf598669>
     a ont:Person ;
     rdfs:label "Vincent Delecroix"@en ;
     rdfs:comment "French writer."@en ;
     ont:authorOf <https://paulduchesne.github.io/state/resource/40cb7f74-d570-416d-95f1-d4d5e83ec810> ;
     ont:wikidataIdentifier "Q3559576" ;
+.
+
+<https://paulduchesne.github.io/state/resource/b1a6969d-48b6-49a5-b602-29ef84fc85c0>
+    a ont:Album ;
+    rdfs:label "Time Will Tell"@en ;
+    rdfs:comment "Album by Caught Ship"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/a6f6f00d-2a9e-4fb1-8e14-e7983cd3a996> ;
+.
+
+<https://paulduchesne.github.io/state/resource/b1d96e30-8f68-4cdb-b878-ca7232e040c5>
+    a ont:Album ;
+    rdfs:label "Hey Kid 606 Remix This Roadkill"@en ;
+    rdfs:comment "Album by Finnigan And Brother"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/21935384-f63f-460a-9fc7-48878d715790> ;
+.
+
+<https://paulduchesne.github.io/state/resource/b2cc51e9-c632-4bda-9fec-bf5c7a0dae65>
+    a ont:Person ;
+    rdfs:label "Mario Nascimbene"@en ;
+    rdfs:comment "Italian composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/97a35baf-8acd-4227-8eda-379cf1679e62> ;
+    ont:wikidataIdentifier "Q330230" ;
+.
+
+<https://paulduchesne.github.io/state/resource/b30baf2e-9b16-4ea1-8a01-0ca22ce01f17>
+    a ont:Album ;
+    rdfs:label "Evan Dorrian"@en ;
+    rdfs:comment "Album by Evan Dorrian"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/f021f5ef-9641-4efd-9395-088160be1040> ;
+.
+
+<https://paulduchesne.github.io/state/resource/b32144b9-0223-43a9-b00e-e89032c09d97>
+    a ont:Person ;
+    rdfs:label "Klara Lewis"@en ;
+    rdfs:comment "British composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/1bae641c-b1d3-4fac-b61f-061ee864fc13> ;
+.
+
+<https://paulduchesne.github.io/state/resource/b33676f0-2d6a-4514-8163-cd87ea36118b>
+    a ont:Album ;
+    rdfs:label "Philophobia"@en ;
+    rdfs:comment "Album by Arab Strap"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/ccdb324f-e96b-4f2b-ae94-2da67c57e101> ;
+    ont:wikidataIdentifier "Q17017045" ;
+.
+
+<https://paulduchesne.github.io/state/resource/b37b0520-d8be-49df-adbd-ce4496340a35>
+    a ont:Album ;
+    rdfs:label "Frozen Refrains"@en ;
+    rdfs:comment "Album by Bérangère Maximin"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/01b44df7-0879-4edd-ad95-944a43ee8bcd> ;
+.
+
+<https://paulduchesne.github.io/state/resource/b472696e-c84d-426c-81cf-53ae67519513>
+    a ont:Album ;
+    rdfs:label "I See Seaweed"@en ;
+    rdfs:comment "Album by The Drones"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/19558d46-add2-41c2-9a06-cae1cff370ca> ;
+    ont:wikidataIdentifier "Q16253557" ;
+.
+
+<https://paulduchesne.github.io/state/resource/b506945b-b5de-43ba-83ad-f79fdb8da5ea>
+    a ont:Album ;
+    rdfs:label "The Oansome Orbit"@en ;
+    rdfs:comment "Album by Paul Gough"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/0c1ab77c-8ca5-4ada-9246-156f8dc03dac> ;
+.
+
+<https://paulduchesne.github.io/state/resource/b536ea8d-6f3e-4f69-afb3-410aa98ad44b>
+    a ont:Organisation ;
+    rdfs:label "Demdike Stare"@en ;
+    rdfs:comment "British group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/f624662e-f6a1-46b7-9ca2-c5013e0ddb20> ;
+    ont:wikidataIdentifier "Q22907721" ;
+.
+
+<https://paulduchesne.github.io/state/resource/b5df082a-c046-4d18-a49d-e0f6ca4d05e3>
+    a ont:Album ;
+    rdfs:label "O Soundtrack My Heart"@en ;
+    rdfs:comment "Album by PVT"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/dedf28a1-53ec-4a67-a23f-4bc3780eeeba> ;
+    ont:wikidataIdentifier "Q3347807" ;
+.
+
+<https://paulduchesne.github.io/state/resource/b641fb65-c63a-4ca7-b5ef-767e5ef17c4b>
+    a ont:Album ;
+    rdfs:label "Engravings"@en ;
+    rdfs:comment "Album by Forest Swords"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/757fce51-ecac-4de3-84b3-c299e3077a2c> ;
+    ont:wikidataIdentifier "Q16835395" ;
 .
 
 <https://paulduchesne.github.io/state/resource/b7315610-4737-4c68-934a-0a1fbe09d281>
@@ -181,12 +1988,386 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q184750" ;
 .
 
+<https://paulduchesne.github.io/state/resource/b77f941d-5430-46ee-bbb2-9873dd77bcad>
+    a ont:Person ;
+    rdfs:label "Keith Fullerton Whitman"@en ;
+    rdfs:comment "American composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/f7a39fb4-561d-4a6c-8575-f02cbcdca7fb> ;
+    ont:wikidataIdentifier "Q4568516" ;
+.
+
+<https://paulduchesne.github.io/state/resource/b89eb213-7be4-4c5f-968a-1e7b76f37602>
+    a ont:Album ;
+    rdfs:label "Sugarbread"@en ;
+    rdfs:comment "Album by Anja Plaschg"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/aa2c3445-389c-42ac-b5f2-200e7c2b5c74> ;
+.
+
+<https://paulduchesne.github.io/state/resource/b9128a0d-c5dd-4201-b751-67185640e912>
+    a ont:Album ;
+    rdfs:label "Ruins"@en ;
+    rdfs:comment "Album by Liz Harris"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/ad787774-a07a-4814-80a4-71dc02b393c3> ;
+    ont:wikidataIdentifier "Q18391435" ;
+.
+
+<https://paulduchesne.github.io/state/resource/b91f941d-31b3-4ec9-9b68-88a47e5234eb>
+    a ont:Album ;
+    rdfs:label "Digressions"@en ;
+    rdfs:comment "Album by Greg Haines"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/c7a5259f-444d-4b6a-bdbf-9c21ef378fab> ;
+.
+
+<https://paulduchesne.github.io/state/resource/b943201a-debc-4620-831a-17a60b1d5e2c>
+    a ont:Album ;
+    rdfs:label "Debased Shapes"@en ;
+    rdfs:comment "Album by Sky Needle"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/4bc24d43-49b1-40b4-8a3f-27f0e48e7a5a> ;
+.
+
+<https://paulduchesne.github.io/state/resource/b96c4c28-8c27-457b-9c74-430d745f3464>
+    a ont:Album ;
+    rdfs:label "Songs Songs"@en ;
+    rdfs:comment "Album by Reuben Ingall"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/4d3d3d94-438e-4585-abe7-f9a74ac09371> ;
+.
+
 <https://paulduchesne.github.io/state/resource/b9c1d601-10c0-446c-8a26-d9e1f6470457>
     a ont:Person ;
     rdfs:label "Christopher Priest"@en ;
     rdfs:comment "British writer."@en ;
     ont:authorOf <https://paulduchesne.github.io/state/resource/175589f1-680a-4944-85f8-3d555f06c623> ;
     ont:wikidataIdentifier "Q707796" ;
+.
+
+<https://paulduchesne.github.io/state/resource/b9cfd393-3233-40b5-9081-e6afe1e6de74>
+    a ont:Album ;
+    rdfs:label "Broken Ear Record"@en ;
+    rdfs:comment "Album by Black Dice"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/61b411fc-d144-4cb5-8a79-0284498b5ce7> ;
+    ont:wikidataIdentifier "Q4973363" ;
+.
+
+<https://paulduchesne.github.io/state/resource/ba73e1d1-4044-4c7d-a4f7-31a27c3d868e>
+    a ont:Album ;
+    rdfs:label "Outside The Circle Of Fire"@en ;
+    rdfs:comment "Album by Chris Watson"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/a1d4e532-acb8-41a7-9dc8-22283e19d7d7> ;
+.
+
+<https://paulduchesne.github.io/state/resource/bb7e31cc-695b-4ab2-a81c-4205cdbb6673>
+    a ont:Album ;
+    rdfs:label "Head Slash Bauch"@en ;
+    rdfs:comment "Album by Antye Greie"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/88db9a41-e263-45f6-9de4-e8c59b031b56> ;
+.
+
+<https://paulduchesne.github.io/state/resource/bc0e7b7a-59a0-4412-af65-1cd61966c70b>
+    a ont:Album ;
+    rdfs:label "Bestial Burden"@en ;
+    rdfs:comment "Album by  Margaret Chardiet"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/e967432a-e9d9-4401-b5b5-3ddef427bc4e> ;
+.
+
+<https://paulduchesne.github.io/state/resource/bc6f5f35-98ee-478e-a854-af0b8bbf2b22>
+    a ont:Album ;
+    rdfs:label "Pi"@en ;
+    rdfs:comment "Album by Clint Mansell"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/7f1ad375-ca9c-4c31-b7d9-8a1b2d57c380> ;
+.
+
+<https://paulduchesne.github.io/state/resource/bc951de5-1866-4382-94b9-af5a1760c890>
+    a ont:Person ;
+    rdfs:label "David Lang"@en ;
+    rdfs:comment "American composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/45a3fc22-c0d0-4028-8ebb-556684a0214c> ;
+    ont:wikidataIdentifier "Q3018260" ;
+.
+
+<https://paulduchesne.github.io/state/resource/bcc8512f-3a74-476d-80b1-520b462a3d85>
+    a ont:Album ;
+    rdfs:label "No Love Deep Web"@en ;
+    rdfs:comment "Album by Death Grips"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/ae5d3f1b-1056-4d84-8418-22516474618a> ;
+    ont:wikidataIdentifier "Q17042652" ;
+.
+
+<https://paulduchesne.github.io/state/resource/bd7cd98b-314d-4f5b-acec-ef104dd71803>
+    a ont:Album ;
+    rdfs:label "Termites"@en ;
+    rdfs:comment "Album by True Radical Miracle"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/d4c956be-717d-4615-9f1f-0105e853bfee> ;
+.
+
+<https://paulduchesne.github.io/state/resource/be82ac4e-843d-4c5f-9f70-8eff4d01ac46>
+    a ont:Album ;
+    rdfs:label "Death Magic"@en ;
+    rdfs:comment "Album by Health"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/549e7e4a-7ddd-4e04-93e6-22c47027f87a> ;
+    ont:wikidataIdentifier "Q20804278" ;
+.
+
+<https://paulduchesne.github.io/state/resource/be8a997a-e2a8-4073-8bad-c8fb8e383709>
+    a ont:Album ;
+    rdfs:label "Kiri No Oto"@en ;
+    rdfs:comment "Album by Lawrence English"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/c930c0b6-b485-4482-a3db-6a7299d38a55> ;
+.
+
+<https://paulduchesne.github.io/state/resource/bf6b6b38-3b87-480d-b45a-8e7fb6c083b2>
+    a ont:Organisation ;
+    rdfs:label "The Avalanches"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/9448856a-2a7d-4bea-9b00-d55c428a43b2> ;
+    ont:wikidataIdentifier "Q2000851" ;
+.
+
+<https://paulduchesne.github.io/state/resource/c05a3761-c8b2-4e5f-8d18-ae89f553c519>
+    a ont:Album ;
+    rdfs:label "Dangerous Orbits"@en ;
+    rdfs:comment "Album by Bérangère Maximin"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/01b44df7-0879-4edd-ad95-944a43ee8bcd> ;
+.
+
+<https://paulduchesne.github.io/state/resource/c220ee49-4436-4255-80c4-3ffa399d9be8>
+    a ont:Album ;
+    rdfs:label "Untitled"@en ;
+    rdfs:comment "Album by Fourteen Nights At Sea"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/758eb90d-23e3-4e8d-905e-7020cd3561c9> ;
+.
+
+<https://paulduchesne.github.io/state/resource/c22cfdd3-1d07-499e-a528-b067f31103b0>
+    a ont:Person ;
+    rdfs:label "Saul Williams"@en ;
+    rdfs:comment "American composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/901599b7-91dd-49fd-8c03-f383c6ae592e> ;
+    ont:wikidataIdentifier "Q533369" ;
+.
+
+<https://paulduchesne.github.io/state/resource/c3ceed21-278a-4ca5-a212-a08949f4b687>
+    a ont:Album ;
+    rdfs:label "Alps Of The World"@en ;
+    rdfs:comment "Album by Chris Hearn"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/491a5020-0cfe-4bae-b5d8-c8acdcdf6731> ;
+.
+
+<https://paulduchesne.github.io/state/resource/c42e5017-0291-43f7-a49e-dbbc7af54ab8>
+    a ont:Album ;
+    rdfs:label "The Rose Has Teeth in the Mouth of a Beast"@en ;
+    rdfs:comment "Album by Matmos"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/e148d18b-daaa-4aed-b5cd-fae1c4c6a3fc> ;
+    ont:wikidataIdentifier "Q7761541" ;
+.
+
+<https://paulduchesne.github.io/state/resource/c46883ea-5959-4f25-9708-dc3bbeced615>
+    a ont:Organisation ;
+    rdfs:label "Andromeda Is Coming"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/86b2e22f-f333-493e-8d77-dd93fc9f3cc8> ;
+.
+
+<https://paulduchesne.github.io/state/resource/c5a85a08-482d-42b9-bbe5-c22fb1982b60>
+    a ont:Album ;
+    rdfs:label "Watch Illuminate"@en ;
+    rdfs:comment "Album by Sia Ahmad"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/c0927b8f-0ed9-4382-a7ff-8401f32059b1> ;
+.
+
+<https://paulduchesne.github.io/state/resource/c5fa8589-e180-4797-aaab-87d436d54bad>
+    a ont:Album ;
+    rdfs:label "Rise Above"@en ;
+    rdfs:comment "Album by Dirty Projectors"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/f0bdb3a2-02a3-4ebb-a30a-15a1a99c505d> ;
+    ont:wikidataIdentifier "Q16968618" ;
+.
+
+<https://paulduchesne.github.io/state/resource/c77f83ff-6abd-472d-b705-7115a2048ab6>
+    a ont:Organisation ;
+    rdfs:label "Sida"@en ;
+    rdfs:comment "French group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/e3e2d9e0-e95f-4190-94b1-1f7731e357f9> ;
+.
+
+<https://paulduchesne.github.io/state/resource/c7a5259f-444d-4b6a-bdbf-9c21ef378fab>
+    a ont:Person ;
+    rdfs:label "Greg Haines"@en ;
+    rdfs:comment "British composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/b91f941d-31b3-4ec9-9b68-88a47e5234eb> ;
+.
+
+<https://paulduchesne.github.io/state/resource/c87775a9-f887-4e14-8eaf-679cd01ff1cd>
+    a ont:Album ;
+    rdfs:label "Compact Disc Services Rendered"@en ;
+    rdfs:comment "Album by Primary Colours"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/3a4d54c4-925b-4b30-b295-6b5e60b1c1c5> ;
+.
+
+<https://paulduchesne.github.io/state/resource/c928ada4-8fdf-40ac-a2a2-b6ea06949f0d>
+    a ont:Album ;
+    rdfs:label "New Slaves"@en ;
+    rdfs:comment "Album by Zs"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/614450b5-5f68-4cc9-872f-7cd6217d6c58> ;
+.
+
+<https://paulduchesne.github.io/state/resource/cbb2e901-9b37-4398-b012-b4c3d55a1e4f>
+    a ont:Organisation ;
+    rdfs:label "Carter Tutti Void"@en ;
+    rdfs:comment "British group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/48bedd05-4eb9-4496-9233-f5789d0d4549> ;
+.
+
+<https://paulduchesne.github.io/state/resource/d1a9a933-aaad-43fa-a574-fa9e09a337e9>
+    a ont:Album ;
+    rdfs:label "Nippon"@en ;
+    rdfs:comment "Album by Spartak"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/da225c83-0f4e-4bb9-9271-d6333e48e6f2> ;
+.
+
+<https://paulduchesne.github.io/state/resource/d1d27a46-c0f1-4de7-8995-c78b2389ec96>
+    a ont:Organisation ;
+    rdfs:label "Big Black"@en ;
+    rdfs:comment "American group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/7cafd19a-296b-48a6-9c94-a0108ab6e327> ;
+    ont:wikidataIdentifier "Q572821" ;
+.
+
+<https://paulduchesne.github.io/state/resource/d1e06e08-4cdf-405d-9306-d545b6dc9098>
+    a ont:Album ;
+    rdfs:label "Gods Country"@en ;
+    rdfs:comment "Album by Chat Pile"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/2417fb79-2d8c-45f3-ab3f-a352970e50c1> ;
+.
+
+<https://paulduchesne.github.io/state/resource/d31ee844-25d4-43df-b3bc-64759580de00>
+    a ont:Album ;
+    rdfs:label "Deleted Scenes"@en ;
+    rdfs:comment "Album by Standish Carlyon"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/134e2e20-9d1e-437a-9c96-bf0c9d98320f> ;
+.
+
+<https://paulduchesne.github.io/state/resource/d33125e8-e940-4739-98ed-f447b4d51fa7>
+    a ont:Organisation ;
+    rdfs:label "Fuck Buttons"@en ;
+    rdfs:comment "British group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/d685f590-f5d1-4276-a3b2-7d13c2bb37db> ;
+    ont:wikidataIdentifier "Q1043901" ;
+.
+
+<https://paulduchesne.github.io/state/resource/d4a6127f-b60e-4090-a355-e2e70482379a>
+    a ont:Album ;
+    rdfs:label "Rossz Csillag Alatt Született"@en ;
+    rdfs:comment "Album by Aaron Funk"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/8cf78a58-90cb-4a88-8c76-e39851ec77ff> ;
+    ont:wikidataIdentifier "Q7369946" ;
+.
+
+<https://paulduchesne.github.io/state/resource/d4c956be-717d-4615-9f1f-0105e853bfee>
+    a ont:Organisation ;
+    rdfs:label "True Radical Miracle"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/bd7cd98b-314d-4f5b-acec-ef104dd71803> ;
+.
+
+<https://paulduchesne.github.io/state/resource/d4ea7e0c-0eda-44a3-8f11-d2daee6a5b0c>
+    a ont:Person ;
+    rdfs:label "Elizabeth Bernho"@en ;
+    rdfs:comment "British composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/05f3308a-4cdf-4f4c-b304-67c7df4b1350> ;
+    ont:wikidataIdentifier "Q5529065" ;
+.
+
+<https://paulduchesne.github.io/state/resource/d4fec829-2adb-4657-a0fa-3f12173fa82c>
+    a ont:Album ;
+    rdfs:label "Pivixki"@en ;
+    rdfs:comment "Album by Pivixki"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/46e20a2a-e4e6-48c5-ab85-e6693bfa431e> ;
+.
+
+<https://paulduchesne.github.io/state/resource/d58c52c6-a72c-45e4-b84b-74bea2ca235a>
+    a ont:Album ;
+    rdfs:label "Strange Tourist"@en ;
+    rdfs:comment "Album by Gareth Liddiard"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/87fd083b-2f52-487f-b1ea-f026df8eeeb8> ;
+    ont:wikidataIdentifier "Q65083525" ;
+.
+
+<https://paulduchesne.github.io/state/resource/d599f5e4-0ca6-4375-9efa-2bda7d9a5035>
+    a ont:Organisation ;
+    rdfs:label "Powerdove"@en ;
+    rdfs:comment "French group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/ef7f2d8b-d31d-4f9c-81e8-ee681acc2929> ;
+.
+
+<https://paulduchesne.github.io/state/resource/d5cb13de-680d-402c-a783-7fc33b12fb74>
+    a ont:Person ;
+    rdfs:label "Jordan Marson "@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/3ad2afc2-6d1f-4732-8684-b513d1fb5da9> ;
+.
+
+<https://paulduchesne.github.io/state/resource/d6058fb2-a663-4bb4-8c48-d0b6ecda3206>
+    a ont:Album ;
+    rdfs:label "Are You There God Its Me Margaret"@en ;
+    rdfs:comment "Album by Cathy Petocz"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/5faa1251-cb45-426a-aebc-b1977426e67b> ;
+.
+
+<https://paulduchesne.github.io/state/resource/d685f590-f5d1-4276-a3b2-7d13c2bb37db>
+    a ont:Album ;
+    rdfs:label "Street Horrrsing"@en ;
+    rdfs:comment "Album by Fuck Buttons"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/d33125e8-e940-4739-98ed-f447b4d51fa7> ;
+    ont:wikidataIdentifier "Q14184110" ;
+.
+
+<https://paulduchesne.github.io/state/resource/d70e0f16-2fbf-4822-8d15-70b6176191a4>
+    a ont:Person ;
+    rdfs:label "Andrew McLellan"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/77ff6987-971f-4d55-9906-b1d345bd5d3d> ;
+.
+
+<https://paulduchesne.github.io/state/resource/d98be5a6-50b7-4007-9ea7-3af0dac221cd>
+    a ont:Person ;
+    rdfs:label "Jimmy Behan"@en ;
+    rdfs:comment "Irish composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/5de39763-15b3-4578-9203-d84bb6968a06> ;
+.
+
+<https://paulduchesne.github.io/state/resource/dae0ceb0-aa26-4f41-8057-b26528ded644>
+    a ont:Organisation ;
+    rdfs:label "Battles"@en ;
+    rdfs:comment "American group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/332d15ee-d915-46d1-b8b7-08b8b5957b0f> ;
+    ont:wikidataIdentifier "Q811021" ;
+.
+
+<https://paulduchesne.github.io/state/resource/dbf58da6-530a-48e8-a996-f06ccf498248>
+    a ont:Album ;
+    rdfs:label "Paint Your Golden Face"@en ;
+    rdfs:comment "Album by Paint Your Golden Face"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/7604525e-e402-4579-9479-ef851b0c576c> ;
+.
+
+<https://paulduchesne.github.io/state/resource/dbfac137-0f7b-4fe5-a947-f09f87825d98>
+    a ont:Album ;
+    rdfs:label "Inland Sea"@en ;
+    rdfs:comment "Album by Marcus Whale"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/79225f2a-bb17-4354-8911-16c93e8c50a0> ;
+.
+
+<https://paulduchesne.github.io/state/resource/dc0b667f-ec51-4543-8153-1ca9275d42d6>
+    a ont:Album ;
+    rdfs:label "Songs for a Dead Pilot"@en ;
+    rdfs:comment "Album by Low"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/2569fc55-4a93-492c-8290-c0bf511e4a90> ;
+.
+
+<https://paulduchesne.github.io/state/resource/dc21b79f-70fe-41dd-8e2d-e45bd059ebb4>
+    a ont:Album ;
+    rdfs:label "The Forest And The Sea"@en ;
+    rdfs:comment "Album by John Burton"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/8723f25f-18a8-4e08-8adf-1ba204e67520> ;
 .
 
 <https://paulduchesne.github.io/state/resource/dd655cdc-045a-45b9-ada0-5ca16bc750cd>
@@ -197,12 +2378,204 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q80" ;
 .
 
+<https://paulduchesne.github.io/state/resource/dd8407fa-b77b-4d4f-ad6b-895dbc6570e5>
+    a ont:Person ;
+    rdfs:label "Kris Keogh"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/19cad5c0-060e-414d-839b-8606362a43cb> ;
+.
+
 <https://paulduchesne.github.io/state/resource/de97655c-95a8-4cfe-954f-a48142b3ca83>
     a ont:Person ;
     rdfs:label "Karl Ove Knausgaard"@en ;
     rdfs:comment "Norwegian writer."@en ;
     ont:authorOf <https://paulduchesne.github.io/state/resource/6b433c3a-855a-4ddd-bf14-6ed6d75b472f> ;
     ont:wikidataIdentifier "Q609317" ;
+.
+
+<https://paulduchesne.github.io/state/resource/dedb9378-0b04-4661-ab46-0cfcb461f255>
+    a ont:Person ;
+    rdfs:label "Tim Dwyer"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/06aed4c4-dce0-4fb7-b599-071edfb0b15e> ;
+    ont:wikidataIdentifier "Q21521461" ;
+.
+
+<https://paulduchesne.github.io/state/resource/dedf28a1-53ec-4a67-a23f-4bc3780eeeba>
+    a ont:Organisation ;
+    rdfs:label "PVT"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/b5df082a-c046-4d18-a49d-e0f6ca4d05e3> ;
+    ont:wikidataIdentifier "Q3359910" ;
+.
+
+<https://paulduchesne.github.io/state/resource/deeb5575-a263-4bb9-aa50-6e04925ac50a>
+    a ont:Album ;
+    rdfs:label "Collectable Woodland Creatures Armed With Heavy Weaponry"@en ;
+    rdfs:comment "Album by Icarus"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/939e2617-b489-4a5a-9677-db802e6a80b1> ;
+.
+
+<https://paulduchesne.github.io/state/resource/e129a41a-67f3-48de-bba1-ec98d3f69e8a>
+    a ont:Album ;
+    rdfs:label "Cloudache"@en ;
+    rdfs:comment "Album by Chris Finnigan"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/89ea2e61-be20-4a06-b5e7-a54319753a29> ;
+.
+
+<https://paulduchesne.github.io/state/resource/e22b123b-1bb5-4648-b0d0-44e87c79c273>
+    a ont:Album ;
+    rdfs:label "Retribution"@en ;
+    rdfs:comment "Album by Tanya Tagaq"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/8acaa52b-c1d8-4c55-91d3-66df0c8df196> ;
+    ont:wikidataIdentifier "Q28232989" ;
+.
+
+<https://paulduchesne.github.io/state/resource/e33e3923-ddb3-4d5e-8a16-13bb86c21df2>
+    a ont:Album ;
+    rdfs:label "Splendor & Misery"@en ;
+    rdfs:comment "Album by Clipping"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/7ce2038e-5f28-4b95-8a73-0e0a2b77da9b> ;
+    ont:wikidataIdentifier "Q26252668" ;
+.
+
+<https://paulduchesne.github.io/state/resource/e3bf00ba-9f45-4011-b31e-51a81f1ea724>
+    a ont:Organisation ;
+    rdfs:label "The Birthday Party"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/9c8b0684-8a11-41fd-b077-a1aa0c612779> ;
+    ont:wikidataIdentifier "Q1147045" ;
+.
+
+<https://paulduchesne.github.io/state/resource/e3e2d9e0-e95f-4190-94b1-1f7731e357f9>
+    a ont:Album ;
+    rdfs:label "Sida"@en ;
+    rdfs:comment "Album by Sida"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/c77f83ff-6abd-472d-b705-7115a2048ab6> ;
+.
+
+<https://paulduchesne.github.io/state/resource/e64a363b-996d-4677-a7ce-8d935e8f06cd>
+    a ont:Album ;
+    rdfs:label "Kaneda"@en ;
+    rdfs:comment "Album by Assassins 88"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/16e2df74-028b-4482-a3f8-1c734af74515> ;
+.
+
+<https://paulduchesne.github.io/state/resource/e78843fd-46fe-4abb-a486-8096644c14a9>
+    a ont:Album ;
+    rdfs:label "Purple Skies Toxic River"@en ;
+    rdfs:comment "Album by TV Colours"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/3cf5cdff-3b31-48a0-96be-283477aa6153> ;
+.
+
+<https://paulduchesne.github.io/state/resource/e967432a-e9d9-4401-b5b5-3ddef427bc4e>
+    a ont:Person ;
+    rdfs:label " Margaret Chardiet"@en ;
+    rdfs:comment "American composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/bc0e7b7a-59a0-4412-af65-1cd61966c70b> ;
+.
+
+<https://paulduchesne.github.io/state/resource/ead8fc9a-f4bd-4572-914d-a315c8c49ae2>
+    a ont:Album ;
+    rdfs:label "Burning Boy"@en ;
+    rdfs:comment "Album by Joe McKee"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/2da17134-4168-4e55-9d3f-5ee9a3f4d028> ;
+.
+
+<https://paulduchesne.github.io/state/resource/ee579057-c7bc-4890-8c28-bdd0912460a1>
+    a ont:Album ;
+    rdfs:label "Popular"@en ;
+    rdfs:comment "Album by Ben Snaith"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/362206f7-fbc6-4f94-9648-e95a832178aa> ;
+.
+
+<https://paulduchesne.github.io/state/resource/ef7f2d8b-d31d-4f9c-81e8-ee681acc2929>
+    a ont:Album ;
+    rdfs:label "Machination"@en ;
+    rdfs:comment "Album by Powerdove"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/d599f5e4-0ca6-4375-9efa-2bda7d9a5035> ;
+.
+
+<https://paulduchesne.github.io/state/resource/f021f5ef-9641-4efd-9395-088160be1040>
+    a ont:Person ;
+    rdfs:label "Evan Dorrian"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/b30baf2e-9b16-4ea1-8a01-0ca22ce01f17> ;
+.
+
+<https://paulduchesne.github.io/state/resource/f0bdb3a2-02a3-4ebb-a30a-15a1a99c505d>
+    a ont:Organisation ;
+    rdfs:label "Dirty Projectors"@en ;
+    rdfs:comment "American group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/c5fa8589-e180-4797-aaab-87d436d54bad> ;
+    ont:wikidataIdentifier "Q1154614" ;
+.
+
+<https://paulduchesne.github.io/state/resource/f112421b-b7f6-4fd7-b085-730c1d97d424>
+    a ont:Album ;
+    rdfs:label "Wiiw Thighs"@en ;
+    rdfs:comment "Album by Kirin J. Callinan"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/52254db8-e5d1-4f30-abad-e364258c326c> ;
+.
+
+<https://paulduchesne.github.io/state/resource/f248d63b-a5f3-4ec2-9ddf-74c947c8c35f>
+    a ont:Album ;
+    rdfs:label "Psychic Radio Ep"@en ;
+    rdfs:comment "Album by Finnigan And Brother"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/21935384-f63f-460a-9fc7-48878d715790> ;
+.
+
+<https://paulduchesne.github.io/state/resource/f3fec9ad-8c78-48e5-8795-5e2c82f05afe>
+    a ont:Album ;
+    rdfs:label "The Inheritors"@en ;
+    rdfs:comment "Album by James Holden"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/0d47cc42-fe4a-44cc-b4eb-d08391783d79> ;
+    ont:wikidataIdentifier "Q48796606" ;
+.
+
+<https://paulduchesne.github.io/state/resource/f41d07c2-ddf0-40f5-934b-a4070303bba9>
+    a ont:Album ;
+    rdfs:label "Zombies On The Airwaves Of Paris"@en ;
+    rdfs:comment "Album by Snowman"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/203c7ff6-ba8b-43c9-a7a3-7c87d26ab293> ;
+.
+
+<https://paulduchesne.github.io/state/resource/f624662e-f6a1-46b7-9ca2-c5013e0ddb20>
+    a ont:Album ;
+    rdfs:label "Liberation Through Hearing"@en ;
+    rdfs:comment "Album by Demdike Stare"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/b536ea8d-6f3e-4f69-afb3-410aa98ad44b> ;
+    ont:wikidataIdentifier "Q21998596" ;
+.
+
+<https://paulduchesne.github.io/state/resource/f6d3c940-bbe9-4910-9d80-979f6ee9f32d>
+    a ont:Organisation ;
+    rdfs:label "Pan Sonic"@en ;
+    rdfs:comment "Finnish group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/5cc3b7ad-b5ca-4c10-b297-b56338c8a7ff> ;
+    ont:wikidataIdentifier "Q1889385" ;
+.
+
+<https://paulduchesne.github.io/state/resource/f7a39fb4-561d-4a6c-8575-f02cbcdca7fb>
+    a ont:Album ;
+    rdfs:label "Generator"@en ;
+    rdfs:comment "Album by Keith Fullerton Whitman"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/b77f941d-5430-46ee-bbb2-9873dd77bcad> ;
+.
+
+<https://paulduchesne.github.io/state/resource/f7bacf89-1141-470e-afc0-ae092f100e62>
+    a ont:Album ;
+    rdfs:label "Dead Boomers Live"@en ;
+    rdfs:comment "Album by Dead Boomers"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/0d4a84eb-8ece-49d2-9151-d82b0a843046> ;
+.
+
+<https://paulduchesne.github.io/state/resource/f9192a0a-1ef7-4f87-9044-4845b57e06f6>
+    a ont:Organisation ;
+    rdfs:label "The Knife"@en ;
+    rdfs:comment "Swedish group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/af95678e-d7ba-4365-a60b-31bad14bf67e> ;
+    ont:wikidataIdentifier "Q741471" ;
 .
 
 <https://paulduchesne.github.io/state/resource/f9852676-8b80-4856-8c56-feca14d999b4>
@@ -213,12 +2586,90 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q17006093" ;
 .
 
+<https://paulduchesne.github.io/state/resource/f9c6075b-1f66-4b52-a947-b75be264ec41>
+    a ont:Organisation ;
+    rdfs:label "Marcus Whale And Tom Smith"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/aa5037db-6221-4a7a-96bc-1dca3b905483> ;
+.
+
+<https://paulduchesne.github.io/state/resource/fa59a268-88da-48c6-b6e9-dbf8dbc4880e>
+    a ont:Organisation ;
+    rdfs:label "Joy Division"@en ;
+    rdfs:comment "British group."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/2f7ce81a-6f3a-4f1d-8ff3-d59940fe881d> ;
+    ont:wikidataIdentifier "Q172763" ;
+.
+
+<https://paulduchesne.github.io/state/resource/fa7b6117-c714-40bb-bd3c-935db3b990bc>
+    a ont:Album ;
+    rdfs:label "The Von Einem Tapes"@en ;
+    rdfs:comment "Album by Mark Groves"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/2f41ce18-0d23-4145-acb0-f1b20b1ff997> ;
+.
+
+<https://paulduchesne.github.io/state/resource/fb0a0340-3984-4db9-98e9-174746cd682c>
+    a ont:Album ;
+    rdfs:label "Tilt"@en ;
+    rdfs:comment "Album by Scott Walker"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/5d35aca1-fde5-4149-804e-46ba9baf16e9> ;
+    ont:wikidataIdentifier "Q3528550" ;
+.
+
+<https://paulduchesne.github.io/state/resource/fc16c24a-e99c-4391-b115-9380a97ca87b>
+    a ont:Person ;
+    rdfs:label "Ron Grainer"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/9cf9b5d5-b83c-493e-b5a9-0ce453670e0b> ;
+    ont:wikidataIdentifier "Q320816" ;
+.
+
+<https://paulduchesne.github.io/state/resource/fcd4fb78-e8bd-4d70-9f3f-38397cd53f4a>
+    a ont:Album ;
+    rdfs:label "Long Vacation"@en ;
+    rdfs:comment "Album by Rainbow Chan"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/b22af9f9-e9d2-41c2-a467-f91ce1ec79ed> ;
+.
+
+<https://paulduchesne.github.io/state/resource/fd51c8cc-efd3-49fb-b73b-f762e070934a>
+    a ont:Album ;
+    rdfs:label "Fake Fish Distribution 279"@en ;
+    rdfs:comment "Album by Icarus"@en ;
+    ont:hasCreator <https://paulduchesne.github.io/state/resource/939e2617-b489-4a5a-9677-db802e6a80b1> ;
+.
+
+<https://paulduchesne.github.io/state/resource/ff1d4d22-e4ad-4b84-a8b0-fc4611054bec>
+    a ont:Person ;
+    rdfs:label "Björk"@en ;
+    rdfs:comment "Icelandic composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/6c73c85b-49a9-4147-99dc-14ab611a7d2c> ;
+    ont:wikidataIdentifier "Q42455" ;
+.
+
+<https://paulduchesne.github.io/state/resource/ffd6c94c-9468-463d-8d46-a7826cf88166>
+    a ont:Person ;
+    rdfs:label "Giorgio Moroder"@en ;
+    rdfs:comment "Italian composer."@en ;
+    ont:creatorOf <https://paulduchesne.github.io/state/resource/7f04ef58-db72-478f-b2ab-2ca5d99ae1d9> ;
+    ont:wikidataIdentifier "Q312674" ;
+.
+
 <https://paulduchesne.github.io/state/resource/fff8c988-6198-4536-9298-28a2d395c705>
     a ont:Location ;
     rdfs:label "Wellington"@en ;
     rdfs:comment "Capital city of New Zealand."@en ;
     ont:locationOf <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ;
     ont:wikidataIdentifier "Q23661" ;
+.
+
+<https://paulduchesne.github.io/state/resource/06872df7-82b1-4042-b7bb-e02a3aa03681>
+    a ont:Person ;
+    rdfs:label "Holly Herndon"@en ;
+    rdfs:comment "American composer."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/25f0e727-c909-4874-a1a8-ae1da9922a93> ,
+        <https://paulduchesne.github.io/state/resource/7243e4a9-e898-4139-a912-9d9f5463dce2> ;
+    ont:wikidataIdentifier "Q16203447" ;
 .
 
 <https://paulduchesne.github.io/state/resource/0c410f97-9ca0-43ee-aedb-e1a2a89a1162>
@@ -241,6 +2692,24 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:participatedIn <https://paulduchesne.github.io/state/resource/2da336c1-f4d6-4fbe-9cdb-500383ffab38> ;
 .
 
+<https://paulduchesne.github.io/state/resource/0e3566bd-2a4f-49ba-8b5f-f4cd4604d24b>
+    a ont:Person ;
+    rdfs:label "Austin Buckett"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/3f4cf469-d2b8-4d12-a386-db5f99014897> ,
+        <https://paulduchesne.github.io/state/resource/460a2d45-9ba0-4ffa-817f-b7a1acc407d1> ;
+.
+
+<https://paulduchesne.github.io/state/resource/16e2df74-028b-4482-a3f8-1c734af74515>
+    a ont:Organisation ;
+    rdfs:label "Assassins 88"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/573756ab-f067-42c7-bdef-a1254430a048> ,
+        <https://paulduchesne.github.io/state/resource/e64a363b-996d-4677-a7ce-8d935e8f06cd> ;
+.
+
 <https://paulduchesne.github.io/state/resource/175589f1-680a-4944-85f8-3d555f06c623>
     a ont:Book ;
     rdfs:label "Inverted World"@en ;
@@ -250,6 +2719,26 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:participatedIn <https://paulduchesne.github.io/state/resource/9700fda4-3fe7-44be-b323-26fb2fd0e0e8> ;
 .
 
+<https://paulduchesne.github.io/state/resource/19558d46-add2-41c2-9a06-cae1cff370ca>
+    a ont:Organisation ;
+    rdfs:label "The Drones"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/8346fea1-47d3-4885-a9a6-c2804ed3f0b8> ,
+        <https://paulduchesne.github.io/state/resource/b472696e-c84d-426c-81cf-53ae67519513> ;
+    ont:wikidataIdentifier "Q128339" ;
+.
+
+<https://paulduchesne.github.io/state/resource/1e9fa16b-98cb-491a-8148-a7dda2246968>
+    a ont:Organisation ;
+    rdfs:label "Witch Hats"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/084b6c9c-7732-4b9b-a87b-b4c4cbbce9dd> ,
+        <https://paulduchesne.github.io/state/resource/89ff5c4e-0cf9-4654-a9a6-a91cafe83c16> ;
+    ont:wikidataIdentifier "Q8027836" ;
+.
+
 <https://paulduchesne.github.io/state/resource/243492e0-1eaa-4d45-8721-12985d1cd9b3>
     a ont:Book ;
     rdfs:label "Death and the Gardener"@en ;
@@ -257,6 +2746,16 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:hasAuthor <https://paulduchesne.github.io/state/resource/043b75f5-3f6e-41ce-a234-a3f63a71de91> ;
     ont:identifier "9781399631037" ;
     ont:participatedIn <https://paulduchesne.github.io/state/resource/e44ca924-764e-4dfb-be0f-356d8a1733d5> ;
+.
+
+<https://paulduchesne.github.io/state/resource/2569fc55-4a93-492c-8290-c0bf511e4a90>
+    a ont:Organisation ;
+    rdfs:label "Low"@en ;
+    rdfs:comment "American group."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/475fde08-0374-4ce7-a191-1d26a7eff778> ,
+        <https://paulduchesne.github.io/state/resource/dc0b667f-ec51-4543-8153-1ca9275d42d6> ;
+    ont:wikidataIdentifier "Q941559" ;
 .
 
 <https://paulduchesne.github.io/state/resource/2da336c1-f4d6-4fbe-9cdb-500383ffab38>
@@ -279,6 +2778,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
         <https://paulduchesne.github.io/state/resource/6b433c3a-855a-4ddd-bf14-6ed6d75b472f> ;
     ont:startDate "2025-11-23" ;
+.
+
+<https://paulduchesne.github.io/state/resource/362206f7-fbc6-4f94-9648-e95a832178aa>
+    a ont:Person ;
+    rdfs:label "Ben Snaith"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/828d7b73-2224-439c-ba7b-ebb21a460784> ,
+        <https://paulduchesne.github.io/state/resource/ee579057-c7bc-4890-8c28-bdd0912460a1> ;
 .
 
 <https://paulduchesne.github.io/state/resource/3b5ea998-21b9-4b09-b910-b1c1ba6b91c5>
@@ -341,6 +2849,26 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:startDate "2026-02-05" ;
 .
 
+<https://paulduchesne.github.io/state/resource/51c8029c-bbd7-44a1-8b6d-48786503c98e>
+    a ont:Person ;
+    rdfs:label "Cécile Schott"@en ;
+    rdfs:comment "French composer."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/41164b71-66ac-40c9-a0a7-218c05f999b2> ,
+        <https://paulduchesne.github.io/state/resource/98df73bb-f139-4ec6-b742-056ae88da726> ;
+    ont:wikidataIdentifier "Q1988819" ;
+.
+
+<https://paulduchesne.github.io/state/resource/61b411fc-d144-4cb5-8a79-0284498b5ce7>
+    a ont:Organisation ;
+    rdfs:label "Black Dice"@en ;
+    rdfs:comment "American group."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/4b4a0e7f-a203-4d5c-9494-2bc6cb1805a7> ,
+        <https://paulduchesne.github.io/state/resource/b9cfd393-3233-40b5-9081-e6afe1e6de74> ;
+    ont:wikidataIdentifier "Q880218" ;
+.
+
 <https://paulduchesne.github.io/state/resource/6b433c3a-855a-4ddd-bf14-6ed6d75b472f>
     a ont:Book ;
     rdfs:label "The School of Night"@en ;
@@ -399,6 +2927,26 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:startDate "2025-12-04" ;
 .
 
+<https://paulduchesne.github.io/state/resource/7991263f-8455-4d38-bbd3-d0f215871cf5>
+    a ont:Person ;
+    rdfs:label "Daniel Lopatin"@en ;
+    rdfs:comment "American composer."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/2b616b2d-a1eb-4cd0-b65f-21b14975feda> ,
+        <https://paulduchesne.github.io/state/resource/aabf82de-06c8-458d-8535-ebf35a3ef956> ;
+    ont:wikidataIdentifier "Q286346" ;
+.
+
+<https://paulduchesne.github.io/state/resource/8435c1b2-5b98-4b8e-ba5d-39492670b546>
+    a ont:Organisation ;
+    rdfs:label "HTRK"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/4494806c-d687-447c-9d55-0afe2411ded0> ,
+        <https://paulduchesne.github.io/state/resource/5755cd7d-c571-4e13-a987-f26e1ef234b8> ;
+    ont:wikidataIdentifier "Q5636130" ;
+.
+
 <https://paulduchesne.github.io/state/resource/86477d45-4c1a-4f95-841d-a3fc2d8ffa25>
     a ont:ReadingEvent ;
     rdfs:label "Reading 'I Remain in Darkness'" ;
@@ -410,6 +2958,16 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:startDate "2025-11-09" ;
 .
 
+<https://paulduchesne.github.io/state/resource/8723f25f-18a8-4e08-8adf-1ba204e67520>
+    a ont:Person ;
+    rdfs:label "John Burton"@en ;
+    rdfs:comment "British composer."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/1f72aff9-072d-4d75-b66a-829982b1d71d> ,
+        <https://paulduchesne.github.io/state/resource/dc21b79f-70fe-41dd-8e2d-e45bd059ebb4> ;
+    ont:wikidataIdentifier "Q6508889" ;
+.
+
 <https://paulduchesne.github.io/state/resource/8c827882-23c4-45d3-b54c-0f7df578389f>
     a ont:Book ;
     rdfs:label "Fever Dream"@en ;
@@ -417,6 +2975,16 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:hasAuthor <https://paulduchesne.github.io/state/resource/0530f07f-ae3f-4693-becc-2ccd8914c932> ;
     ont:identifier "9780399184604" ;
     ont:participatedIn <https://paulduchesne.github.io/state/resource/9614c25b-a271-4750-a4cf-245ad1a722ee> ;
+.
+
+<https://paulduchesne.github.io/state/resource/8c9810c3-f221-4b75-bd03-1fe8fb89c7a4>
+    a ont:Organisation ;
+    rdfs:label "Einstürzende Neubauten"@en ;
+    rdfs:comment "German group."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/30a37543-0315-49a0-b732-44d8ac5c9fda> ,
+        <https://paulduchesne.github.io/state/resource/8f9e9098-7a65-4ae1-b5cc-61167e18c667> ;
+    ont:wikidataIdentifier "Q11898" ;
 .
 
 <https://paulduchesne.github.io/state/resource/8f8628dc-9e7c-480f-8c8b-d1124bbf16b3>
@@ -453,6 +3021,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:hasAuthor <https://paulduchesne.github.io/state/resource/8104f052-ebd5-4910-8695-1be0312337d5> ;
     ont:identifier "9781590171998" ;
     ont:participatedIn <https://paulduchesne.github.io/state/resource/447fd9f5-0093-494a-a536-98d8c234f134> ;
+.
+
+<https://paulduchesne.github.io/state/resource/939e2617-b489-4a5a-9677-db802e6a80b1>
+    a ont:Organisation ;
+    rdfs:label "Icarus"@en ;
+    rdfs:comment "British group."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/deeb5575-a263-4bb9-aa50-6e04925ac50a> ,
+        <https://paulduchesne.github.io/state/resource/fd51c8cc-efd3-49fb-b73b-f762e070934a> ;
 .
 
 <https://paulduchesne.github.io/state/resource/9614c25b-a271-4750-a4cf-245ad1a722ee>
@@ -535,6 +3112,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:startDate "2026-02-07" ;
 .
 
+<https://paulduchesne.github.io/state/resource/c0927b8f-0ed9-4382-a7ff-8401f32059b1>
+    a ont:Person ;
+    rdfs:label "Sia Ahmad"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/3b6fa604-9dd2-48f0-bb74-3ec898b2f228> ,
+        <https://paulduchesne.github.io/state/resource/c5a85a08-482d-42b9-bbe5-c22fb1982b60> ;
+.
+
 <https://paulduchesne.github.io/state/resource/cac1db2e-8f8d-4c39-aa5e-838167352444>
     a ont:ReadingEvent ;
     rdfs:label "Reading 'Exterminate! Regenerate!'"@en ;
@@ -564,6 +3150,16 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:hasAuthor <https://paulduchesne.github.io/state/resource/958759bb-0abd-44db-a13e-0ac9d2ce642a> ;
     ont:identifier "9781399614771" ;
     ont:participatedIn <https://paulduchesne.github.io/state/resource/cac1db2e-8f8d-4c39-aa5e-838167352444> ;
+.
+
+<https://paulduchesne.github.io/state/resource/ccdb324f-e96b-4f2b-ae94-2da67c57e101>
+    a ont:Organisation ;
+    rdfs:label "Arab Strap"@en ;
+    rdfs:comment "Scottish group."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/61d83df5-7228-4cce-bb7d-ad0f88ec32df> ,
+        <https://paulduchesne.github.io/state/resource/b33676f0-2d6a-4514-8163-cd87ea36118b> ;
+    ont:wikidataIdentifier "Q2632762" ;
 .
 
 <https://paulduchesne.github.io/state/resource/cda1ee67-c4a1-4c37-9a94-d51ba5ed5499>
@@ -628,6 +3224,16 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:startDate "2026-01-25" ;
 .
 
+<https://paulduchesne.github.io/state/resource/e148d18b-daaa-4aed-b5cd-fae1c4c6a3fc>
+    a ont:Organisation ;
+    rdfs:label "Matmos"@en ;
+    rdfs:comment "American group."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/2b3e44ea-61c3-4048-9768-0b1a3d958d3b> ,
+        <https://paulduchesne.github.io/state/resource/c42e5017-0291-43f7-a49e-dbbc7af54ab8> ;
+    ont:wikidataIdentifier "Q1256138" ;
+.
+
 <https://paulduchesne.github.io/state/resource/e2a312a1-cb35-4760-b3bf-4e04e2935065>
     a ont:Book ;
     rdfs:label "Memories Of The Future"@en ;
@@ -665,6 +3271,16 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:participatedIn <https://paulduchesne.github.io/state/resource/86477d45-4c1a-4f95-841d-a3fc2d8ffa25> ;
 .
 
+<https://paulduchesne.github.io/state/resource/ed5bc93d-ea96-4532-98a1-48b5c389435e>
+    a ont:Organisation ;
+    rdfs:label "Tropical Fuck Storm"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/04bf0c12-218e-40cb-b9e5-cc72d55831a7> ,
+        <https://paulduchesne.github.io/state/resource/97a3af25-4f96-445a-981d-0371e65597ba> ;
+    ont:wikidataIdentifier "Q56064390" ;
+.
+
 <https://paulduchesne.github.io/state/resource/fe923883-a71b-460f-99a0-d8abf05a2281>
     a ont:ReadingEvent ;
     rdfs:label "Reading 'Against Progress'" ;
@@ -674,6 +3290,226 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
         <https://paulduchesne.github.io/state/resource/ba8048d3-a13c-4964-9d80-a04e0c50c0ba> ;
     ont:startDate "2025-11-11" ;
+.
+
+<https://paulduchesne.github.io/state/resource/ff31e84f-69c2-4850-870b-0eb1839a831d>
+    a ont:Organisation ;
+    rdfs:label "Liars"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/49490a00-aeef-4c46-abfe-63fdab5eccf9> ,
+        <https://paulduchesne.github.io/state/resource/52ccfd21-c2d6-48c1-b81e-a2a26d395d7a> ;
+    ont:wikidataIdentifier "Q1091146" ;
+.
+
+<https://paulduchesne.github.io/state/resource/ffc03abd-3406-473f-a1bb-b207887efc21>
+    a ont:Person ;
+    rdfs:label "Oren Ambarchi"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/1f6ed568-58c5-4f73-b5c6-1cd2d64cd521> ,
+        <https://paulduchesne.github.io/state/resource/79716519-a42e-42d6-8472-9a06fb9f446b> ;
+    ont:wikidataIdentifier "Q7101536" ;
+.
+
+<https://paulduchesne.github.io/state/resource/01b44df7-0879-4edd-ad95-944a43ee8bcd>
+    a ont:Person ;
+    rdfs:label "Bérangère Maximin"@en ;
+    rdfs:comment "French composer."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/7aa67428-c4a0-49d2-92ee-9b509eb7060e> ,
+        <https://paulduchesne.github.io/state/resource/b37b0520-d8be-49df-adbd-ce4496340a35> ,
+        <https://paulduchesne.github.io/state/resource/c05a3761-c8b2-4e5f-8d18-ae89f553c519> ;
+    ont:wikidataIdentifier "Q20973535" ;
+.
+
+<https://paulduchesne.github.io/state/resource/14017918-e915-4a3a-a067-380b9d536a1c>
+    a ont:Person ;
+    rdfs:label "Bobby Krlic"@en ;
+    rdfs:comment "British composer."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/014369b3-d66a-429d-98f9-77caec9e5cd0> ,
+        <https://paulduchesne.github.io/state/resource/6c653d29-d7e6-42b6-93b1-a4fbf456e849> ,
+        <https://paulduchesne.github.io/state/resource/9a1b8780-261e-4eb4-9aa6-9a9803e0fa81> ;
+    ont:wikidataIdentifier "Q16223599" ;
+.
+
+<https://paulduchesne.github.io/state/resource/203c7ff6-ba8b-43c9-a7a3-7c87d26ab293>
+    a ont:Organisation ;
+    rdfs:label "Snowman"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/29dc3210-2d8b-443a-bfa4-b65dc8a5f5d9> ,
+        <https://paulduchesne.github.io/state/resource/91319643-01ac-4ea0-8778-2239cd9a8840> ,
+        <https://paulduchesne.github.io/state/resource/f41d07c2-ddf0-40f5-934b-a4070303bba9> ;
+    ont:wikidataIdentifier "Q7548664" ;
+.
+
+<https://paulduchesne.github.io/state/resource/24946da4-9a3d-413e-8ab5-ab3d978ede15>
+    a ont:Person ;
+    rdfs:label "Jonathan Black"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/2f8d1630-3174-489d-8986-0dcc38360a4e> ,
+        <https://paulduchesne.github.io/state/resource/496727b7-d53c-4909-84b0-906e77568e51> ,
+        <https://paulduchesne.github.io/state/resource/83064a89-fbca-45d5-ab11-e022bcfa8efb> ;
+.
+
+<https://paulduchesne.github.io/state/resource/2dfba8e5-3f9d-42d7-90d3-90149c9ba44e>
+    a ont:Person ;
+    rdfs:label "Matthew Herbert"@en ;
+    rdfs:comment "British composer."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/4e74c0ba-fb97-4b5a-85b1-b62cd1f7af7a> ,
+        <https://paulduchesne.github.io/state/resource/6c78904e-2628-48b9-90f8-b63d5d3ddfd2> ,
+        <https://paulduchesne.github.io/state/resource/81a44127-f818-43d6-bf74-26347e054225> ;
+    ont:wikidataIdentifier "Q290270" ;
+.
+
+<https://paulduchesne.github.io/state/resource/52254db8-e5d1-4f30-abad-e364258c326c>
+    a ont:Person ;
+    rdfs:label "Kirin J. Callinan"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/4d4af50e-d50e-497b-865c-d75a066540e7> ,
+        <https://paulduchesne.github.io/state/resource/56af7b27-1ed0-4671-826b-aa489c0585a0> ,
+        <https://paulduchesne.github.io/state/resource/f112421b-b7f6-4fd7-b085-730c1d97d424> ;
+    ont:wikidataIdentifier "Q47359645" ;
+.
+
+<https://paulduchesne.github.io/state/resource/78e89a0f-2ad8-40bb-8b37-4dd14a538020>
+    a ont:Person ;
+    rdfs:label "Tim Hecker"@en ;
+    rdfs:comment "Canadian composer."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/6aaaa2b2-d904-4da4-9bff-b5fcfb2aecbf> ,
+        <https://paulduchesne.github.io/state/resource/90c28f53-707f-42cf-a2b7-3a7f89f5d0e7> ,
+        <https://paulduchesne.github.io/state/resource/a0fa1b25-2259-4aa2-a342-bab2867eaa96> ;
+    ont:wikidataIdentifier "Q3068648" ;
+.
+
+<https://paulduchesne.github.io/state/resource/79225f2a-bb17-4354-8911-16c93e8c50a0>
+    a ont:Person ;
+    rdfs:label "Marcus Whale"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/99773de8-f62b-4062-ba6d-7032f02b2331> ,
+        <https://paulduchesne.github.io/state/resource/a4a7b63b-2bdf-40f9-a89d-de4ae9b5215f> ,
+        <https://paulduchesne.github.io/state/resource/dbfac137-0f7b-4fe5-a947-f09f87825d98> ;
+.
+
+<https://paulduchesne.github.io/state/resource/8acaa52b-c1d8-4c55-91d3-66df0c8df196>
+    a ont:Person ;
+    rdfs:label "Tanya Tagaq"@en ;
+    rdfs:comment "Canadian composer."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/0de01e56-8283-4834-bd51-55424aba4a5e> ,
+        <https://paulduchesne.github.io/state/resource/3c454a9e-631a-4381-a737-418c711f448b> ,
+        <https://paulduchesne.github.io/state/resource/e22b123b-1bb5-4648-b0d0-44e87c79c273> ;
+    ont:wikidataIdentifier "Q759716" ;
+.
+
+<https://paulduchesne.github.io/state/resource/a6633a8b-dc56-40de-b285-598e19c49e55>
+    a ont:Organisation ;
+    rdfs:label "My Disco"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/3be192c4-a16d-499d-8aca-3e37d6823cf0> ,
+        <https://paulduchesne.github.io/state/resource/93b0918a-4d83-4ba6-ab28-46f20204de7d> ,
+        <https://paulduchesne.github.io/state/resource/9ebfc2b0-dc2d-45c0-8cdc-b2378f1b5bc2> ;
+    ont:wikidataIdentifier "Q6945286" ;
+.
+
+<https://paulduchesne.github.io/state/resource/aa2c3445-389c-42ac-b5f2-200e7c2b5c74>
+    a ont:Person ;
+    rdfs:label "Anja Plaschg"@en ;
+    rdfs:comment "Austrian composer."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/2c6a1d72-e9cb-4075-ac51-f8af05695664> ,
+        <https://paulduchesne.github.io/state/resource/aeb19311-a812-423e-99e3-46966c51fa73> ,
+        <https://paulduchesne.github.io/state/resource/b89eb213-7be4-4c5f-968a-1e7b76f37602> ;
+    ont:wikidataIdentifier "Q78837" ;
+.
+
+<https://paulduchesne.github.io/state/resource/b22af9f9-e9d2-41c2-a467-f91ce1ec79ed>
+    a ont:Person ;
+    rdfs:label "Rainbow Chan"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/37a1fbfd-e172-4e02-99df-9c93ff20d3e4> ,
+        <https://paulduchesne.github.io/state/resource/8d508b62-a614-4393-a6e1-2f185c0b29ac> ,
+        <https://paulduchesne.github.io/state/resource/fcd4fb78-e8bd-4d70-9f3f-38397cd53f4a> ;
+    ont:wikidataIdentifier "Q131985841" ;
+.
+
+<https://paulduchesne.github.io/state/resource/21935384-f63f-460a-9fc7-48878d715790>
+    a ont:Organisation ;
+    rdfs:label "Finnigan And Brother"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/1ffb0ac1-4bd2-4ab3-b4b2-46b453f3f483> ,
+        <https://paulduchesne.github.io/state/resource/84c492b4-a9da-4b29-aa04-be1aed1fe628> ,
+        <https://paulduchesne.github.io/state/resource/b1d96e30-8f68-4cdb-b878-ca7232e040c5> ,
+        <https://paulduchesne.github.io/state/resource/f248d63b-a5f3-4ec2-9ddf-74c947c8c35f> ;
+.
+
+<https://paulduchesne.github.io/state/resource/64f8af27-a61a-4a76-9363-74c7072104d8>
+    a ont:Organisation ;
+    rdfs:label "Amnesia Scanner"@en ;
+    rdfs:comment "Finnish group."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/0536fe2e-39c4-4356-b771-e6f69690608c> ,
+        <https://paulduchesne.github.io/state/resource/2661a5e2-71a6-4839-af19-c6d441f4df7b> ,
+        <https://paulduchesne.github.io/state/resource/7d8e4952-4e24-471c-97ea-2d5ca253b8bc> ,
+        <https://paulduchesne.github.io/state/resource/8b5c68e2-2ad6-4e36-a617-2777a07bbdbf> ;
+    ont:wikidataIdentifier "Q48698507" ;
+.
+
+<https://paulduchesne.github.io/state/resource/88db9a41-e263-45f6-9de4-e8c59b031b56>
+    a ont:Person ;
+    rdfs:label "Antye Greie"@en ;
+    rdfs:comment "German composer."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/0f1c2c7f-25ee-40a8-bb17-2230e08790ef> ,
+        <https://paulduchesne.github.io/state/resource/7a9d1065-a91a-432b-ae24-28f97a1bab70> ,
+        <https://paulduchesne.github.io/state/resource/8b0463a5-6891-4fa0-8e2a-d64d871714f1> ,
+        <https://paulduchesne.github.io/state/resource/bb7e31cc-695b-4ab2-a81c-4205cdbb6673> ;
+    ont:wikidataIdentifier "Q610427" ;
+.
+
+<https://paulduchesne.github.io/state/resource/a985587e-2420-4999-966a-0372e2a04af6>
+    a ont:Person ;
+    rdfs:label "Ben Frost"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/450ac813-cfc8-4127-8cbb-e2afcbeefe49> ,
+        <https://paulduchesne.github.io/state/resource/5d446f92-c046-4679-910a-ea2123d8174d> ,
+        <https://paulduchesne.github.io/state/resource/6e26340c-66d2-4e22-a817-b37d46570e35> ,
+        <https://paulduchesne.github.io/state/resource/9b288c83-4c88-4b0c-b280-afd75bbc62f1> ;
+    ont:wikidataIdentifier "Q4493066" ;
+.
+
+<https://paulduchesne.github.io/state/resource/c930c0b6-b485-4482-a3db-6a7299d38a55>
+    a ont:Person ;
+    rdfs:label "Lawrence English"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/269dae52-074d-4be0-9dd4-29a1f4f1f3c3> ,
+        <https://paulduchesne.github.io/state/resource/35f6f7dd-d6fa-4917-889c-860adb4cc95c> ,
+        <https://paulduchesne.github.io/state/resource/a08ab9ed-5fac-46fd-8115-96eeb35e6bc0> ,
+        <https://paulduchesne.github.io/state/resource/be8a997a-e2a8-4073-8bad-c8fb8e383709> ;
+    ont:wikidataIdentifier "Q6504031" ;
+.
+
+<https://paulduchesne.github.io/state/resource/da225c83-0f4e-4bb9-9271-d6333e48e6f2>
+    a ont:Organisation ;
+    rdfs:label "Spartak"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/668150a0-1d55-4389-b3e7-d6613d0f64f4> ,
+        <https://paulduchesne.github.io/state/resource/882d3e21-3e29-48b0-8757-563557baa7dd> ,
+        <https://paulduchesne.github.io/state/resource/8dd6c03a-499f-4e3c-81fa-b4fe024f8cbc> ,
+        <https://paulduchesne.github.io/state/resource/d1a9a933-aaad-43fa-a574-fa9e09a337e9> ;
 .
 
 <https://paulduchesne.github.io/state/resource/e5e95fdb-dda9-4c40-9273-395fe34aba3c>
@@ -688,6 +3524,30 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q2565882" ;
 .
 
+<https://paulduchesne.github.io/state/resource/f41743c3-f2cd-494c-913b-196df9de247b>
+    a ont:Person ;
+    rdfs:label "Dominick Fernow"@en ;
+    rdfs:comment "American composer."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/481f1725-0eaa-4d06-9b4b-79b9bb99532b> ,
+        <https://paulduchesne.github.io/state/resource/4be5809b-0bf1-47f0-970e-9f5e31ea436e> ,
+        <https://paulduchesne.github.io/state/resource/61be6c2b-7ccc-4732-b035-78454edf9369> ,
+        <https://paulduchesne.github.io/state/resource/9d61b786-460a-4af7-b57c-aa02bfd657cc> ;
+    ont:wikidataIdentifier "Q287486" ;
+.
+
+<https://paulduchesne.github.io/state/resource/0d4a84eb-8ece-49d2-9151-d82b0a843046>
+    a ont:Organisation ;
+    rdfs:label "Dead Boomers"@en ;
+    rdfs:comment "Australian group."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/11e94fde-ef87-407f-be45-b0d2de29efe1> ,
+        <https://paulduchesne.github.io/state/resource/4b8464f4-6d20-4fb7-bf3c-d8470ba3d7cb> ,
+        <https://paulduchesne.github.io/state/resource/5a9a6a40-e16f-4f95-8292-e72939b018ec> ,
+        <https://paulduchesne.github.io/state/resource/6a210b50-2b53-4e3b-8e5a-39a4301ffe2e> ,
+        <https://paulduchesne.github.io/state/resource/f7bacf89-1141-470e-afc0-ae092f100e62> ;
+.
+
 <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a>
     a ont:OrganisationalEvent ;
     rdfs:label "iPRES 2025" ;
@@ -699,6 +3559,36 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://paulduchesne.github.io/state/resource/ba11aa05-dfd9-452f-9ef3-c3711b8bc11c> ,
         <https://paulduchesne.github.io/state/resource/d2d8ae17-8d48-4256-931e-4f24ecf61f60> ,
         <https://paulduchesne.github.io/state/resource/eac8d8d9-1424-46d7-b6e8-47ecd1789dc9> ;
+.
+
+<https://paulduchesne.github.io/state/resource/4d3d3d94-438e-4585-abe7-f9a74ac09371>
+    a ont:Person ;
+    rdfs:label "Reuben Ingall"@en ;
+    rdfs:comment "Australian composer."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/383a501f-3169-4886-9e7f-e0026739726d> ,
+        <https://paulduchesne.github.io/state/resource/397890fa-7506-4a86-98f7-ddfa51b2cfd3> ,
+        <https://paulduchesne.github.io/state/resource/4a19403a-5a2a-4190-9c44-9b2f2618cd96> ,
+        <https://paulduchesne.github.io/state/resource/58b85621-9253-43cd-b7be-983c5e4778f0> ,
+        <https://paulduchesne.github.io/state/resource/66a80ccb-3c30-4186-9e40-161845703155> ,
+        <https://paulduchesne.github.io/state/resource/b96c4c28-8c27-457b-9c74-430d745f3464> ;
+.
+
+<https://paulduchesne.github.io/state/resource/67739b53-0ac8-4f97-ba94-86e24dbb4ffd>
+    a ont:Organisation ;
+    rdfs:label "Swans"@en ;
+    rdfs:comment "American group."@en ;
+    ont:creatorOf
+        <https://paulduchesne.github.io/state/resource/1ec95913-4a90-4063-a9c5-9f32b23cb667> ,
+        <https://paulduchesne.github.io/state/resource/34a7122c-47e6-48e2-8667-d9820d5c8946> ,
+        <https://paulduchesne.github.io/state/resource/3a878bbd-2b40-4ea7-93c8-3f129e156d3f> ,
+        <https://paulduchesne.github.io/state/resource/54dc674a-3f2b-4016-bf60-a47e8ddec759> ,
+        <https://paulduchesne.github.io/state/resource/65dce59f-e823-48cd-b8d8-3af4131aa94c> ,
+        <https://paulduchesne.github.io/state/resource/6bcc125f-9933-451f-8449-d11f5a60d01e> ,
+        <https://paulduchesne.github.io/state/resource/7d635d6b-b54b-4adf-9461-155915ab8063> ,
+        <https://paulduchesne.github.io/state/resource/84a1f6bd-69fe-4786-a613-4c13533aadba> ,
+        <https://paulduchesne.github.io/state/resource/869917fd-f21f-4e10-abb1-291df0ca7d80> ;
+    ont:wikidataIdentifier "Q573017" ;
 .
 
 <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8>

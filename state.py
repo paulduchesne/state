@@ -8,6 +8,105 @@ import uuid
 def test():
     print('hello')
 
+
+def load_graph():
+    graph_path = pathlib.Path.cwd() / 'public.ttl'
+    if not graph_path.exists():
+        raise Exception('File not found.')
+    return rdflib.Graph().parse(graph_path)
+
+
+def entity(entity_type: str, label: str, comment: str, wikidata: str) -> str:
+    """
+    Generate/update an entity record.
+    Note that this currently assumes no two entities share the same name.
+
+    :param entity_type: type of the entity.
+    :param label: name of the entity.
+    :param comment: short text description of the entity.
+    :param wikidata: corresponding wikidata id.
+    """
+
+    # load existing graph.
+    
+    graph = load_graph()
+
+    # pull or mint id.
+
+    uri = f"https://paulduchesne.github.io/state/resource/{str(uuid.uuid4())}"
+    persons = [s for s,p,o in graph.triples((None, rdflib.RDF.type, rdflib.URIRef(f'https://paulduchesne.github.io/state/ontology/{entity_type}')))]
+    for p in persons:
+        for a,b,c in graph.triples((p, rdflib.RDFS.label, None)):
+            if str(c) == label:
+                uri = p
+
+    # declare person.
+
+    graph.add((rdflib.URIRef(uri), rdflib.RDF.type, rdflib.URIRef(f'https://paulduchesne.github.io/state/ontology/{entity_type}')))
+
+    # add label.
+
+    if label:
+        labels = [o for s,p,o in graph.triples((rdflib.URIRef(uri), rdflib.RDFS.label, None))]
+        if not len(labels):
+            graph.add((rdflib.URIRef(uri), rdflib.RDFS.label, rdflib.Literal(label, lang='en')))
+
+    # add comment.
+
+    if comment:
+        comments = [o for s,p,o in graph.triples((rdflib.URIRef(uri), rdflib.RDFS.comment, None))]
+        if not len(comments):
+            graph.add((rdflib.URIRef(uri), rdflib.RDFS.comment, rdflib.Literal(comment, lang='en')))
+
+    # add wikidata.
+
+    if wikidata:
+        wikidatas = [o for s,p,o in graph.triples((rdflib.URIRef(uri), rdflib.URIRef('https://paulduchesne.github.io/state/ontology/wikidataIdentifier'), None))]
+        if not len(wikidatas):
+            graph.add((rdflib.URIRef(uri), rdflib.URIRef('https://paulduchesne.github.io/state/ontology/wikidataIdentifier'), rdflib.Literal(wikidata)))
+
+    # write to graph.
+
+    graph_path = pathlib.Path.cwd() / 'public.ttl'
+    graph.serialize(graph_path, format='longturtle')
+
+    # return entity uri.
+
+    return uri
+
+def relation(subject_id: str, property_name: str, object_id: str) -> str:
+    """
+    Generate/update a relationship between two entities.
+
+    :param subject_id: id of subject node.
+    :param property_name: name of relationship property.
+    :param object_id: id of object node.
+    """
+
+    # load existing graph.
+    
+    graph = load_graph()
+
+    # format identifiers.
+
+    subject_uri = f"https://paulduchesne.github.io/state/resource/{subject_id}"
+    object_uri = f"https://paulduchesne.github.io/state/resource/{object_id}"
+
+    # declare relationship.
+
+    graph.add((
+        rdflib.URIRef(subject_uri), 
+        rdflib.URIRef(f'https://paulduchesne.github.io/state/ontology/{property_name}'), 
+        rdflib.URIRef(object_uri))
+        )
+
+
+    # write to graph.
+
+    graph_path = pathlib.Path.cwd() / 'public.ttl'
+    graph.serialize(graph_path, format='longturtle')
+
+
 def person(label: str, comment: str, member: str, wikidata: str) -> str:
     """
     Generate/update a person record.
@@ -20,11 +119,8 @@ def person(label: str, comment: str, member: str, wikidata: str) -> str:
     """
 
     # load existing graph.
-
-    graph_path = pathlib.Path.cwd() / 'public.ttl'
-    if not graph_path.exists():
-        raise Exception('File not found.')
-    graph = rdflib.Graph().parse(graph_path)
+    
+    graph = load_graph()
 
     # pull or mint id.
 
