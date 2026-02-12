@@ -87,7 +87,19 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+
+    classes = [{'class_link':s} for s,p,o in graph.triples((None, rdflib.RDF.type, rdflib.OWL.Class))]
+    for c in classes:
+        c['class_label'] = extract_text(c['class_link'], rdflib.RDFS.label)
+        instances = [{'entity_link':s} for s,p,o in graph.triples((None, rdflib.RDF.type, c['class_link']))]
+        for i in instances:
+            i['entity_label'] = extract_text(i['entity_link'], rdflib.RDFS.label)
+
+        c['instances'] = sorted(instances, key=lambda x: x['entity_label'])
+
+    classes = sorted(classes, key=lambda x: x['class_label'])
+
+    return render_template('index.html', data=classes)
 
 # resource pages.
 
@@ -124,11 +136,11 @@ def resource_generator():
 
 # transform README to index page.
 
-with open(pathlib.Path.cwd() / 'README.md') as index_in:
-    index_in = index_in.read()
+# with open(pathlib.Path.cwd() / 'README.md') as index_in:
+#     index_in = index_in.read()
 
-with open(pathlib.Path.cwd() / 'templates' / 'index.html', 'w') as index_out:
-    index_out.write(markdown.markdown(index_in))
+# with open(pathlib.Path.cwd() / 'templates' / 'index.html', 'w') as index_out:
+#     index_out.write(markdown.markdown(index_in))
 
 if __name__ == '__main__':
     freezer.freeze()
