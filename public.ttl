@@ -181,6 +181,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q184750" ;
 .
 
+<https://paulduchesne.github.io/state/resource/b9c1d601-10c0-446c-8a26-d9e1f6470457>
+    a ont:Person ;
+    rdfs:label "Christopher Priest"@en ;
+    rdfs:comment "British writer."@en ;
+    ont:authorOf <https://paulduchesne.github.io/state/resource/175589f1-680a-4944-85f8-3d555f06c623> ;
+    ont:wikidataIdentifier "Q707796" ;
+.
+
 <https://paulduchesne.github.io/state/resource/dd655cdc-045a-45b9-ada0-5ca16bc750cd>
     a ont:Person ;
     rdfs:label "Tim Berners-Lee"@en ;
@@ -231,6 +239,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:hasAuthor <https://paulduchesne.github.io/state/resource/dd655cdc-045a-45b9-ada0-5ca16bc750cd> ;
     ont:identifier "9781035023684" ;
     ont:participatedIn <https://paulduchesne.github.io/state/resource/2da336c1-f4d6-4fbe-9cdb-500383ffab38> ;
+.
+
+<https://paulduchesne.github.io/state/resource/175589f1-680a-4944-85f8-3d555f06c623>
+    a ont:Book ;
+    rdfs:label "Inverted World"@en ;
+    rdfs:comment "Book by Christopher Priest"@en ;
+    ont:hasAuthor <https://paulduchesne.github.io/state/resource/b9c1d601-10c0-446c-8a26-d9e1f6470457> ;
+    ont:identifier "9781590172698" ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/9700fda4-3fe7-44be-b323-26fb2fd0e0e8> ;
 .
 
 <https://paulduchesne.github.io/state/resource/243492e0-1eaa-4d45-8721-12985d1cd9b3>
@@ -449,6 +466,17 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:startDate "2026-01-07" ;
 .
 
+<https://paulduchesne.github.io/state/resource/9700fda4-3fe7-44be-b323-26fb2fd0e0e8>
+    a ont:ReadingEvent ;
+    rdfs:label "Reading 'Inverted World'"@en ;
+    rdfs:comment "Reading event."@en ;
+    ont:endDate "" ;
+    ont:hasParticipant
+        <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
+        <https://paulduchesne.github.io/state/resource/175589f1-680a-4944-85f8-3d555f06c623> ;
+    ont:startDate "2026-02-12" ;
+.
+
 <https://paulduchesne.github.io/state/resource/9f47fa31-05ff-4bee-bfd5-fdaa16058dac>
     a ont:ReadingEvent ;
     rdfs:label "Reading 'Sun and Steel'"@en ;
@@ -500,7 +528,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a ont:ReadingEvent ;
     rdfs:label "Reading 'Boring Formless Nonsense'"@en ;
     rdfs:comment "Reading event."@en ;
-    ont:endDate "" ;
+    ont:endDate "2026-02-12" ;
     ont:hasParticipant
         <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
         <https://paulduchesne.github.io/state/resource/6d640efd-b316-4ea7-b16d-409d521b3557> ;
@@ -692,6 +720,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://paulduchesne.github.io/state/resource/780a127f-b83f-4ecf-9e05-752a82faecf8> ,
         <https://paulduchesne.github.io/state/resource/86477d45-4c1a-4f95-841d-a3fc2d8ffa25> ,
         <https://paulduchesne.github.io/state/resource/9614c25b-a271-4750-a4cf-245ad1a722ee> ,
+        <https://paulduchesne.github.io/state/resource/9700fda4-3fe7-44be-b323-26fb2fd0e0e8> ,
         <https://paulduchesne.github.io/state/resource/9f47fa31-05ff-4bee-bfd5-fdaa16058dac> ,
         <https://paulduchesne.github.io/state/resource/bd289923-774e-4550-89a1-c7faac5bcaa9> ,
         <https://paulduchesne.github.io/state/resource/cac1db2e-8f8d-4c39-aa5e-838167352444> ,
