@@ -114,7 +114,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/state/resource/0c1ab77c-8ca5-4ada-9246-156f8dc03dac>
     a ont:Person ;
     rdfs:label "Paul Gough"@en ;
-    rdfs:comment "Australian composer."@en ;
+    rdfs:comment "Australian composer. Has performed as Pimmon."@en ;
     ont:creatorOf <https://paulduchesne.github.io/state/resource/b506945b-b5de-43ba-83ad-f79fdb8da5ea> ;
     ont:wikidataIdentifier "Q7194665" ;
 .
@@ -152,7 +152,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/state/resource/0fddd67c-6e77-47b0-beec-8f90845f1849>
     a ont:Person ;
     rdfs:label "Hannah de Feyter"@en ;
-    rdfs:comment "Australian composer."@en ;
+    rdfs:comment "Australian composer. Has performed as Alphamale."@en ;
     ont:creatorOf <https://paulduchesne.github.io/state/resource/6cf5efee-ef14-4b4d-8659-e7a85be4ede0> ;
 .
 
@@ -471,7 +471,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/state/resource/343df74f-5482-434d-ae90-dfcf915cb9b8>
     a ont:Person ;
     rdfs:label "Frederikke Hoffmeier"@en ;
-    rdfs:comment "Danish composer."@en ;
+    rdfs:comment "Danish composer. Has performed as Puce Mary."@en ;
     ont:creatorOf <https://paulduchesne.github.io/state/resource/8c63e6b3-7ce5-4bc0-b2d8-14eec12bfc9a> ;
     ont:wikidataIdentifier "Q66425353" ;
 .
@@ -486,7 +486,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/state/resource/35aa6aba-9366-4545-bbfb-c046b5acd68c>
     a ont:Person ;
     rdfs:label "Brian Chippendale"@en ;
-    rdfs:comment "American composer."@en ;
+    rdfs:comment "American composer. Has performed as Black Pus."@en ;
     ont:creatorOf <https://paulduchesne.github.io/state/resource/6323f545-f103-409a-936b-3d586c60be69> ;
     ont:wikidataIdentifier "Q2924872" ;
 .
@@ -737,7 +737,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/state/resource/4ad6ff33-4bbf-431b-9a3c-18be6fed6997>
     a ont:Person ;
     rdfs:label "Leo Chadburn"@en ;
-    rdfs:comment "British composer."@en ;
+    rdfs:comment "British composer. Has performed as Simon Bookish."@en ;
     ont:creatorOf <https://paulduchesne.github.io/state/resource/01ce23b4-dcca-4d7e-82d4-1e4dd647946e> ;
     ont:wikidataIdentifier "Q7518310" ;
 .
@@ -929,7 +929,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/state/resource/60fb697c-ae6f-4286-872f-96f9fadcce0a>
     a ont:Person ;
     rdfs:label "Kristin Hayter"@en ;
-    rdfs:comment "American composer."@en ;
+    rdfs:comment "American composer. Has performed as Lingua Ignota."@en ;
     ont:creatorOf <https://paulduchesne.github.io/state/resource/9a451737-abf9-4a41-960f-e07783373ebe> ;
     ont:wikidataIdentifier "Q64744924" ;
 .
@@ -1146,7 +1146,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/state/resource/74f2c977-392a-4340-8e92-a0e24cbb2a9d>
     a ont:Person ;
     rdfs:label "Aditya Surya Taruna "@en ;
-    rdfs:comment "Indonesian composer."@en ;
+    rdfs:comment "Indonesian composer. Has performed as Hulubalang."@en ;
     ont:creatorOf <https://paulduchesne.github.io/state/resource/452958cd-9773-4f02-a82d-d0db5e5c9766> ;
 .
 
@@ -1441,7 +1441,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/state/resource/8cf78a58-90cb-4a88-8c76-e39851ec77ff>
     a ont:Person ;
     rdfs:label "Aaron Funk"@en ;
-    rdfs:comment "Canadian composer."@en ;
+    rdfs:comment "Canadian composer. Has performed as Venetian Snares."@en ;
     ont:creatorOf <https://paulduchesne.github.io/state/resource/d4a6127f-b60e-4090-a355-e2e70482379a> ;
     ont:wikidataIdentifier "Q120204" ;
 .
@@ -1587,7 +1587,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/state/resource/95ef7e30-3822-4df1-b212-d1ad96d2f62c>
     a ont:Person ;
     rdfs:label "Thomas Jenkinson"@en ;
-    rdfs:comment "British composer."@en ;
+    rdfs:comment "British composer. Has performed as Squarepusher."@en ;
     ont:creatorOf <https://paulduchesne.github.io/state/resource/a658cdfa-7e5b-4613-85bb-841083ff9f1b> ;
     ont:wikidataIdentifier "Q553861" ;
 .
@@ -1778,7 +1778,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/state/resource/ad787774-a07a-4814-80a4-71dc02b393c3>
     a ont:Person ;
     rdfs:label "Liz Harris"@en ;
-    rdfs:comment "American composer."@en ;
+    rdfs:comment "American composer. Has performed as Grouper."@en ;
     ont:creatorOf <https://paulduchesne.github.io/state/resource/b9128a0d-c5dd-4201-b751-67185640e912> ;
     ont:wikidataIdentifier "Q4951034" ;
 .
@@ -2250,7 +2250,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/state/resource/d70e0f16-2fbf-4822-8d15-70b6176191a4>
     a ont:Person ;
     rdfs:label "Andrew McLellan"@en ;
-    rdfs:comment "Australian composer."@en ;
+    rdfs:comment "Australian composer. Has performed as Cured Pink."@en ;
     ont:creatorOf <https://paulduchesne.github.io/state/resource/77ff6987-971f-4d55-9906-b1d345bd5d3d> ;
 .
 
@@ -2301,7 +2301,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/state/resource/dd8407fa-b77b-4d4f-ad6b-895dbc6570e5>
     a ont:Person ;
     rdfs:label "Kris Keogh"@en ;
-    rdfs:comment "Australian composer."@en ;
+    rdfs:comment "Australian composer. Has performed as Blastcorp."@en ;
     ont:creatorOf <https://paulduchesne.github.io/state/resource/19cad5c0-060e-414d-839b-8606362a43cb> ;
 .
 
@@ -2316,7 +2316,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/state/resource/dedb9378-0b04-4661-ab46-0cfcb461f255>
     a ont:Person ;
     rdfs:label "Tim Dwyer"@en ;
-    rdfs:comment "Australian composer."@en ;
+    rdfs:comment "Australian composer. Has performed as Horse MacGyver."@en ;
     ont:creatorOf <https://paulduchesne.github.io/state/resource/06aed4c4-dce0-4fb7-b599-071edfb0b15e> ;
     ont:wikidataIdentifier "Q21521461" ;
 .
@@ -2747,7 +2747,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/state/resource/51c8029c-bbd7-44a1-8b6d-48786503c98e>
     a ont:Person ;
     rdfs:label "Cécile Schott"@en ;
-    rdfs:comment "French composer."@en ;
+    rdfs:comment "French composer. Has performed as Colleen."@en ;
     ont:creatorOf
         <https://paulduchesne.github.io/state/resource/41164b71-66ac-40c9-a0a7-218c05f999b2> ,
         <https://paulduchesne.github.io/state/resource/98df73bb-f139-4ec6-b742-056ae88da726> ;
@@ -2825,7 +2825,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/state/resource/7991263f-8455-4d38-bbd3-d0f215871cf5>
     a ont:Person ;
     rdfs:label "Daniel Lopatin"@en ;
-    rdfs:comment "American composer."@en ;
+    rdfs:comment "American composer. Has performed as Oneohtrix Point Never."@en ;
     ont:creatorOf
         <https://paulduchesne.github.io/state/resource/2b616b2d-a1eb-4cd0-b65f-21b14975feda> ,
         <https://paulduchesne.github.io/state/resource/aabf82de-06c8-458d-8535-ebf35a3ef956> ;
@@ -2872,7 +2872,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/state/resource/8723f25f-18a8-4e08-8adf-1ba204e67520>
     a ont:Person ;
     rdfs:label "John Burton"@en ;
-    rdfs:comment "British composer."@en ;
+    rdfs:comment "British composer. Has performed as Leafcutter John."@en ;
     ont:creatorOf
         <https://paulduchesne.github.io/state/resource/1f72aff9-072d-4d75-b66a-829982b1d71d> ,
         <https://paulduchesne.github.io/state/resource/dc21b79f-70fe-41dd-8e2d-e45bd059ebb4> ;
@@ -2882,7 +2882,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/state/resource/89ea2e61-be20-4a06-b5e7-a54319753a29>
     a ont:Person ;
     rdfs:label "Chris Finnigan"@en ;
-    rdfs:comment "Australian composer."@en ;
+    rdfs:comment "Australian composer. Has performed as Fossil Rabbit."@en ;
     ont:creatorOf <https://paulduchesne.github.io/state/resource/e129a41a-67f3-48de-bba1-ec98d3f69e8a> ;
     ont:memberOf <https://paulduchesne.github.io/state/resource/21935384-f63f-460a-9fc7-48878d715790> ;
 .
@@ -3137,8 +3137,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <https://paulduchesne.github.io/state/resource/d5cb13de-680d-402c-a783-7fc33b12fb74>
     a ont:Person ;
-    rdfs:label "Jordan Marson "@en ;
-    rdfs:comment "Australian composer."@en ;
+    rdfs:label "Jordan Marson"@en ;
+    rdfs:comment "Australian composer. Has performed as Oceans."@en ;
     ont:creatorOf <https://paulduchesne.github.io/state/resource/3ad2afc2-6d1f-4732-8684-b513d1fb5da9> ;
     ont:memberOf <https://paulduchesne.github.io/state/resource/dbf58da6-530a-48e8-a996-f06ccf498248> ;
 .
@@ -3300,7 +3300,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/state/resource/14017918-e915-4a3a-a067-380b9d536a1c>
     a ont:Person ;
     rdfs:label "Bobby Krlic"@en ;
-    rdfs:comment "British composer."@en ;
+    rdfs:comment "British composer. Has performed as The Haxan Cloak."@en ;
     ont:creatorOf
         <https://paulduchesne.github.io/state/resource/014369b3-d66a-429d-98f9-77caec9e5cd0> ,
         <https://paulduchesne.github.io/state/resource/6c653d29-d7e6-42b6-93b1-a4fbf456e849> ,
@@ -3322,7 +3322,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/state/resource/24946da4-9a3d-413e-8ab5-ab3d978ede15>
     a ont:Person ;
     rdfs:label "Jonathan Black"@en ;
-    rdfs:comment "Australian composer."@en ;
+    rdfs:comment "Australian composer. Has performed as Jonny Telafone."@en ;
     ont:creatorOf
         <https://paulduchesne.github.io/state/resource/2f8d1630-3174-489d-8986-0dcc38360a4e> ,
         <https://paulduchesne.github.io/state/resource/496727b7-d53c-4909-84b0-906e77568e51> ,
@@ -3343,7 +3343,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/state/resource/362206f7-fbc6-4f94-9648-e95a832178aa>
     a ont:Person ;
     rdfs:label "Ben Snaith"@en ;
-    rdfs:comment "Australian composer."@en ;
+    rdfs:comment "Australian composer. Has performed as Orlando Furious."@en ;
     ont:creatorOf
         <https://paulduchesne.github.io/state/resource/828d7b73-2224-439c-ba7b-ebb21a460784> ,
         <https://paulduchesne.github.io/state/resource/ee579057-c7bc-4890-8c28-bdd0912460a1> ;
@@ -3408,7 +3408,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/state/resource/aa2c3445-389c-42ac-b5f2-200e7c2b5c74>
     a ont:Person ;
     rdfs:label "Anja Plaschg"@en ;
-    rdfs:comment "Austrian composer."@en ;
+    rdfs:comment "Austrian composer. Has performed as Soap & Skin."@en ;
     ont:creatorOf
         <https://paulduchesne.github.io/state/resource/2c6a1d72-e9cb-4075-ac51-f8af05695664> ,
         <https://paulduchesne.github.io/state/resource/aeb19311-a812-423e-99e3-46966c51fa73> ,
@@ -3486,7 +3486,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/state/resource/88db9a41-e263-45f6-9de4-e8c59b031b56>
     a ont:Person ;
     rdfs:label "Antye Greie"@en ;
-    rdfs:comment "German composer."@en ;
+    rdfs:comment "German composer. Has performed as AGF."@en ;
     ont:creatorOf
         <https://paulduchesne.github.io/state/resource/0f1c2c7f-25ee-40a8-bb17-2230e08790ef> ,
         <https://paulduchesne.github.io/state/resource/7a9d1065-a91a-432b-ae24-28f97a1bab70> ,
