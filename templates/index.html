@@ -4,14 +4,21 @@
 
 <div style="width: 800px; display: block; margin: 0 auto;">
 
+    <h1>state</h1>
 
-{% for c in data %}
-<strong>{{ c.class_label}}</strong><br>
 
-{% for i in c.instances %}
 
-<a href="{{ i.entity_link }}">{{ i.entity_label }}</a><br>
-{% endfor %}
-{% endfor %}
+
+    {% for c in data %}
+    {% if c.instances %}
+
+    <br><strong>{{ c.class_label}}</strong><br><br>
+
+    {% for i in c.instances %}
+
+    <a href="{{ i.entity_link }}">{{ i.entity_label }}</a><br>
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
 
 </div>
