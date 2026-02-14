@@ -1,0 +1,3 @@
+[submodule "geist-font"]
+	path = geist-font
+	url = https://github.com/vercel/geist-font.git
