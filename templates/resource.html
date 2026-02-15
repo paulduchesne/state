@@ -14,34 +14,28 @@
 
 
 
-<div style="width: 600px; display: block; margin: 0 auto;">
+<div style="width: 600px; display: block; margin: 0 auto; padding-top:40px">
 
-     <div id="paper" style="width: 400px; height: 400px; padding-top: 40px;"></div>
-      <br><br>
+ 
 
-
-<tspan style="font-family: geist_regular;font-size: 24px;">{{ data.label }}</tspan>
-[<a href="{{ data.type.entity_link }}">{{ data.type.entity_label }}</a>]<br><br>
-{{ data.comment | safe }}
+<tspan class="title_text">{{ data.label }}</tspan><br><br>
+<!-- [<a href="{{ data.type.entity_link }}">{{ data.type.entity_label }}</a>]<br><br> -->
+<tspan class="regular_text">{{ data.comment | safe }}</tspan><br>
 
 {% if data.statements %}
-<strong>Statements</strong>
-<br>
+<tspan class="bold_text">Statements</tspan><br><br>
+
 {% for s in data.statements %}
 {% if s.type == 'entity' %}
-{{ data.label }} → <a href="{{ s.property_link }}">{{ s.property_label }}</a> → <a href="{{ s.entity_link }}">{{ s.entity_label }}</a><br>
+<tspan class="regular_text">{{ data.label }} → <a href="{{ s.property_link }}">{{ s.property_label }}</a> → <a href="{{ s.entity_link }}">{{ s.entity_label }}</a><br></tspan>
 {% endif %}
 {% if s.type == 'literal' %}
-{{ data.label }} → <a href="{{ s.property_link }}">{{ s.property_label }}</a> → {{ s.entity_label }}<br>
+<tspan class="regular_text">{{ data.label }} → <a href="{{ s.property_link }}">{{ s.property_label }}</a> → {{ s.entity_label }}<br></tspan>
 {% endif %}
 {% endfor %}
 {% endif %}
 
 </div>
 
-
-      <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script>let nodes_data = JSON.parse('{{ data|tojson|safe }}');</script>
-      <script src="../static/nodes.js"></script>
 
 {% endblock %}

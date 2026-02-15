@@ -1,6 +1,5 @@
 <head>
     <title>state</title>
-
     <style>
     @font-face {
         font-family: 'geist_light';
@@ -10,22 +9,38 @@
         font-family: 'geist_regular';
         src: url("{{ url_for('static', filename='geist/fonts/Geist/otf/Geist-Regular.otf') }}") format('opentype');
     }
-
+    @font-face {
+        font-family: 'geist_bold';
+        src: url("{{ url_for('static', filename='geist/fonts/Geist/otf/Geist-Bold.otf') }}") format('opentype');
+    }
+    .title_text {
+        font-size: 24px; 
+        font-family: 'geist_light', sans-serif
+    }
+    .bold_text {
+        font-size: 16px; 
+        font-family: 'geist_bold', sans-serif
+    }
+    .regular_text {
+        font-size: 16px; 
+        font-family: 'geist_light', sans-serif
+    }
+    a, a:visited, a:hover, a:active {
+        color: lightseagreen;        
+        text-decoration: underline; 
+    }
 
 </style>
 </head>
 
 <body style="margin: 0; padding: 0">
+
     <div style="width: 100%; background-color: #333333; display: flex; justify-content: left; align-items: center;">
+        <tspan class='regular_text'style="color: #dddddd; padding: 20px">state</tspan>
+    </div>
 
+    {% block content %}{% endblock %}
 
- 
-
-    <tspan style="font-size: 16px; font-family: 'geist_light', sans-serif; color: #dddddd; padding: 20px">state</tspan>
-            </div>
-            {% block content %}{% endblock %}
-
-  
 </body>
 
   
