@@ -2,9 +2,25 @@
 
 {% block content %}
 
-<div style="width: 800px; display: block; margin: 0 auto;">
 
-<h3>{{ data.label }}</h3>
+<!-- example -->
+
+<!-- http://localhost:8764/resource/87664044-a8cb-48cc-9cb0-b37bea003770.html -->
+
+
+
+<!-- http://localhost:8764/resource/06aed4c4-dce0-4fb7-b599-071edfb0b15e.html -->
+ 
+
+
+
+<div style="width: 600px; display: block; margin: 0 auto;">
+
+     <div id="paper" style="width: 400px; height: 400px; padding-top: 40px;"></div>
+      <br><br>
+
+
+<tspan style="font-family: geist_regular;font-size: 24px;">{{ data.label }}</tspan>
 [<a href="{{ data.type.entity_link }}">{{ data.type.entity_label }}</a>]<br><br>
 {{ data.comment | safe }}
 
@@ -22,5 +38,10 @@
 {% endif %}
 
 </div>
+
+
+      <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script>let nodes_data = JSON.parse('{{ data|tojson|safe }}');</script>
+      <script src="../static/nodes.js"></script>
 
 {% endblock %}
