@@ -114,6 +114,7 @@ for x in node_array.keys():
 # define app.
 
 app = Flask(__name__)
+app.config['FREEZER_RELATIVE_URLS'] = True
 
 # index page.
 
