@@ -2,40 +2,25 @@
 
 {% block content %}
 
-
-<!-- example -->
-
-<!-- http://localhost:8764/resource/87664044-a8cb-48cc-9cb0-b37bea003770.html -->
-
-
-
-<!-- http://localhost:8764/resource/06aed4c4-dce0-4fb7-b599-071edfb0b15e.html -->
- 
-
-
-
 <div style="width: 600px; display: block; margin: 0 auto; padding-top:40px">
 
- 
+    <tspan class="title_text">{{ data.label }}</tspan><br><br>
+    <tspan class="regular_text">[<a href="{{ data.type.entity_link }}">{{ data.type.entity_label }}</a>]</tspan><br>
+    <tspan class="regular_text">{{ data.comment | safe }}</tspan>
 
-<tspan class="title_text">{{ data.label }}</tspan><br><br>
-<!-- [<a href="{{ data.type.entity_link }}">{{ data.type.entity_label }}</a>]<br><br> -->
-<tspan class="regular_text">{{ data.comment | safe }}</tspan><br>
+    {% if data.statements %}
+    <tspan class="bold_text">Statements</tspan><br><br>
 
-{% if data.statements %}
-<tspan class="bold_text">Statements</tspan><br><br>
-
-{% for s in data.statements %}
-{% if s.type == 'entity' %}
-<tspan class="regular_text">{{ data.label }} → <a href="{{ s.property_link }}">{{ s.property_label }}</a> → <a href="{{ s.entity_link }}">{{ s.entity_label }}</a><br></tspan>
-{% endif %}
-{% if s.type == 'literal' %}
-<tspan class="regular_text">{{ data.label }} → <a href="{{ s.property_link }}">{{ s.property_label }}</a> → {{ s.entity_label }}<br></tspan>
-{% endif %}
-{% endfor %}
-{% endif %}
+    {% for s in data.statements %}
+    {% if s.type == 'entity' %}
+    <tspan class="regular_text">{{ data.label }} → <a href="{{ s.property_link }}">{{ s.property_label }}</a> → <a href="{{ s.entity_link }}">{{ s.entity_label }}</a><br></tspan>
+    {% endif %}
+    {% if s.type == 'literal' %}
+    <tspan class="regular_text">{{ data.label }} → <a href="{{ s.property_link }}">{{ s.property_label }}</a> → {{ s.entity_label }}<br></tspan>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
 
 </div>
-
 
 {% endblock %}
