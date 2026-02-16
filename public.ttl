@@ -4,7 +4,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 <https://paulduchesne.github.io/state/resource/84e22246-8182-469d-9fc5-99cfbce52aa1>
     a ont:Protocol ;
     rdfs:label "SSH"@en ;
-    rdfs:comment "SSH is a protocol for authenticating to devices over a network. I hope never to need to understand the complexities of how it actually operates. <br><br>Create an Ed25519 key. <br><br>```ssh-keygen -t ed25519 ``` <br><br>Print public key. <br><br>```cat .ssh/id_ed25519.pub```"@en ;
+    rdfs:comment "SSH is a protocol for authenticating to devices over a network. I hope never to need to understand the complexities of how it actually operates. <br><br>Create an Ed25519 key.<pre><code>ssh-keygen -t ed25519</code></pre>Print public key.<pre><code>cat .ssh/id_ed25519.pub</code></pre>"@en ;
 .
 
 <https://paulduchesne.github.io/state/resource/a2e9cb60-f35b-487a-add9-a9044fa64d85>

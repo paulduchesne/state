@@ -56,7 +56,7 @@ for x in node_array.keys():
 # node comment.
 
 for x in node_array.keys():
-    node_array[x]["comment"] = markdown.markdown(extract_text(x, rdflib.RDFS.comment))
+    node_array[x]["comment"] = markdown.markdown(extract_text(x, rdflib.RDFS.comment), extensions=['fenced_code'])
 
 # node statements.
 
