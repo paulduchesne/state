@@ -1,24 +1,26 @@
-<head>
-    <title>state</title>
-</head>
+{% extends 'layout.html' %}
 
-<div style="width: 800px; display: block; margin: 0 auto;">
+{% block content %}
 
-<h3>{{ data.label }}</h3>
-[<a href="{{ data.type.entity_link }}">{{ data.type.entity_label }}</a>]<br><br>
-{{ data.comment | safe }}
+<div style="width: 600px; display: block; margin: 0 auto; padding-top:40px">
 
-{% if data.statements %}
-<strong>Statements</strong>
-<br>
-{% for s in data.statements %}
-{% if s.type == 'entity' %}
-{{ data.label }} → <a href="{{ s.property_link }}">{{ s.property_label }}</a> → <a href="{{ s.entity_link }}">{{ s.entity_label }}</a><br>
-{% endif %}
-{% if s.type == 'literal' %}
-{{ data.label }} → <a href="{{ s.property_link }}">{{ s.property_label }}</a> → {{ s.entity_label }}<br>
-{% endif %}
-{% endfor %}
-{% endif %}
+    <tspan class="title_text">{{ data.label }}</tspan><br><br>
+    <tspan class="regular_text">[<a href="{{ data.type.entity_link }}">{{ data.type.entity_label }}</a>]</tspan><br>
+    <tspan class="regular_text">{{ data.comment | safe }}</tspan>
+
+    {% if data.statements %}
+    <tspan class="bold_text">Statements</tspan><br><br>
+
+    {% for s in data.statements %}
+    {% if s.type == 'entity' %}
+    <tspan class="regular_text">{{ data.label }} → <a href="{{ s.property_link }}">{{ s.property_label }}</a> → <a href="{{ s.entity_link }}">{{ s.entity_label }}</a><br></tspan>
+    {% endif %}
+    {% if s.type == 'literal' %}
+    <tspan class="regular_text">{{ data.label }} → <a href="{{ s.property_link }}">{{ s.property_label }}</a> → {{ s.entity_label }}<br></tspan>
+    {% endif %}
+    {% endfor %}
+    {% endif %}
 
 </div>
+
+{% endblock %}

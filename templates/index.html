@@ -1,24 +1,19 @@
-<head>
-    <title>state</title>
-</head>
+{% extends 'layout.html' %}
 
-<div style="width: 800px; display: block; margin: 0 auto;">
-
-    <h1>state</h1>
-
-
-
+{% block content %}
+   
+<div style="width: 600px; display: block; margin: 0 auto; padding-top:40px">
 
     {% for c in data %}
     {% if c.instances %}
-
-    <br><strong>{{ c.class_label}}</strong><br><br>
-
+    <tspan class="bold_text">{{ c.class_label}}</tspan><br><br>
     {% for i in c.instances %}
-
-    <a href="{{ i.entity_link }}">{{ i.entity_label }}</a><br>
+    <tspan class="regular_text"><a href="{{ i.entity_link }}">{{ i.entity_label }}</a></tspan><br>
     {% endfor %}
+    <br>
     {% endif %}
     {% endfor %}
 
 </div>
+
+{% endblock %}
