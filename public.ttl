@@ -1,6 +1,12 @@
 PREFIX ont: <https://paulduchesne.github.io/state/ontology/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
+<https://paulduchesne.github.io/state/resource/63f92f5a-0dc8-405c-b03f-195988d9efbb>
+    a ont:Application ;
+    rdfs:label "Docker"@en ;
+    rdfs:comment "Docker is an application to facilitate containerised enviroments. This is intensely useful for ensuring predictability, that software behaves in a fully expectated manner.<br><br>The easiest way to install Docker in a dev context is<pre><code>curl -fsSL https://get.docker.com  | sudo sh</code></pre>By default Docker will expect sudo on every command, which gets boring. Instead auth the user<pre><code>sudo usermod -aG docker $USER</code></pre>An Ubuntu container can be deployed in interactive mode with the following command<pre><code>docker run -it ubuntu:24.04</code></pre>It is also common to define your own `Dockerfile`, which can contain extensive config<pre><code>FROM ubuntu:24.04</code></pre>This image can be built<pre><code>docker build -t my-project .</code></pre>and deployed<pre><code>docker run -it my-project</code></pre>"@en ;
+.
+
 <https://paulduchesne.github.io/state/resource/84e22246-8182-469d-9fc5-99cfbce52aa1>
     a ont:Protocol ;
     rdfs:label "SSH"@en ;

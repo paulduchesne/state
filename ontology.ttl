@@ -111,6 +111,12 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 .
 
 
+<https://paulduchesne.github.io/state/ontology/Application>
+    a owl:Class ;
+    rdfs:label "Application"@en ; 
+    rdfs:comment "A wrapped discrete instance of software."@en ;  
+.
+
 # owl:ObjectProperty
 
 <https://paulduchesne.github.io/state/ontology/hasParticipant>
