@@ -1112,6 +1112,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:hasCreator <https://paulduchesne.github.io/state/resource/951a3ac2-4e0a-4eed-b718-9a483f78c6ef> ;
 .
 
+<https://paulduchesne.github.io/state/resource/70561de9-873a-4419-a6cb-70bcbe352497>
+    a ont:Person ;
+    rdfs:label "Vasily Grossman"@en ;
+    rdfs:comment "Russian writer."@en ;
+    ont:authorOf <https://paulduchesne.github.io/state/resource/c15216ea-cf68-4043-9189-98112d813350> ;
+    ont:wikidataIdentifier "Q313767" ;
+.
+
 <https://paulduchesne.github.io/state/resource/7243e4a9-e898-4139-a912-9d9f5463dce2>
     a ont:Album ;
     rdfs:label "Platform"@en ;
@@ -2972,7 +2980,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a ont:ReadingEvent ;
     rdfs:label "Reading 'Inverted World'"@en ;
     rdfs:comment "Reading event."@en ;
-    ont:endDate "" ;
+    ont:endDate "2026-02-19" ;
     ont:hasParticipant
         <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
         <https://paulduchesne.github.io/state/resource/175589f1-680a-4944-85f8-3d555f06c623> ;
@@ -3059,6 +3067,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
         <https://paulduchesne.github.io/state/resource/6d640efd-b316-4ea7-b16d-409d521b3557> ;
     ont:startDate "2026-02-07" ;
+.
+
+<https://paulduchesne.github.io/state/resource/c15216ea-cf68-4043-9189-98112d813350>
+    a ont:Book ;
+    rdfs:label "Life and Fate"@en ;
+    rdfs:comment "Book by Vasily Grossman"@en ;
+    ont:hasAuthor <https://paulduchesne.github.io/state/resource/70561de9-873a-4419-a6cb-70bcbe352497> ;
+    ont:identifier "9781590172018" ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/fb69769f-16b7-4dcb-8258-b870596651b7> ;
 .
 
 <https://paulduchesne.github.io/state/resource/cac1db2e-8f8d-4c39-aa5e-838167352444>
@@ -3249,6 +3266,17 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:comment "Australian group."@en ;
     ont:creatorOf <https://paulduchesne.github.io/state/resource/aa5037db-6221-4a7a-96bc-1dca3b905483> ;
     ont:hasMember <https://paulduchesne.github.io/state/resource/79225f2a-bb17-4354-8911-16c93e8c50a0> ;
+.
+
+<https://paulduchesne.github.io/state/resource/fb69769f-16b7-4dcb-8258-b870596651b7>
+    a ont:ReadingEvent ;
+    rdfs:label "Reading 'Life and Fate'"@en ;
+    rdfs:comment "Reading event."@en ;
+    ont:endDate "" ;
+    ont:hasParticipant
+        <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
+        <https://paulduchesne.github.io/state/resource/c15216ea-cf68-4043-9189-98112d813350> ;
+    ont:startDate "2026-02-19" ;
 .
 
 <https://paulduchesne.github.io/state/resource/fe923883-a71b-460f-99a0-d8abf05a2281>
@@ -3662,6 +3690,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://paulduchesne.github.io/state/resource/df0b77c1-6b2c-4bd4-904e-9921848978d0> ,
         <https://paulduchesne.github.io/state/resource/e1143363-8ef5-4178-9f22-4de39500925e> ,
         <https://paulduchesne.github.io/state/resource/e44ca924-764e-4dfb-be0f-356d8a1733d5> ,
+        <https://paulduchesne.github.io/state/resource/fb69769f-16b7-4dcb-8258-b870596651b7> ,
         <https://paulduchesne.github.io/state/resource/fe923883-a71b-460f-99a0-d8abf05a2281> ;
     ont:wikidataIdentifier "Q115057988" ;
 .
