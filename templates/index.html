@@ -1,10 +1,17 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-   
+
 <div style="width: 600px; display: block; margin: 0 auto; padding-top:40px">
 
-    {% for c in data %}
+
+    <div id="screen"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--{% for c in data %}
     {% if c.instances %}
     <tspan class="bold_text">{{ c.class_label}}</tspan><br><br>
     {% for i in c.instances %}
@@ -12,8 +19,12 @@
     {% endfor %}
     <br>
     {% endif %}
-    {% endfor %}
+    {% endfor %}-->
 
 </div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>let nodes_data = JSON.parse('{{ data|tojson|safe }}');</script>
+<script src="../static/nodes.js"></script>
 
 {% endblock %}

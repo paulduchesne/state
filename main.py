@@ -141,6 +141,7 @@ def index():
 
         c["instances"] = sorted(instances, key=lambda x: x["entity_label"])
 
+    classes = [x for x in classes if len(x['instances'])]
     classes = sorted(classes, key=lambda x: x["class_label"])
 
     return render_template("index.html", data=classes)

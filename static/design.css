@@ -1,45 +1,47 @@
 @font-face {
     font-family: 'geist_light';
-    src: url("{{ url_for('static', filename='geist/fonts/Geist/otf/Geist-Light.otf') }}") format('opentype');
+    src: url('../static/geist/fonts/Geist/otf/Geist-Light.otf');
 }
 
 @font-face {
     font-family: 'geist_regular';
-    src: url("{{ url_for('static', filename='geist/fonts/Geist/otf/Geist-Regular.otf') }}") format('opentype');
+    src: url('../static/geist/fonts/Geist/otf/Geist-Regular.otf');
 }
 
 @font-face {
     font-family: 'geist_bold';
-    src: url("{{ url_for('static', filename='geist/fonts/Geist/otf/Geist-Bold.otf') }}") format('opentype');
+    src: url('../static/geist/fonts/Geist/otf/Geist-Bold.otf');
 }
 
+
+
 .title_text {
-    font-size: 24px; 
+    font-size: 24px;
     font-family: 'geist_light', sans-serif
 }
 
 .bold_text {
-    font-size: 16px; 
+    font-size: 16px;
     font-family: 'geist_bold', sans-serif
 }
 
 .regular_text {
-    font-size: 16px; 
+    font-size: 16px;
     font-family: 'geist_light', sans-serif
 }
 
 a, a:visited, a:hover, a:active {
-    color: lightseagreen;        
-    text-decoration: underline; 
+    color: lightseagreen;
+    text-decoration: underline;
 }
 
 pre {
-  background-color: #f4f4f4; 
-  border-radius: 8px;       
-  padding: 15px;            
-  overflow: auto;           
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 15px;
+  overflow: auto;
 }
- 
+
 code {
-  font-family: monospace;   
+  font-family: monospace;
 }
