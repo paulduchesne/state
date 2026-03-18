@@ -13,7 +13,10 @@
     src: url('../static/geist/fonts/Geist/otf/Geist-Bold.otf');
 }
 
-
+@font-face {
+    font-family: 'geist_medium';
+    src: url('../static/geist/fonts/Geist/otf/Geist-Medium.otf');
+}
 
 .title_text {
     font-size: 24px;
@@ -28,6 +31,11 @@
 .regular_text {
     font-size: 16px;
     font-family: 'geist_light', sans-serif
+}
+
+.type_labels {
+    font-size: 16px;
+    font-family: 'geist_medium', sans-serif
 }
 
 a, a:visited, a:hover, a:active {
