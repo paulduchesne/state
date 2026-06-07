@@ -799,6 +799,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q4045807" ;
 .
 
+<https://paulduchesne.github.io/state/resource/4f1be3d7-3931-444d-9f57-e2ddcc8fd3c6>
+    a ont:Person ;
+    rdfs:label "Fyodor Dostoevsky"@en ;
+    rdfs:comment "Russian writer."@en ;
+    ont:authorOf <https://paulduchesne.github.io/state/resource/39378144-d6c7-46ef-a626-97b372fadb41> ;
+    ont:wikidataIdentifier "Q991" ;
+.
+
 <https://paulduchesne.github.io/state/resource/524bdd1b-f156-48ed-9c52-7ae7e45a91ac>
     a ont:Organisation ;
     rdfs:label "Hebden Reid Gustafsson"@en ;
@@ -1198,6 +1206,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "Cured Pink"@en ;
     rdfs:comment "Album by Andrew McLellan"@en ;
     ont:hasCreator <https://paulduchesne.github.io/state/resource/d70e0f16-2fbf-4822-8d15-70b6176191a4> ;
+.
+
+<https://paulduchesne.github.io/state/resource/788c45b3-ff04-43b5-996b-4c3d15c6aefc>
+    a ont:Person ;
+    rdfs:label "Edouard Louis"@en ;
+    rdfs:comment "French writer."@en ;
+    ont:authorOf <https://paulduchesne.github.io/state/resource/6b7d2644-6850-4ac3-8f59-f813f469889a> ;
+    ont:wikidataIdentifier "Q16011483" ;
 .
 
 <https://paulduchesne.github.io/state/resource/79716519-a42e-42d6-8472-9a06fb9f446b>
@@ -2357,6 +2373,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:hasCreator <https://paulduchesne.github.io/state/resource/89ea2e61-be20-4a06-b5e7-a54319753a29> ;
 .
 
+<https://paulduchesne.github.io/state/resource/e1b5bce8-c157-4497-9b5e-7033c7899f3d>
+    a ont:Person ;
+    rdfs:label "Yuko Tsushima"@en ;
+    rdfs:comment "Japanese writer."@en ;
+    ont:authorOf <https://paulduchesne.github.io/state/resource/616616bf-096e-446c-b01c-cc6616be03b5> ;
+    ont:wikidataIdentifier "Q291672" ;
+.
+
 <https://paulduchesne.github.io/state/resource/e22b123b-1bb5-4648-b0d0-44e87c79c273>
     a ont:Album ;
     rdfs:label "Retribution"@en ;
@@ -2698,6 +2722,26 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:memberOf <https://paulduchesne.github.io/state/resource/d4c956be-717d-4615-9f1f-0105e853bfee> ;
 .
 
+<https://paulduchesne.github.io/state/resource/39378144-d6c7-46ef-a626-97b372fadb41>
+    a ont:Book ;
+    rdfs:label "The Brothers Karamazov"@en ;
+    rdfs:comment "Book by Fyodor Dostoevsky"@en ;
+    ont:hasAuthor <https://paulduchesne.github.io/state/resource/4f1be3d7-3931-444d-9f57-e2ddcc8fd3c6> ;
+    ont:identifier "9781250398024" ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/587b15ec-0d00-4171-aeed-6d1d7a493c76> ;
+.
+
+<https://paulduchesne.github.io/state/resource/3ad4e2e0-8c98-41bf-94ba-d40e09f1a0b7>
+    a ont:ReadingEvent ;
+    rdfs:label "Reading 'Woman Running in the Mountains'"@en ;
+    rdfs:comment "Reading event."@en ;
+    ont:endDate "2026-06-06" ;
+    ont:hasParticipant
+        <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
+        <https://paulduchesne.github.io/state/resource/616616bf-096e-446c-b01c-cc6616be03b5> ;
+    ont:startDate "2026-05-24" ;
+.
+
 <https://paulduchesne.github.io/state/resource/3b5ea998-21b9-4b09-b910-b1c1ba6b91c5>
     a ont:ReadingEvent ;
     rdfs:label "Reading 'Memories Of The Future'"@en ;
@@ -2768,6 +2812,37 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     ont:wikidataIdentifier "Q1988819" ;
 .
 
+<https://paulduchesne.github.io/state/resource/52e6a8ab-1f71-4c16-8cac-5c6e1ee380a3>
+    a ont:ReadingEvent ;
+    rdfs:label "Reading 'History of Violence'"@en ;
+    rdfs:comment "Reading event."@en ;
+    ont:endDate "2026-06-08" ;
+    ont:hasParticipant
+        <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
+        <https://paulduchesne.github.io/state/resource/6b7d2644-6850-4ac3-8f59-f813f469889a> ;
+    ont:startDate "2026-06-06" ;
+.
+
+<https://paulduchesne.github.io/state/resource/587b15ec-0d00-4171-aeed-6d1d7a493c76>
+    a ont:ReadingEvent ;
+    rdfs:label "Reading 'The Brothers Karamazov'"@en ;
+    rdfs:comment "Reading event."@en ;
+    ont:endDate "2026-05-24" ;
+    ont:hasParticipant
+        <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
+        <https://paulduchesne.github.io/state/resource/39378144-d6c7-46ef-a626-97b372fadb41> ;
+    ont:startDate "2026-04-20" ;
+.
+
+<https://paulduchesne.github.io/state/resource/616616bf-096e-446c-b01c-cc6616be03b5>
+    a ont:Book ;
+    rdfs:label "Woman Running in the Mountains"@en ;
+    rdfs:comment "Book by Yuko Tsushima"@en ;
+    ont:hasAuthor <https://paulduchesne.github.io/state/resource/e1b5bce8-c157-4497-9b5e-7033c7899f3d> ;
+    ont:identifier "9781681375977" ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/3ad4e2e0-8c98-41bf-94ba-d40e09f1a0b7> ;
+.
+
 <https://paulduchesne.github.io/state/resource/61b411fc-d144-4cb5-8a79-0284498b5ce7>
     a ont:Organisation ;
     rdfs:label "Black Dice"@en ;
@@ -2796,6 +2871,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
         <https://paulduchesne.github.io/state/resource/90c8c4ca-4ccf-4aca-b021-d480efd1abb6> ;
     ont:startDate "2025-12-08" ;
+.
+
+<https://paulduchesne.github.io/state/resource/6b7d2644-6850-4ac3-8f59-f813f469889a>
+    a ont:Book ;
+    rdfs:label "History of Violence"@en ;
+    rdfs:comment "Book by Edouard Louis"@en ;
+    ont:hasAuthor <https://paulduchesne.github.io/state/resource/788c45b3-ff04-43b5-996b-4c3d15c6aefc> ;
+    ont:identifier "9781784706074" ;
+    ont:participatedIn <https://paulduchesne.github.io/state/resource/52e6a8ab-1f71-4c16-8cac-5c6e1ee380a3> ;
 .
 
 <https://paulduchesne.github.io/state/resource/6d640efd-b316-4ea7-b16d-409d521b3557>
@@ -3272,7 +3356,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     a ont:ReadingEvent ;
     rdfs:label "Reading 'Life and Fate'"@en ;
     rdfs:comment "Reading event."@en ;
-    ont:endDate "" ;
+    ont:endDate "2026-05-31" ;
     ont:hasParticipant
         <https://paulduchesne.github.io/state/resource/0ef53722-52ca-49c8-873d-3549a74914e8> ,
         <https://paulduchesne.github.io/state/resource/c15216ea-cf68-4043-9189-98112d813350> ;
@@ -3673,9 +3757,12 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         <https://paulduchesne.github.io/state/resource/2da336c1-f4d6-4fbe-9cdb-500383ffab38> ,
         <https://paulduchesne.github.io/state/resource/2ebe1653-01bb-4558-97eb-3f1ce794dd5a> ,
         <https://paulduchesne.github.io/state/resource/2ed97264-8762-4f68-a8ab-06b6e3b1adfe> ,
+        <https://paulduchesne.github.io/state/resource/3ad4e2e0-8c98-41bf-94ba-d40e09f1a0b7> ,
         <https://paulduchesne.github.io/state/resource/3b5ea998-21b9-4b09-b910-b1c1ba6b91c5> ,
         <https://paulduchesne.github.io/state/resource/447fd9f5-0093-494a-a536-98d8c234f134> ,
         <https://paulduchesne.github.io/state/resource/48052b54-e4f7-42a6-9bb2-a8b033926e3f> ,
+        <https://paulduchesne.github.io/state/resource/52e6a8ab-1f71-4c16-8cac-5c6e1ee380a3> ,
+        <https://paulduchesne.github.io/state/resource/587b15ec-0d00-4171-aeed-6d1d7a493c76> ,
         <https://paulduchesne.github.io/state/resource/6b440e4a-fbcd-45b9-a3fd-8a2dbf930877> ,
         <https://paulduchesne.github.io/state/resource/780a127f-b83f-4ecf-9e05-752a82faecf8> ,
         <https://paulduchesne.github.io/state/resource/86477d45-4c1a-4f95-841d-a3fc2d8ffa25> ,
